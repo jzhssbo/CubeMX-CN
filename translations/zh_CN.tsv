@@ -553,7 +553,7 @@ Increment Mode	递增模式 (Increment Mode)
 Increment Source Address	源地址递增 (Increment Source Address)
 Information	信息 (Information)
 Input	输入 (Input)
-Input frequency	输入频率 (Input frequency)
+Input frequency	输入频率
 Installed	已安装 (Installed)
 Instance	实例 (Instance)
 Interrupt	中断 (Interrupt)
@@ -3586,7 +3586,7 @@ HSE Default Trimming Value	HSE 默认微调值 (HSE Default Trimming Value)
 HSE Div	HSE 分频 (HSE Div)
 HSE Divider	HSE 分频器 (HSE Divider)
 HSE Is Used	HSE 已启用 (HSE Is Used)
-HSE OSC	HSE 振荡器 (HSE OSC)
+HSE OSC	HSE 振荡器
 HSE Prediv	HSE 预分频 (HSE Prediv)
 HSE Prediv Value	HSE 预分频值 (HSE Prediv Value)
 HSE Prediv2 Value	HSE 预分频 2 值 (HSE Prediv2 Value)
@@ -3903,7 +3903,7 @@ LSCO clock output	LSCO 时钟输出 (LSCO clock output)
 LSCOS Clock Source	LSCOS 时钟源 (LSCOS Clock Source)
 LSE Drive Capability	LSE 驱动能力 (LSE Drive Capability)
 LSE Is Used	LSE 已启用 (LSE Is Used)
-LSE OSC	LSE 振荡器 (LSE OSC)
+LSE OSC	LSE 振荡器
 LSE Propagation Is Used	LSE 传播已启用 (LSE Propagation Is Used)
 LSE STATUS	LSE 状态 (LSE STATUS)
 LSE Startup Timeout Value (ms)	LSE 启动超时值 (ms) (LSE Startup Timeout Value (ms))
@@ -3914,8 +3914,8 @@ LSE used flag	LSE 使用标志 (LSE used flag)
 LSI OSC	LSI 振荡器 (LSI OSC)
 LSI Source	LSI 时钟源 (LSI Source)
 LSI used flag	LSI 使用标志 (LSI used flag)
-LSI1 Source	LSI1 时钟源 (LSI1 Source)
-LSI2 Source	LSI2 时钟源 (LSI2 Source)
+LSI1 Source	LSI1 时钟源
+LSI2 Source	LSI2 时钟源
 LSI2RC is Internal osc	LSI2RC 为内部振荡器 (LSI2RC is Internal osc)
 LSIRC is Internal osc	LSIRC 为内部振荡器 (LSIRC is Internal osc)
 LTCD Clock	LTCD 时钟 (LTCD Clock)
@@ -3969,14 +3969,14 @@ MSI in Stop mode	MSI 在停止模式下 (MSI in Stop mode)
 MSI is Used	MSI 已启用 (MSI is Used)
 MSIK Div	MSIK 分频 (MSIK Div)
 MSIK Is Used	MSIK 已启用 (MSIK Is Used)
-MSIK Source	MSIK 时钟源 (MSIK Source)
+MSIK Source	MSIK 时钟源
 MSIK in Stop mode	MSIK 在停止模式下 (MSIK in Stop mode)
 MSIK is Used	MSIK 已启用 (MSIK is Used)
 MSIKRC pres	MSIKRC 预分频 (MSIKRC pres)
 MSIS Clock	MSIS 时钟 (MSIS Clock)
 MSIS Div	MSIS 分频 (MSIS Div)
 MSIS Is Used	MSIS 已启用 (MSIS Is Used)
-MSIS Source	MSIS 时钟源 (MSIS Source)
+MSIS Source	MSIS 时钟源
 MSIS is Used	MSIS 已启用 (MSIS is Used)
 Main PLL is Used	主 PLL 已启用 (Main PLL is Used)
 Main PLL2 Is Used	主 PLL2 已启用 (Main PLL2 Is Used)
@@ -9986,7 +9986,7 @@ Potentiometer	电位器 (Potentiometer)
 Power Supply	电源 (Power Supply)
 Touch Feature	触摸功能 (Touch Feature)
 USB Port	通用串行总线端口 (USB Port)
-SMPS	开关电源 (SMPS)
+SMPS	开关电源
 # ── 中间件列表（2026-11-10 第 23 批）──
 6LoWPAN	6LoWPAN（低功耗无线个域网 IPv6）
 Audio_PDM	音频 PDM（脉冲密度调制音频） (Audio_PDM)
@@ -15341,28 +15341,28 @@ SynchronousWait3	同步等待 3 (SynchronousWait3)
 SynchronousWait4	同步等待 4 (SynchronousWait4)
 Wait1	等待 1 (Wait1)
 Wait2	等待 2 (Wait2)
-100 MHz max	最大 100 MHz (100 MHz max)
-1000 MHz max	最大 1000 MHz (1000 MHz max)
+100 MHz max	最大 100 MHz
+1000 MHz max	最大 1000 MHz
 108 MHz max	最大 108 MHz (108 MHz max)
-120 MHz max	最大 120 MHz (120 MHz max)
-150 MHz max	最大 150 MHz (150 MHz max)
-170 MHz max	最大 170 MHz (170 MHz max)
+120 MHz max	最大 120 MHz
+150 MHz max	最大 150 MHz
+170 MHz max	最大 170 MHz
 180 MHz max	最大 180 MHz (180 MHz max)
-200 MHz max	最大 200 MHz (200 MHz max)
+200 MHz max	最大 200 MHz
 216 MHz max	最大 216 MHz (216 MHz max)
 225 MHz max	最大 225 MHz (225 MHz max)
-240 MHz max	最大 240 MHz (240 MHz max)
-300 MHz max	最大 300 MHz (300 MHz max)
-400 MHz max	最大 400 MHz (400 MHz max)
+240 MHz max	最大 240 MHz
+300 MHz max	最大 300 MHz
+400 MHz max	最大 400 MHz
 45 MHz max	最大 45 MHz (45 MHz max)
-480 MHz max	最大 480 MHz (480 MHz max)
+480 MHz max	最大 480 MHz
 54 MHz max	最大 54 MHz (54 MHz max)
-600 MHz max	最大 600 MHz (600 MHz max)
+600 MHz max	最大 600 MHz
 650 MHz max	最大 650 MHz (650 MHz max)
 75 MHz max	最大 75 MHz (75 MHz max)
-800 MHz max	最大 800 MHz (800 MHz max)
+800 MHz max	最大 800 MHz
 90 MHz max	最大 90 MHz (90 MHz max)
-900 MHz max	最大 900 MHz (900 MHz max)
+900 MHz max	最大 900 MHz
 DSI byte lane clock Source	DSI 字节通道时钟源 (DSI byte lane clock Source)
 DSI pixel clock Source	DSI 像素时钟源 (DSI pixel clock Source)
 DSI rxclkesc clock Source	DSI 接收逃逸时钟源 (DSI rxclkesc clock Source)
