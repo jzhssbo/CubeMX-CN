@@ -212,7 +212,7 @@ File is not readable	无法读取文件 (File is not readable)
 File not found	未找到文件 (File not found)
 Firmware Package Name and Version	固件包名称与版本 (Firmware Package Name and Version)
 Firmware Relative Path	固件相对路径 (Firmware Relative Path)
-Firmware area address (in internal RAM)	固件区域地址（内部 RAM）
+Firmware area address (in internal RAM)	固件区域地址（内部 RAM） (Firmware area address (in internal RAM))
 Firmware area size	固件区域大小 (Firmware area size)
 Firmware binary input file	固件二进制输入文件 (Firmware binary input file)
 Firmware download area address (in external flash)	固件下载区域地址（外部闪存） (Firmware download area address (in external flash))
@@ -228,7 +228,7 @@ Generate Code	生成代码 (Generate Code)
 Generate PDF Report	生成 PDF 报告 (Generate PDF Report)
 Generate Project Report	生成工程报告 (Generate Project Report)
 Generate Project Reports	生成工程报告 (Generate Project Reports)
-Generate Project report files (pdf and txt)	生成工程报告文件（PDF 和 TXT）
+Generate Project report files (pdf and txt)	生成工程报告文件（PDF 和 TXT） (Generate Project report files (pdf and txt))
 Generate Report	生成报告 (Generate Report)
 Generate Text Report	生成文本报告 (Generate Text Report)
 Generate Under Root	在根目录下生成 (Generate Under Root)
@@ -1641,7 +1641,7 @@ FDCAN2 interrupt 0	灵活数据速率控制器局域网 2 中断 0 (FDCAN2 inter
 FDCAN2 interrupt 1	灵活数据速率控制器局域网 2 中断 1 (FDCAN2 interrupt 1)
 FDCAN3 interrupt 0	灵活数据速率控制器局域网 3 中断 0 (FDCAN3 interrupt 0)
 FDCAN3 interrupt 1	灵活数据速率控制器局域网 3 中断 1 (FDCAN3 interrupt 1)
-FLASH (CFI)  global Interrupt	闪存 (CFI) 全局中断
+FLASH (CFI)  global Interrupt	闪存 (CFI) 全局中断 (FLASH (CFI)  global Interrupt)
 FLASH controller interrupt	闪存控制器中断 (FLASH controller interrupt)
 FLASH global Interrupt + FLASH ECC interrupt	闪存全局中断 + 闪存 ECC 中断 (FLASH global Interrupt + FLASH ECC interrupt)
 FLASH interrupts	闪存中断 (FLASH interrupts)
@@ -1737,17 +1737,17 @@ I2C1 Error interrupt	集成电路互连总线 1 错误中断 (I2C1 Error interru
 I2C1 Event Interrupt	集成电路互连总线 1 事件中断 (I2C1 Event Interrupt)
 I2C1 Event and Error Interrupt	集成电路互连总线 1 事件与错误中断 (I2C1 Event and Error Interrupt)
 I2C1 Event interrupt	集成电路互连总线 1 事件中断 (I2C1 Event interrupt)
-I2C1 Interrupt  (combined with EXTI 23)	集成电路互连总线 1 中断（与 EXTI 23 合并）
+I2C1 Interrupt  (combined with EXTI 23)	集成电路互连总线 1 中断（与 EXTI 23 合并） (I2C1 Interrupt  (combined with EXTI 23))
 I2C1 error interrupt	集成电路互连总线 1 错误中断 (I2C1 error interrupt)
 I2C1 event global interrupt / I2C1 wake-up interrupt through EXT line 23	集成电路互连总线 1 事件全局中断 / 集成电路互连总线 1 唤醒中断（经外部线 23） (I2C1 event global interrupt / I2C1 wake-up interrupt through EXT line 23)
 I2C1 event global interrupt / I2C1 wake-up interrupt through EXTI line 23	集成电路互连总线 1 事件全局中断 / 集成电路互连总线 1 唤醒中断经外部中断线 23 (I2C1 event global interrupt / I2C1 wake-up interrupt through EXTI line 23)
 I2C1 event interrupt	集成电路互连总线 1 事件中断 (I2C1 event interrupt)
 I2C1 event interrupt / I2C1 wake-up interrupt through EXTI line 23	集成电路互连总线 1 事件中断 / 集成电路互连总线 1 唤醒中断经外部中断线 23 (I2C1 event interrupt / I2C1 wake-up interrupt through EXTI line 23)
 I2C1 global interrupt	集成电路互连总线 1 全局中断 (I2C1 global interrupt)
-I2C1 global interrupt (combined with EXTI 23)	集成电路互连总线 1 全局中断（与 EXTI 23 合并）
+I2C1 global interrupt (combined with EXTI 23)	集成电路互连总线 1 全局中断（与 EXTI 23 合并） (I2C1 global interrupt (combined with EXTI 23))
 I2C1 interrupt	集成电路互连总线 1 中断 (I2C1 interrupt)
-I2C1 interrupt  (combined with EXTI 23)	集成电路互连总线 1 中断（与 EXTI 23 合并）
-I2C2 + I2C3 global interrupt (combined with EXTI 22)	集成电路互连总线 2 + 集成电路互连总线 3 全局中断（与 EXTI 22 合并）
+I2C1 interrupt  (combined with EXTI 23)	集成电路互连总线 1 中断（与 EXTI 23 合并） (I2C1 interrupt  (combined with EXTI 23))
+I2C2 + I2C3 global interrupt (combined with EXTI 22)	集成电路互连总线 2 + 集成电路互连总线 3 全局中断（与 EXTI 22 合并） (I2C2 + I2C3 global interrupt (combined with EXTI 22))
 I2C2 + I2C3 global interrupt (combined with EXTI 22) + I2C4 global interrupt	集成电路互连总线 2 + 集成电路互连总线 3 全局中断 (与 EXTI 22) + 集成电路互连总线 4 全局中断 (I2C2 + I2C3 global interrupt (combined with EXTI 22) + I2C4 global interrupt)
 I2C2 Error Interrupt	集成电路互连总线 2 错误中断 (I2C2 Error Interrupt)
 I2C2 Error interrupt	集成电路互连总线 2 错误中断 (I2C2 Error interrupt)
@@ -1868,7 +1868,7 @@ PVD interrupt through EXTI line16	可编程电压检测中断经外部中断线 
 PVD through EXTI Line detection Interrupt	可编程电压检测经外部中断线检测中断 (PVD through EXTI Line detection Interrupt)
 PVD through EXTI Line detection Interrupt(EXTI lines 16/19/20/21)	可编程电压检测经外部中断线检测中断(EXTI 线 16/19/20/21)
 PVD through EXTI line 16	可编程电压检测经外部中断线 16 (PVD through EXTI line 16)
-PVD through EXTI line 16, PVM (monit. VDDIO2) through EXTI line 34	可编程电压检测（经外部中断线 16）、PVM（监测 VDDIO2，经外部中断线 34）
+PVD through EXTI line 16, PVM (monit. VDDIO2) through EXTI line 34	可编程电压检测（经外部中断线 16）、PVM（监测 VDDIO2，经外部中断线 34） (PVD through EXTI line 16, PVM (monit. VDDIO2) through EXTI line 34)
 PVD/AVD through EXTI Line detection Interrupt	可编程电压检测/AVD 经外部中断线检测中断 (PVD/AVD through EXTI Line detection Interrupt)
 PVD/PVM through EXTI Line detection Interrupt	可编程电压检测/PVM 经外部中断线检测中断 (PVD/PVM through EXTI Line detection Interrupt)
 PVD/PVM0/PVM2 interrupts through EXTI lines 16/31/33	可编程电压检测/PVM0/PVM2 中断经外部中断线 16/31/33 (PVD/PVM0/PVM2 interrupts through EXTI lines 16/31/33)
@@ -2016,9 +2016,9 @@ TIM11 global interrupt	定时器 11 全局中断 (TIM11 global interrupt)
 TIM12 global interrupt	定时器 12 全局中断 (TIM12 global interrupt)
 TIM13 global interrupt	定时器 13 全局中断 (TIM13 global interrupt)
 TIM14 global interrupt	定时器 14 全局中断 (TIM14 global interrupt)
-TIM15 + LPTIM3 global interrupt (combined with EXTI 33)	定时器 15 + 低功耗定时器 3 全局中断（与 EXTI 33 合并）
+TIM15 + LPTIM3 global interrupt (combined with EXTI 33)	定时器 15 + 低功耗定时器 3 全局中断（与 EXTI 33 合并） (TIM15 + LPTIM3 global interrupt (combined with EXTI 33))
 TIM15 global interrupt	定时器 15 全局中断 (TIM15 global interrupt)
-TIM15 global interrupt (combined with EXTI 33)	定时器 15 全局中断（与 EXTI 33 合并）
+TIM15 global interrupt (combined with EXTI 33)	定时器 15 全局中断（与 EXTI 33 合并） (TIM15 global interrupt (combined with EXTI 33))
 TIM16 Global Interrupt	定时器 16 全局中断 (TIM16 Global Interrupt)
 TIM16 global interrupt	定时器 16 全局中断 (TIM16 global interrupt)
 TIM16, FDCAN1_IT0 and FDCAN2_IT0 Interrupt	定时器 16、FDCAN1 中断 0 与 FDCAN2 中断 0 (TIM16, FDCAN1_IT0 and FDCAN2_IT0 Interrupt)
@@ -2119,11 +2119,11 @@ USART10 global interrupt	通用同步/异步收发器 10 全局中断 (USART10 g
 USART2 + LPUART2 Interrupt	通用同步/异步收发器 2 + 低功耗通用异步收发器 2 中断 (USART2 + LPUART2 Interrupt)
 USART2 Interrupt	通用同步/异步收发器 2 中断 (USART2 Interrupt)
 USART2 global interrupt	通用同步/异步收发器 2 全局中断 (USART2 global interrupt)
-USART2 global interrupt (combined with EXTI 26) + LPUART2 global interrupt (combined with EXTI lines 35)	通用同步/异步收发器 2 全局中断（与 EXTI 26 合并）+ 低功耗通用异步收发器 2 全局中断（与 EXTI 35 合并）
+USART2 global interrupt (combined with EXTI 26) + LPUART2 global interrupt (combined with EXTI lines 35)	通用同步/异步收发器 2 全局中断（与 EXTI 26 合并）+ 低功耗通用异步收发器 2 全局中断（与 EXTI 35 合并） (USART2 global interrupt (combined with EXTI 26) + LPUART2 global interrupt (combined with EXTI lines 35))
 USART2 global interrupt / USART2 wake-up interrupt through EXT line 26	通用同步/异步收发器 2 全局中断 / 通用同步/异步收发器 2 唤醒中断（经外部线 26） (USART2 global interrupt / USART2 wake-up interrupt through EXT line 26)
 USART2 global interrupt / USART2 wake-up interrupt through EXTI line 26	通用同步/异步收发器 2 全局中断 / 通用同步/异步收发器 2 唤醒中断经外部中断线 26 (USART2 global interrupt / USART2 wake-up interrupt through EXTI line 26)
 USART2 interrupt	通用同步/异步收发器 2 中断 (USART2 interrupt)
-USART3  (combined with EXTI 24) + LPUART1 global interrupt (combined with EXTI lines 28)	通用同步/异步收发器 3（与 EXTI 24 合并）+ 低功耗通用异步收发器 1 全局中断（与 EXTI 28 合并）
+USART3  (combined with EXTI 24) + LPUART1 global interrupt (combined with EXTI lines 28)	通用同步/异步收发器 3（与 EXTI 24 合并）+ 低功耗通用异步收发器 1 全局中断（与 EXTI 28 合并） (USART3  (combined with EXTI 24) + LPUART1 global interrupt (combined with EXTI lines 28))
 USART3 and USART4 global interrupts	通用同步/异步收发器 3 与通用同步/异步收发器 4 全局中断 (USART3 and USART4 global interrupts)
 USART3 and USART4 interrupts	通用同步/异步收发器 3 与通用同步/异步收发器 4 中断 (USART3 and USART4 interrupts)
 USART3 global interrupt	通用同步/异步收发器 3 全局中断 (USART3 global interrupt)
@@ -2133,8 +2133,8 @@ USART3, USART4 and LPUART1 interrupts / LPUART1 wake-up interrupt through EXTI l
 USART3, USART4, USART5, USART6 globlal Interrupts (combined with EXTI 28)	通用同步/异步收发器 3、通用同步/异步收发器 4、通用同步/异步收发器 5、通用同步/异步收发器 6 全局中断（与外部中断 28 合并） (USART3, USART4, USART5, USART6 globlal Interrupts (combined with EXTI 28))
 USART3, USART4, USART5, USART6, LPUART1 globlal Interrupts (combined with EXTI 28)	通用同步/异步收发器 3、通用同步/异步收发器 4、通用同步/异步收发器 5、通用同步/异步收发器 6、低功耗通用异步收发器 1 全局中断（与外部中断 28 合并） (USART3, USART4, USART5, USART6, LPUART1 globlal Interrupts (combined with EXTI 28))
 USART4 and USART5 interrupt	通用同步/异步收发器 4 与通用同步/异步收发器 5 中断 (USART4 and USART5 interrupt)
-USART4  global interrupt (combined with EXTI 20)	通用同步/异步收发器 4 全局中断（与 EXTI 20 合并）
-USART4  global interrupt (combined with EXTI 20) + LPUART3 (combined with EXTI lines 34)	通用同步/异步收发器 4 全局中断（与 EXTI 20 合并） + 低功耗通用异步收发器 3（与 EXTI 34 合并）
+USART4  global interrupt (combined with EXTI 20)	通用同步/异步收发器 4 全局中断（与 EXTI 20 合并） (USART4  global interrupt (combined with EXTI 20))
+USART4  global interrupt (combined with EXTI 20) + LPUART3 (combined with EXTI lines 34)	通用同步/异步收发器 4 全局中断（与 EXTI 20 合并） + 低功耗通用异步收发器 3（与 EXTI 34 合并） (USART4  global interrupt (combined with EXTI 20) + LPUART3 (combined with EXTI lines 34))
 USART6 global interrupt	通用同步/异步收发器 6 全局中断 (USART6 global interrupt)
 USB FS global interrupt	通用串行总线全速全局中断 (USB FS global interrupt)
 USB FS wake-up interrupt through EXTI line 18	通用串行总线全速唤醒中断经外部中断线 18 (USB FS wake-up interrupt through EXTI line 18)
@@ -2148,7 +2148,7 @@ USB OTG HS interrupt	通用串行总线 OTG 高速中断 (USB OTG HS interrupt)
 USB event interrupt / USB wake-up interrupt through EXTI line 18	通用串行总线事件中断 / 通用串行总线唤醒中断经外部中断线 18 (USB event interrupt / USB wake-up interrupt through EXTI line 18)
 USB event interrupt through EXTI line 17	通用串行总线事件中断经外部中断线 17 (USB event interrupt through EXTI line 17)
 USB global Interrupt / USB wake-up interrupt through EXTI line 18	通用串行总线全局中断 / 通用串行总线唤醒中断经外部中断线 18 (USB global Interrupt / USB wake-up interrupt through EXTI line 18)
-USB global interrupt (combined with EXTI 33)	通用串行总线全局中断（与 EXTI 33 合并）
+USB global interrupt (combined with EXTI 33)	通用串行总线全局中断（与 EXTI 33 合并） (USB global interrupt (combined with EXTI 33))
 USB global interrupt / USB wake-up interrupt through EXTI line 18	通用串行总线全局中断 / 通用串行总线唤醒中断经外部中断线 18 (USB global interrupt / USB wake-up interrupt through EXTI line 18)
 USB high priority global interrupt	通用串行总线高优先级全局中断 (USB high priority global interrupt)
 USB high priority interrupt	通用串行总线高优先级中断 (USB high priority interrupt)
@@ -4718,33 +4718,33 @@ hsi16 Source	HSI16 时钟源 (hsi16 Source)
 play1 clock selection	PLAY1 时钟源选择 (play1 clock selection)
 uart4 Clock Selection	UART4 时钟源选择 (uart4 Clock Selection)
 uart5 Clock Selection	UART5 时钟源选择 (uart5 Clock Selection)
-0 WS (1 CPU cycle)	0 个等待周期（1 个 CPU 周期）
-0 WS (1 HCLK cycle)	0 个等待周期（1 个 HCLK 周期）
-1 WS (2 CPU cycle)	1 个等待周期（2 个 CPU 周期）
-1 WS (2 CPU cycles)	1 个等待周期（2 个 CPU 周期）
-1 WS (2 HCLK cycle)	1 个等待周期（2 个 HCLK 周期）
-10 WS (11 CPU cycle)	10 个等待周期（11 个 CPU 周期）
-11 WS (12 CPU cycle)	11 个等待周期（12 个 CPU 周期）
-12 WS (13 CPU cycle)	12 个等待周期（13 个 CPU 周期）
-13 WS (14 CPU cycle)	13 个等待周期（14 个 CPU 周期）
-14 WS (15 CPU cycle)	14 个等待周期（15 个 CPU 周期）
-15 WS (16 CPU cycle)	15 个等待周期（16 个 CPU 周期）
-2 WS (3 CPU cycle)	2 个等待周期（3 个 CPU 周期）
-2 WS (3 CPU cycles)	2 个等待周期（3 个 CPU 周期）
-3 WS (4 CPU cycle)	3 个等待周期（4 个 CPU 周期）
-3 WS (4 CPU cycles)	3 个等待周期（4 个 CPU 周期）
-4 WS (5 CPU cycle)	4 个等待周期（5 个 CPU 周期）
-4 WS (5 CPU cycles)	4 个等待周期（5 个 CPU 周期）
-4 WS (6 CPU cycle)	4 个等待周期（6 个 CPU 周期）
-5 WS (6 CPU cycle)	5 个等待周期（6 个 CPU 周期）
-5 WS (6 CPU cycles)	5 个等待周期（6 个 CPU 周期）
-6 WS (7 CPU cycle)	6 个等待周期（7 个 CPU 周期）
-6 WS (7 CPU cycles)	6 个等待周期（7 个 CPU 周期）
-7 WS (7 CPU cycles)	7 个等待周期（7 个 CPU 周期）
-7 WS (8 CPU cycle)	7 个等待周期（8 个 CPU 周期）
-8 WS (7 CPU cycles)	8 个等待周期（7 个 CPU 周期）
-8 WS (9 CPU cycle)	8 个等待周期（9 个 CPU 周期）
-9 WS (10 CPU cycle)	9 个等待周期（10 个 CPU 周期）
+0 WS (1 CPU cycle)	0 个等待周期（1 个 CPU 周期） (0 WS (1 CPU cycle))
+0 WS (1 HCLK cycle)	0 个等待周期（1 个 HCLK 周期） (0 WS (1 HCLK cycle))
+1 WS (2 CPU cycle)	1 个等待周期（2 个 CPU 周期） (1 WS (2 CPU cycle))
+1 WS (2 CPU cycles)	1 个等待周期（2 个 CPU 周期） (1 WS (2 CPU cycles))
+1 WS (2 HCLK cycle)	1 个等待周期（2 个 HCLK 周期） (1 WS (2 HCLK cycle))
+10 WS (11 CPU cycle)	10 个等待周期（11 个 CPU 周期） (10 WS (11 CPU cycle))
+11 WS (12 CPU cycle)	11 个等待周期（12 个 CPU 周期） (11 WS (12 CPU cycle))
+12 WS (13 CPU cycle)	12 个等待周期（13 个 CPU 周期） (12 WS (13 CPU cycle))
+13 WS (14 CPU cycle)	13 个等待周期（14 个 CPU 周期） (13 WS (14 CPU cycle))
+14 WS (15 CPU cycle)	14 个等待周期（15 个 CPU 周期） (14 WS (15 CPU cycle))
+15 WS (16 CPU cycle)	15 个等待周期（16 个 CPU 周期） (15 WS (16 CPU cycle))
+2 WS (3 CPU cycle)	2 个等待周期（3 个 CPU 周期） (2 WS (3 CPU cycle))
+2 WS (3 CPU cycles)	2 个等待周期（3 个 CPU 周期） (2 WS (3 CPU cycles))
+3 WS (4 CPU cycle)	3 个等待周期（4 个 CPU 周期） (3 WS (4 CPU cycle))
+3 WS (4 CPU cycles)	3 个等待周期（4 个 CPU 周期） (3 WS (4 CPU cycles))
+4 WS (5 CPU cycle)	4 个等待周期（5 个 CPU 周期） (4 WS (5 CPU cycle))
+4 WS (5 CPU cycles)	4 个等待周期（5 个 CPU 周期） (4 WS (5 CPU cycles))
+4 WS (6 CPU cycle)	4 个等待周期（6 个 CPU 周期） (4 WS (6 CPU cycle))
+5 WS (6 CPU cycle)	5 个等待周期（6 个 CPU 周期） (5 WS (6 CPU cycle))
+5 WS (6 CPU cycles)	5 个等待周期（6 个 CPU 周期） (5 WS (6 CPU cycles))
+6 WS (7 CPU cycle)	6 个等待周期（7 个 CPU 周期） (6 WS (7 CPU cycle))
+6 WS (7 CPU cycles)	6 个等待周期（7 个 CPU 周期） (6 WS (7 CPU cycles))
+7 WS (7 CPU cycles)	7 个等待周期（7 个 CPU 周期） (7 WS (7 CPU cycles))
+7 WS (8 CPU cycle)	7 个等待周期（8 个 CPU 周期） (7 WS (8 CPU cycle))
+8 WS (7 CPU cycles)	8 个等待周期（7 个 CPU 周期） (8 WS (7 CPU cycles))
+8 WS (9 CPU cycle)	8 个等待周期（9 个 CPU 周期） (8 WS (9 CPU cycle))
+9 WS (10 CPU cycle)	9 个等待周期（10 个 CPU 周期） (9 WS (10 CPU cycle))
 Active on falling edge	下降沿有效 (Active on falling edge)
 Active on rising edge	上升沿有效 (Active on rising edge)
 Automatic	自动 (Automatic)
@@ -6509,7 +6509,7 @@ TAMP Tamper Secure interrupt	防篡改安全中断 (TAMP Tamper Secure interrupt
 TIM1 Break, Transition error and Index error interrupt	定时器 1 刹车、换相错误与索引错误中断 (TIM1 Break, Transition error and Index error interrupt)
 TIM1 Global Interrupt	定时器 1 全局中断 (TIM1 Global Interrupt)
 TIM8 Break, Transition error and Index error interrupt	定时器 8 刹车、换相错误与索引错误中断 (TIM8 Break, Transition error and Index error interrupt)
-Tamper interrupt (include LSECSS interrupts)	篡改中断（含 LSECSS 中断）
+Tamper interrupt (include LSECSS interrupts)	篡改中断（含 LSECSS 中断） (Tamper interrupt (include LSECSS interrupts))
 Tamper non-secure global interrupt through EXTI line 19	篡改非安全全局中断经外部中断线 19 (Tamper non-secure global interrupt through EXTI line 19)
 Tamper secure global interrupt through EXTI line 20	篡改安全全局中断经外部中断线 20 (Tamper secure global interrupt through EXTI line 20)
 UART12 global interrupt	通用异步收发器 12 全局中断 (UART12 global interrupt)
@@ -6532,9 +6532,9 @@ USB On The Go HS wake-up interrupt through EXTI line	通用串行总线 OTG 高�
 USB On The Go HS wake-up interrupt through EXTI line 20	通用串行总线 OTG 高速唤醒中断经外部中断线 20 (USB On The Go HS wake-up interrupt through EXTI line 20)
 USB On The Go HS wake-up interrupt through EXTI line 43	通用串行总线 OTG 高速唤醒中断经外部中断线 43 (USB On The Go HS wake-up interrupt through EXTI line 43)
 USB global interrupt	通用串行总线全局中断 (USB global interrupt)
-USB2 DR Remote  Wake up from USB2PHY2	USB2 双角色远程唤醒（来自 USB2PHY2）
+USB2 DR Remote  Wake up from USB2PHY2	USB2 双角色远程唤醒（来自 USB2PHY2） (USB2 DR Remote  Wake up from USB2PHY2)
 USB2 DR global interrupt	USB2 双角色全局中断 (USB2 DR global interrupt)
-USBH Remote  Wake up from USB2PHY1	USBH 远程唤醒（来自 USB2PHY1）
+USBH Remote  Wake up from USB2PHY1	USBH 远程唤醒（来自 USB2PHY1） (USBH Remote  Wake up from USB2PHY1)
 secure AES interrupt	安全高级加密标准中断 (secure AES interrupt)
 10th Channel	第 10 通道 (10th Channel)
 11th Channel	第 11 通道 (11th Channel)
@@ -7245,58 +7245,58 @@ DMA2D TC FLAG	二维图形加速 TC 标志 (DMA2D TC FLAG)
 DMA2D TW FLAG	二维图形加速 TW 标志 (DMA2D TW FLAG)
 DMA2DString for LL	DMA2DString 用于 LL (DMA2DString for LL)
 DMAMUX clock enable	DMA 请求复用器时钟使能 (DMAMUX clock enable)
-DMAMUX1 Channel0 (DMA1 Channel 1) event	DMA 请求复用器 1 通道 0 (DMA1 通道 1) 事件
-DMAMUX1 Channel0 (DMA1 Channel1) event	DMA 请求复用器 1 通道 0 (DMA1 通道1) 事件
+DMAMUX1 Channel0 (DMA1 Channel 1) event	DMA 请求复用器 1 通道 0 (DMA1 通道 1) 事件 (DMAMUX1 Channel0 (DMA1 Channel 1) event)
+DMAMUX1 Channel0 (DMA1 Channel1) event	DMA 请求复用器 1 通道 0 (DMA1 通道1) 事件 (DMAMUX1 Channel0 (DMA1 Channel1) event)
 DMAMUX1 Channel0 (DMA1 Stream0) event	DMA 请求复用器 1 通道 0（DMA1 数据流 0）事件 (DMAMUX1 Channel0 (DMA1 Stream0) event)
-DMAMUX1 Channel0 (DMA1 channel 1) event	DMA 请求复用器 1 通道 0 (DMA1 通道 1) 事件
-DMAMUX1 Channel0 (DMA1 channel1) event	DMA 请求复用器 1 通道 0 (DMA1 通道1) 事件
+DMAMUX1 Channel0 (DMA1 channel 1) event	DMA 请求复用器 1 通道 0 (DMA1 通道 1) 事件 (DMAMUX1 Channel0 (DMA1 channel 1) event)
+DMAMUX1 Channel0 (DMA1 channel1) event	DMA 请求复用器 1 通道 0 (DMA1 通道1) 事件 (DMAMUX1 Channel0 (DMA1 channel1) event)
 DMAMUX1 Channel0 event	DMA 请求复用器 1 通道 0 事件 (DMAMUX1 Channel0 event)
-DMAMUX1 Channel1 (DMA1 Channel 2) event	DMA 请求复用器 1 通道 1 (DMA1 通道 2) 事件
-DMAMUX1 Channel1 (DMA1 Channel2) event	DMA 请求复用器 1 通道 1 (DMA1 通道2) 事件
+DMAMUX1 Channel1 (DMA1 Channel 2) event	DMA 请求复用器 1 通道 1 (DMA1 通道 2) 事件 (DMAMUX1 Channel1 (DMA1 Channel 2) event)
+DMAMUX1 Channel1 (DMA1 Channel2) event	DMA 请求复用器 1 通道 1 (DMA1 通道2) 事件 (DMAMUX1 Channel1 (DMA1 Channel2) event)
 DMAMUX1 Channel1 (DMA1 Stream1) event	DMA 请求复用器 1 通道 1（DMA1 数据流 1）事件 (DMAMUX1 Channel1 (DMA1 Stream1) event)
-DMAMUX1 Channel1 (DMA1 channel2) event	DMA 请求复用器 1 通道 1 (DMA1 通道2) 事件
+DMAMUX1 Channel1 (DMA1 channel2) event	DMA 请求复用器 1 通道 1 (DMA1 通道2) 事件 (DMAMUX1 Channel1 (DMA1 channel2) event)
 DMAMUX1 Channel1 event	DMA 请求复用器 1 通道 1 事件 (DMAMUX1 Channel1 event)
-DMAMUX1 Channel2 (DMA1 Channel 3) event	DMA 请求复用器 1 通道 2 (DMA1 通道 3) 事件
-DMAMUX1 Channel2 (DMA1 Channel3) event	DMA 请求复用器 1 通道 2 (DMA1 通道3) 事件
+DMAMUX1 Channel2 (DMA1 Channel 3) event	DMA 请求复用器 1 通道 2 (DMA1 通道 3) 事件 (DMAMUX1 Channel2 (DMA1 Channel 3) event)
+DMAMUX1 Channel2 (DMA1 Channel3) event	DMA 请求复用器 1 通道 2 (DMA1 通道3) 事件 (DMAMUX1 Channel2 (DMA1 Channel3) event)
 DMAMUX1 Channel2 (DMA1 Stream2) event	DMA 请求复用器 1 通道 2（DMA1 数据流 2）事件 (DMAMUX1 Channel2 (DMA1 Stream2) event)
-DMAMUX1 Channel2 (DMA1 channel3) event	DMA 请求复用器 1 通道 2 (DMA1 通道3) 事件
+DMAMUX1 Channel2 (DMA1 channel3) event	DMA 请求复用器 1 通道 2 (DMA1 通道3) 事件 (DMAMUX1 Channel2 (DMA1 channel3) event)
 DMAMUX1 Channel2 event	DMA 请求复用器 1 通道 2 事件 (DMAMUX1 Channel2 event)
-DMAMUX1 Channel3 (DMA1 Channel 4) event	DMA 请求复用器 1 通道 3 (DMA1 通道 4) 事件
-DMAMUX1 Channel3 (DMA1 Channel4) event	DMA 请求复用器 1 通道 3 (DMA1 通道4) 事件
+DMAMUX1 Channel3 (DMA1 Channel 4) event	DMA 请求复用器 1 通道 3 (DMA1 通道 4) 事件 (DMAMUX1 Channel3 (DMA1 Channel 4) event)
+DMAMUX1 Channel3 (DMA1 Channel4) event	DMA 请求复用器 1 通道 3 (DMA1 通道4) 事件 (DMAMUX1 Channel3 (DMA1 Channel4) event)
 DMAMUX1 Channel3 (DMA1 Stream3) event	DMA 请求复用器 1 通道 3（DMA1 数据流 3）事件 (DMAMUX1 Channel3 (DMA1 Stream3) event)
-DMAMUX1 Channel3 (DMA1 channel4) event	DMA 请求复用器 1 通道 3 (DMA1 通道4) 事件
-DMAMUX1 channel0  (DMA1 channel1) event	DMA 请求复用器 1 通道 0 (DMA1 通道1) 事件
-DMAMUX1 channel0 (DMA1 Channel1) event	DMA 请求复用器 1 通道 0 (DMA1 通道1) 事件
-DMAMUX1 channel1  (DMA1 channel2) event	DMA 请求复用器 1 通道 1 (DMA1 通道2) 事件
-DMAMUX1 channel1 (DMA1 Channel2) event	DMA 请求复用器 1 通道 1 (DMA1 通道2) 事件
-DMAMUX1 channel1 (DMA1 channel2) event	DMA 请求复用器 1 通道 1 (DMA1 通道2) 事件
-DMAMUX1 channel2  (DMA1 channel3) event	DMA 请求复用器 1 通道 2 (DMA1 通道3) 事件
-DMAMUX1 channel2 (DMA1 Channel3) event	DMA 请求复用器 1 通道 2 (DMA1 通道3) 事件
-DMAMUX1 channel2 (DMA1 channel3) event	DMA 请求复用器 1 通道 2 (DMA1 通道3) 事件
-DMAMUX1 channel3  (DMA1 channel4) event	DMA 请求复用器 1 通道 3 (DMA1 通道4) 事件
-DMAMUX1 channel3 (DMA1 Channel4) event	DMA 请求复用器 1 通道 3 (DMA1 通道4) 事件
-DMAMUX1 channel3 (DMA1 channel4) event	DMA 请求复用器 1 通道 3 (DMA1 通道4) 事件
+DMAMUX1 Channel3 (DMA1 channel4) event	DMA 请求复用器 1 通道 3 (DMA1 通道4) 事件 (DMAMUX1 Channel3 (DMA1 channel4) event)
+DMAMUX1 channel0  (DMA1 channel1) event	DMA 请求复用器 1 通道 0 (DMA1 通道1) 事件 (DMAMUX1 channel0  (DMA1 channel1) event)
+DMAMUX1 channel0 (DMA1 Channel1) event	DMA 请求复用器 1 通道 0 (DMA1 通道1) 事件 (DMAMUX1 channel0 (DMA1 Channel1) event)
+DMAMUX1 channel1  (DMA1 channel2) event	DMA 请求复用器 1 通道 1 (DMA1 通道2) 事件 (DMAMUX1 channel1  (DMA1 channel2) event)
+DMAMUX1 channel1 (DMA1 Channel2) event	DMA 请求复用器 1 通道 1 (DMA1 通道2) 事件 (DMAMUX1 channel1 (DMA1 Channel2) event)
+DMAMUX1 channel1 (DMA1 channel2) event	DMA 请求复用器 1 通道 1 (DMA1 通道2) 事件 (DMAMUX1 channel1 (DMA1 channel2) event)
+DMAMUX1 channel2  (DMA1 channel3) event	DMA 请求复用器 1 通道 2 (DMA1 通道3) 事件 (DMAMUX1 channel2  (DMA1 channel3) event)
+DMAMUX1 channel2 (DMA1 Channel3) event	DMA 请求复用器 1 通道 2 (DMA1 通道3) 事件 (DMAMUX1 channel2 (DMA1 Channel3) event)
+DMAMUX1 channel2 (DMA1 channel3) event	DMA 请求复用器 1 通道 2 (DMA1 通道3) 事件 (DMAMUX1 channel2 (DMA1 channel3) event)
+DMAMUX1 channel3  (DMA1 channel4) event	DMA 请求复用器 1 通道 3 (DMA1 通道4) 事件 (DMAMUX1 channel3  (DMA1 channel4) event)
+DMAMUX1 channel3 (DMA1 Channel4) event	DMA 请求复用器 1 通道 3 (DMA1 通道4) 事件 (DMAMUX1 channel3 (DMA1 Channel4) event)
+DMAMUX1 channel3 (DMA1 channel4) event	DMA 请求复用器 1 通道 3 (DMA1 通道4) 事件 (DMAMUX1 channel3 (DMA1 channel4) event)
 DMAMUX1 clock enable	DMA 请求复用器 1 时钟使能 (DMAMUX1 clock enable)
-DMAMUX2 Channel0  (BDMA channel0) event	DMA 请求复用器 2 通道 0 (BDMA 通道0) 事件
+DMAMUX2 Channel0  (BDMA channel0) event	DMA 请求复用器 2 通道 0 (BDMA 通道0) 事件 (DMAMUX2 Channel0  (BDMA channel0) event)
 DMAMUX2 Channel0 event	DMA 请求复用器 2 通道 0 事件 (DMAMUX2 Channel0 event)
-DMAMUX2 Channel1  (BDMA channel1) event	DMA 请求复用器 2 通道 1 (BDMA 通道1) 事件
+DMAMUX2 Channel1  (BDMA channel1) event	DMA 请求复用器 2 通道 1 (BDMA 通道1) 事件 (DMAMUX2 Channel1  (BDMA channel1) event)
 DMAMUX2 Channel1 event	DMA 请求复用器 2 通道 1 事件 (DMAMUX2 Channel1 event)
-DMAMUX2 Channel2  (BDMA channel2) event	DMA 请求复用器 2 通道 2 (BDMA 通道2) 事件
+DMAMUX2 Channel2  (BDMA channel2) event	DMA 请求复用器 2 通道 2 (BDMA 通道2) 事件 (DMAMUX2 Channel2  (BDMA channel2) event)
 DMAMUX2 Channel2 event	DMA 请求复用器 2 通道 2 事件 (DMAMUX2 Channel2 event)
-DMAMUX2 Channel3  (BDMA channel3) event	DMA 请求复用器 2 通道 3 (BDMA 通道3) 事件
+DMAMUX2 Channel3  (BDMA channel3) event	DMA 请求复用器 2 通道 3 (BDMA 通道3) 事件 (DMAMUX2 Channel3  (BDMA channel3) event)
 DMAMUX2 Channel3 event	DMA 请求复用器 2 通道 3 事件 (DMAMUX2 Channel3 event)
-DMAMUX2 Channel4  (BDMA channel4) event	DMA 请求复用器 2 通道 4 (BDMA 通道4) 事件
+DMAMUX2 Channel4  (BDMA channel4) event	DMA 请求复用器 2 通道 4 (BDMA 通道4) 事件 (DMAMUX2 Channel4  (BDMA channel4) event)
 DMAMUX2 Channel4 event	DMA 请求复用器 2 通道 4 事件 (DMAMUX2 Channel4 event)
-DMAMUX2 Channel5  (BDMA channel5) event	DMA 请求复用器 2 通道 5 (BDMA 通道5) 事件
+DMAMUX2 Channel5  (BDMA channel5) event	DMA 请求复用器 2 通道 5 (BDMA 通道5) 事件 (DMAMUX2 Channel5  (BDMA channel5) event)
 DMAMUX2 Channel5 event	DMA 请求复用器 2 通道 5 事件 (DMAMUX2 Channel5 event)
-DMAMUX2 Channel6  (BDMA channel6) event	DMA 请求复用器 2 通道 6 (BDMA 通道6) 事件
+DMAMUX2 Channel6  (BDMA channel6) event	DMA 请求复用器 2 通道 6 (BDMA 通道6) 事件 (DMAMUX2 Channel6  (BDMA channel6) event)
 DMAMUX2 Channel6 event	DMA 请求复用器 2 通道 6 事件 (DMAMUX2 Channel6 event)
 DMAMUX2 clock enable	DMA 请求复用器 2 时钟使能 (DMAMUX2 clock enable)
 DQS Mode	DQS 模式 (DQS Mode)
 DQS# reset	DQS# 复位 (DQS# reset)
 DRAM Configuration Register (DCR)	DRAM 配置寄存器 (DCR)
 DRAM initialization	DRAM 初始化 (DRAM initialization)
-DRAM reset (DDR3 only)	DRAM 复位（仅 DDR3）
+DRAM reset (DDR3 only)	DRAM 复位（仅 DDR3） (DRAM reset (DDR3 only))
 DSI FLEX27 source	显示串行接口 FLEX27 源 (DSI FLEX27 source)
 DSI FLEX28 source	显示串行接口 FLEX28 源 (DSI FLEX28 source)
 DSI HSE source	显示串行接口 HSE 源 (DSI HSE source)
@@ -7474,7 +7474,7 @@ External Event Source 2 - COMP4	外部事件源 2 - 比较器 4 (External Event 
 External Event Source 2 - COMP5	外部事件源 2 - 比较器 5 (External Event Source 2 - COMP5)
 External Event Source 2 - COMP6	外部事件源 2 - 比较器 6 (External Event Source 2 - COMP6)
 External Event Source 2 - COMP7	外部事件源 2 - 比较器 7 (External Event Source 2 - COMP7)
-External Event Source 2 - OMPAMP2	外部事件源 2 - 运算放大器 2（原文 OMPAMP2）
+External Event Source 2 - OMPAMP2	外部事件源 2 - 运算放大器 2（原文 OMPAMP2） (External Event Source 2 - OMPAMP2)
 External Event Source 2 - OPAMP1	外部事件源 2 - 运算放大器 1 (External Event Source 2 - OPAMP1)
 External Event Source 2 - OPAMP2	外部事件源 2 - 运算放大器 2 (External Event Source 2 - OPAMP2)
 External Event Source 3 -  COMP7	外部事件源 3 - 比较器 7 (External Event Source 3 -  COMP7)
@@ -9086,10 +9086,10 @@ Cortex-M4 FW	Cortex-M4 固件 (Cortex-M4 FW)
 CortexA35NS OS	Cortex-A35 非安全系统 (CortexA35NS OS)
 CortexA35NS SSBL	Cortex-A35 非安全二级引导 (CortexA35NS SSBL)
 CortexM33NS	Cortex-M33 非安全 (CortexM33NS)
-Cortex-M0	Cortex-M0 内核
-Cortex-M0+	Cortex-M0+ 内核
-Cortex-M4	Cortex-M4 内核
-Cortex-M7	Cortex-M7 内核
+Cortex-M0	Cortex-M0 内核 (Cortex-M0)
+Cortex-M0+	Cortex-M0+ 内核 (Cortex-M0+)
+Cortex-M4	Cortex-M4 内核 (Cortex-M4)
+Cortex-M7	Cortex-M7 内核 (Cortex-M7)
 GPIO port I/O pin 0	GPIO 端口输入/输出引脚 0 (GPIO port I/O pin 0)
 GPIO port I/O pin 1	GPIO 端口输入/输出引脚 1 (GPIO port I/O pin 1)
 GPIO port I/O pin 2	GPIO 端口输入/输出引脚 2 (GPIO port I/O pin 2)
@@ -9994,11 +9994,11 @@ BLE	BLE（低功耗蓝牙）
 Contiki-NG	Contiki-NG（无线传感网）
 Cryptographic	Cryptographic（加密库）
 FatFs	FatFs（文件系统）
-FileX	FileX（文件系统）
-FreeRTOS	FreeRTOS（实时系统）
+FileX	FileX（文件系统） (FileX)
+FreeRTOS	FreeRTOS（实时系统） (FreeRTOS)
 GNSS	GNSS（卫星定位）
 KMS	KMS（密钥管理）
-LevelX	LevelX（闪存均衡）
+LevelX	LevelX（闪存均衡） (LevelX)
 LibJPEG	LibJPEG（JPEG 解码）
 LoRaWan	LoRaWan（远距无线）
 LwIP	LwIP（轻量 IP 栈）
@@ -10006,24 +10006,24 @@ MEMS	MEMS（微机电传感）
 NDEF	NDEF（NFC 数据格式）
 NFC	NFC（近场通信）
 NetXDuo	NetXDuo（TCP/IP 栈）
-OpenAMP	OpenAMP（多核通信）
+OpenAMP	OpenAMP（多核通信） (OpenAMP)
 SBSFU	SBSFU（安全启动更新）
 STermWin	STermWin（图形库）
 STemWin	STemWin（图形库）
-Sigfox	Sigfox（低功耗广域）
+Sigfox	Sigfox（低功耗广域） (Sigfox)
 SubGHz_Phy	SubGHz_Phy（Sub-GHz 物理层）
 TFM	TFM（TrustZone 框架）
 Thread	Thread（无线网状网）
-ThreadX	ThreadX（实时系统）
+ThreadX	ThreadX（实时系统） (ThreadX)
 TouchGFX	TouchGFX（图形框架）
-TouchSensing	TouchSensing（触摸感应）
+TouchSensing	TouchSensing（触摸感应） (TouchSensing)
 USBXDevice	USBXDevice（USBX 设备）
 USBXHost	USBXHost（USBX 主机）
-USB_Device	USB_Device（通用串行总线设备库）
+USB_Device	USB_Device（通用串行总线设备库） (USB_Device)
 USB_Host	USB_Host（通用串行总线主机库）
 USB_PD_Lib	USB_PD_Lib（通用串行总线电力传输库）
 Zigbee	Zigbee（无线网状网）
-mbedTLS	mbedTLS（加密库）
+mbedTLS	mbedTLS（加密库） (mbedTLS)
 # ── 参数组标题 Group 属性（2026-11-10 第 24 批）──
 ADC Trigger 1	模数转换器触发 1 (ADC Trigger 1)
 ADC Trigger 10	模数转换器触发 10 (ADC Trigger 10)
@@ -10248,7 +10248,7 @@ Timeout configuration	超时配置 (Timeout configuration)
 Transfer Event Configuration	传输事件配置 (Transfer Event Configuration)
 Transfer Rate	传输速率 (Transfer Rate)
 Trigger Output (TRGO)	触发输出 (TRGO)
-Trigger Output (TRGO) Parameters	触发输出 (TRGO) 参数
+Trigger Output (TRGO) Parameters	触发输出 (TRGO) 参数 (Trigger Output (TRGO) Parameters)
 UART Parameters - Basic	UART 参数 - 基本 (UART Parameters - Basic)
 UART Parameters - Data Configuration	UART 参数 - 数据配置 (UART Parameters - Data Configuration)
 UART Parameters - WakeUp Interrupt	UART 参数 - 唤醒中断 (UART Parameters - WakeUp Interrupt)
@@ -10322,10 +10322,10 @@ Cable Detection Parameters	线缆检测参数 (Cable Detection Parameters)
 Port 0 Parameters	端口 0 参数 (Port 0 Parameters)
 Not supported	不支持 (Not supported)
 # ── 引脚右键菜单通用项（2026-11-10 第 26 批）──
-Reset_State	Reset_State（复位状态）
-GPIO_Input	GPIO_Input（输入）
-GPIO_Output	GPIO_Output（输出）
-GPIO_Analog	GPIO_Analog（模拟）
+Reset_State	Reset_State（复位状态） (Reset_State)
+GPIO_Input	GPIO_Input（输入） (GPIO_Input)
+GPIO_Output	GPIO_Output（输出） (GPIO_Output)
+GPIO_Analog	GPIO_Analog（模拟） (GPIO_Analog)
 EVENTOUT	EVENTOUT（事件输出）
 SYS_WKUP	SYS_WKUP（唤醒）
 GPIO_Output_OD	GPIO_Output_OD（开漏输出）
@@ -10974,7 +10974,7 @@ Wake-Up 25	唤醒 25 (Wake-Up 25)
 CLK clock divide ratio	CLK 时钟分频比 (CLK clock divide ratio)
 Left aligned, padded with 0s	左对齐，用 0 填充 (Left aligned, padded with 0s)
 Resulting Timing Low-power read time-out	合成时序的低功耗读超时 (Resulting Timing Low-power read time-out)
-Vertical Sync time (VSA) Period	垂直同步时间 (VSA) 周期
+Vertical Sync time (VSA) Period	垂直同步时间 (VSA) 周期 (Vertical Sync time (VSA) Period)
 No CS set	未设置片选 (No CS set)
 Sector [76:79]	扇区 [76:79] (Sector [76:79])
 same EDATA1 and EDATA2 for both banks	两存储区共用 EDATA1 与 EDATA2 (same EDATA1 and EDATA2 for both banks)
@@ -11020,7 +11020,7 @@ NCS Port	NCS 端口 (NCS Port)
 Precharge Duration = 2 RTCCLK cycles	预充电时长 = 2 个 RTCCLK 周期 (Precharge Duration = 2 RTCCLK cycles)
 Tamper 3 No Erase	篡改 3 不擦除 (Tamper 3 No Erase)
 Flow Control - Configuration	流控 - 配置 (Flow Control - Configuration)
-Horizontal Back-Porch (HBP) Period	水平后沿 (HBP) 周期
+Horizontal Back-Porch (HBP) Period	水平后沿 (HBP) 周期 (Horizontal Back-Porch (HBP) Period)
 Clock transition on which the bit capture is made	位采样所用的时钟跳变 (Clock transition on which the bit capture is made)
 # ── 弱项外设界面文字（2026-11-10 第 29 批 B）──
 Cr is output first	Cr 先输出 (Cr is output first)
@@ -11124,7 +11124,7 @@ Word endianness exchanged when destination data size is &gt; WORD	目标数据�
 FREERTOS used	使用 FreeRTOS (FREERTOS used)
 SmartCard TX Pin Active Level Inversion	智能卡发送引脚有效电平反转 (SmartCard TX Pin Active Level Inversion)
 Invert the HS signal on Clock Lanes	反转时钟通道的高速信号 (Invert the HS signal on Clock Lanes)
-Byte lane (NBL) setup time in AHB clock cycles	字节掩码 (NBL) 建立时间（AHB 时钟周期数）
+Byte lane (NBL) setup time in AHB clock cycles	字节掩码 (NBL) 建立时间（AHB 时钟周期数） (Byte lane (NBL) setup time in AHB clock cycles)
 Tamper 1 Trigger	篡改 1 触发 (Tamper 1 Trigger)
 PC-Card Device	PC 卡设备 (PC-Card Device)
 Polarity of the External Tearing Effect Source	外部撕裂效应源的极性 (Polarity of the External Tearing Effect Source)
@@ -11144,7 +11144,7 @@ Alert message	告警消息 (Alert message)
 Specific Command Mode Settings	特定命令模式设置 (Specific Command Mode Settings)
 All Alarm SS fields are masked. There is no comparison on sub seconds for Alarm	所有闹钟亚秒字段均被屏蔽，闹钟不比较亚秒 (All Alarm SS fields are masked. There is no comparison on sub seconds for Alarm)
 DMA2 Remap Macro Argument	DMA2 重映射宏参数 (DMA2 Remap Macro Argument)
-CLE low to RE low delay in HCLK cycles	CLE 到 RE 延迟（HCLK 时钟周期数）
+CLE low to RE low delay in HCLK cycles	CLE 到 RE 延迟（HCLK 时钟周期数） (CLE low to RE low delay in HCLK cycles)
 Single frame mode not available	单帧模式不可用 (Single frame mode not available)
 Enabled with 11 functions removed	启用（移除 11 个功能） (Enabled with 11 functions removed)
 Calibration 1Hz routed to OUT1	1Hz 校准输出到 OUT1 (Calibration 1Hz routed to OUT1)
@@ -11202,8 +11202,8 @@ Resulting Timing High-speed transmission time-out	合成时序的高速传输超
 SDRAM common clock	同步动态存储器公共时钟 (SDRAM common clock)
 YUV SDTV (16 bits)	YUV 标清（16 位） (YUV SDTV (16 bits))
 HPDMA 2D Addressing	HPDMA 2D 寻址 (HPDMA 2D Addressing)
-Enabled with static working buffer on the BSS	启用（BSS 上有静态工作缓冲区）
-Address setup time in HCLK clock cycles	地址建立时间（HCLK 时钟周期数）
+Enabled with static working buffer on the BSS	启用（BSS 上有静态工作缓冲区） (Enabled with static working buffer on the BSS)
+Address setup time in HCLK clock cycles	地址建立时间（HCLK 时钟周期数） (Address setup time in HCLK clock cycles)
 Maximum Chip Select low pulse management	最大片选低脉冲管理 (Maximum Chip Select low pulse management)
 Clk Port	Clk 端口 (Clk Port)
 EXTI LINE 7	外部中断线 7 (EXTI LINE 7)
@@ -11298,8 +11298,8 @@ Vertical Synchronization Polarity	垂直同步极性 (Vertical Synchronization P
 Address 4 Line	地址 4 线 (Address 4 Line)
 All Tampers Interruption	所有篡改中断 (All Tampers Interruption)
 SDRAM Bank2 remapped on FMC bank2 and still accessible at default mapping	同步动态存储器存储块 2 重映射到灵活存储控制器存储块 2，默认映射仍可访问 (SDRAM Bank2 remapped on FMC bank2 and still accessible at default mapping)
-Alternate Mode Controller (AMC) (DFP)	备用模式控制器 (AMC)（下行端口）
-OPAMP 2	OPAMP 2（运算放大器 2）
+Alternate Mode Controller (AMC) (DFP)	备用模式控制器 (AMC)（下行端口） (Alternate Mode Controller (AMC) (DFP))
+OPAMP 2	OPAMP 2（运算放大器 2） (OPAMP 2)
 SS[31:0] are compared and must match to activate alarm	SS[31:0] 全部比较且必须匹配才触发闹钟 (SS[31:0] are compared and must match to activate alarm)
 PDUSB Host (UFP)	PDUSB 主机（上行端口） (PDUSB Host (UFP))
 Common space setup time	公共空间建立时间 (Common space setup time)
@@ -11377,7 +11377,7 @@ I2C4 Rx transfer complete	集成电路互连总线 4 接收传输完成 (I2C4 Rx
 Single frame mode available	单帧模式可用 (Single frame mode available)
 Address setup time in FMC clock cycles	地址建立时间（灵活存储控制器时钟周期数） (Address setup time in FMC clock cycles)
 Input Plus	同相输入 (Input Plus)
-NAND attribute space timing in HCLK cycles	NAND 属性空间时序（HCLK 周期数）
+NAND attribute space timing in HCLK cycles	NAND 属性空间时序（HCLK 周期数） (NAND attribute space timing in HCLK cycles)
 Tamper1 Routed to TAMP1	篡改 1 路由到防篡改 1 (Tamper1 Routed to TAMP1)
 Wrap mode	环绕模式 (Wrap mode)
 LPUART1 IT T WUP ASYNC	低功耗通用异步收发器 1 中断唤醒异步 (LPUART1 IT T WUP ASYNC)
@@ -11393,7 +11393,7 @@ RTC TimeStamp	实时时钟时间戳 (RTC TimeStamp)
 Green component of the rotation	旋转的绿色分量 (Green component of the rotation)
 Tamper 2 Trigger	篡改 2 触发 (Tamper 2 Trigger)
 BGR565 (16 bits)	BGR565（16 位） (BGR565 (16 bits))
-Alternate Mode Adapter (AMA) (UFP)	备用模式适配器 (AMA)（上行端口）
+Alternate Mode Adapter (AMA) (UFP)	备用模式适配器 (AMA)（上行端口） (Alternate Mode Adapter (AMA) (UFP))
 Resulting Maximum time taken by the D-PHY data lane to go from LP to HS transmission	合成时序的 D-物理层收发器数据通道从低功耗转高速的最长时间 (Resulting Maximum time taken by the D-PHY data lane to go from LP to HS transmission)
 Generate request on falling edge events	在下降沿事件上产生请求 (Generate request on falling edge events)
 One Quarter Full	1/4 满 (One Quarter Full)
@@ -11401,7 +11401,7 @@ Bus wide 1-bit data	总线宽度 1 位数据 (Bus wide 1-bit data)
 on a Tearing Effect Event	在撕裂效应事件时 (on a Tearing Effect Event)
 Storeoperation Set	存储操作置位 (Storeoperation Set)
 CF bank 4	CF 存储区 4 (CF bank 4)
-Horizontal Front-Porch (HFP) Period	水平前沿 (HFP) 周期
+Horizontal Front-Porch (HFP) Period	水平前沿 (HFP) 周期 (Horizontal Front-Porch (HFP) Period)
 Generic Short Write Two parameters	通用短写（2 个参数） (Generic Short Write Two parameters)
 Muxed NOR Flash	复用 NOR 闪存 (Muxed NOR Flash)
 Number of column address bits	列地址位数 (Number of column address bits)
@@ -11453,7 +11453,7 @@ DQS Port	DQS 端口 (DQS Port)
 CAD source toggle time	CAD 源切换时间 (CAD source toggle time)
 Signal has a regular waveform at 1Hz	信号在 1 Hz 具有规则波形 (Signal has a regular waveform at 1Hz)
 Start zone 3	起始区 3 (Start zone 3)
-Extended data hold time in HCLK clock cycles	扩展数据保持时间（HCLK 周期数）
+Extended data hold time in HCLK clock cycles	扩展数据保持时间（HCLK 周期数） (Extended data hold time in HCLK clock cycles)
 Tamper 2 Interruption Only	篡改 2 仅中断 (Tamper 2 Interruption Only)
 SD 4 bits Wide bus with auto dir voltage converter	SD 4 位宽总线（带自动方向电压转换） (SD 4 bits Wide bus with auto dir voltage converter)
 # ── 弱项外设界面文字（2026-11-10 第 29 批 E）──
@@ -11501,7 +11501,7 @@ Daylightsaving Sub1h	夏令时减 1 小时 (Daylightsaving Sub1h)
 Not capable	不具备 (Not capable)
 Instruction 1 line	指令 1 线 (Instruction 1 line)
 TIM16 CH1/UP DMA CH4 remap	定时器 16 通道 1/更新重映射到直接存储器访问通道 4 (TIM16 CH1/UP DMA CH4 remap)
-OPAMP 3	OPAMP 3（运算放大器 3）
+OPAMP 3	OPAMP 3（运算放大器 3） (OPAMP 3)
 Alternate Byte 8 Line	备用字节 8 线 (Alternate Byte 8 Line)
 Number of A7S requests	A7S 请求数量 (Number of A7S requests)
 Routed to AF1 device	路由到 AF1 设备 (Routed to AF1 device)
@@ -11514,7 +11514,7 @@ Routed to AF2	路由到 AF2 (Routed to AF2)
 Only SS[0] is compared.	仅比较 SS[0] (Only SS[0] is compared.)
 Single transfer	单次传输 (Single transfer)
 USB Device enumerating	通用串行总线设备枚举中 (USB Device enumerating)
-CF I/O space timing in HCLK cycles	CF 输入/输出空间时序（HCLK 周期数）
+CF I/O space timing in HCLK cycles	CF 输入/输出空间时序（HCLK 周期数） (CF I/O space timing in HCLK cycles)
 Use ITU-R BT.601 set	使用 ITU-R BT.601 标准色域 (Use ITU-R BT.601 set)
 SIOO inst  Only First Cmd	SIOO 指令仅首条命令 (SIOO inst  Only First Cmd)
 I/O space setup time	输入/输出空间建立时间 (I/O space setup time)
@@ -11536,7 +11536,7 @@ Synchronization signal ID	同步信号 ID (Synchronization signal ID)
 Automatic Clock Lane Control	自动时钟通道控制 (Automatic Clock Lane Control)
 LTDC FIFO Overflow Error Interrupt is	液晶显示控制器 FIFO 溢出错误中断为 (LTDC FIFO Overflow Error Interrupt is)
 Data exchange	数据交换 (Data exchange)
-Data hold time in HCLK clock cycles	数据保持时间（HCLK 周期数）
+Data hold time in HCLK clock cycles	数据保持时间（HCLK 周期数） (Data hold time in HCLK clock cycles)
 Horizontal Front Porch	水平前沿 (Horizontal Front Porch)
 VSYNC Polarity (set in LTDC)	VSYNC 极性（在液晶显示控制器中设置） (VSYNC Polarity (set in LTDC))
 Wait state insertion	插入等待状态 (Wait state insertion)
@@ -11568,7 +11568,7 @@ Max Power (mW)	最大功率 (mW) (Max Power (mW))
 Display ID TX	显示 ID 发送 (Display ID TX)
 The external transceiver is disabled	外部收发器已禁用 (The external transceiver is disabled)
 Layer 1 - Luminance Rescale	层 1 - 亮度重缩放 (Layer 1 - Luminance Rescale)
-Vertical Active (VACT) Period	垂直有效 (VACT) 周期
+Vertical Active (VACT) Period	垂直有效 (VACT) 周期 (Vertical Active (VACT) Period)
 PHY related Errors Interrupt	物理层收发器相关错误中断 (PHY related Errors Interrupt)
 Calibration 512Hz routed to OUT	512Hz 校准输出到 OUT (Calibration 512Hz routed to OUT)
 VSync Height	VSYNC 高度 (VSync Height)
@@ -11680,7 +11680,7 @@ SD Card	SD 卡 (SD Card)
 HSA: Horizontal Synchronism Active duration (set in LTDC)	HSA：水平同步有效时长（在液晶显示控制器中设置） (HSA: Horizontal Synchronism Active duration (set in LTDC))
 SDMMC1 Command End Flag	SDMMC1 命令结束标志 (SDMMC1 Command End Flag)
 Swap Clock Lane PINs	交换时钟通道的引脚 (Swap Clock Lane PINs)
-Vertical Front Porch (VFP) Period	垂直前沿 (VFP) 周期
+Vertical Front Porch (VFP) Period	垂直前沿 (VFP) 周期 (Vertical Front Porch (VFP) Period)
 Port2 Octo	端口 2 八线 (Port2 Octo)
 High-speed transmission time-out	高速传输超时 (High-speed transmission time-out)
 End sector	结束扇区 (End sector)
@@ -11729,14 +11729,14 @@ SRAM3 power down in Run mode	SRAM3 在运行模式下掉电 (SRAM3 power down in
 USART COMP2 out	USART 取自比较器 2 输出 (USART COMP2 out)
 SD 1 bit with auto dir voltage converter	SD 1 位（带自动方向电压转换） (SD 1 bit with auto dir voltage converter)
 # ── TIM1_8 高级定时器模板（2026-11-10 第 29 批 G，30 个芯片族共享）──
-- COMP1	- COMP1（比较器 1）
-- COMP2	- COMP2（比较器 2）
-- COMP3	- COMP3（比较器 3）
-- COMP4	- COMP4（比较器 4）
-- COMP5	- COMP5（比较器 5）
-- COMP6	- COMP6（比较器 6）
-- COMP7	- COMP7（比较器 7）
-- DFSDM	- DFSDM（Sigma-Delta 数字滤波器）
+- COMP1	- COMP1（比较器 1） (- COMP1)
+- COMP2	- COMP2（比较器 2） (- COMP2)
+- COMP3	- COMP3（比较器 3） (- COMP3)
+- COMP4	- COMP4（比较器 4） (- COMP4)
+- COMP5	- COMP5（比较器 5） (- COMP5)
+- COMP6	- COMP6（比较器 6） (- COMP6)
+- COMP7	- COMP7（比较器 7） (- COMP7)
+- DFSDM	- DFSDM（Sigma-Delta 数字滤波器） (- DFSDM)
 - Digital Input	- 数字输入 (- Digital Input)
 Activate Break Input 2 on PIN shared with COMP1 out	在与比较器 1 输出复用的引脚上启用刹车输入 2 (Activate Break Input 2 on PIN shared with COMP1 out)
 Activate Break Input 2 on PIN shared with COMP2 out	在与比较器 2 输出复用的引脚上启用刹车输入 2 (Activate Break Input 2 on PIN shared with COMP2 out)
@@ -11866,7 +11866,7 @@ Calibration 1Hz routed to OUT2	1Hz 校准输出到 OUT2 (Calibration 1Hz routed 
 Adapted Command Mode	适配命令模式 (Adapted Command Mode)
 Data 2 Line	数据 2 线 (Data 2 Line)
 SMARTCARD IsDataInvert	智能卡数据反转 (SMARTCARD IsDataInvert)
-CF attribute space timing in HCLK cycles	CF 属性空间时序（HCLK 周期数）
+CF attribute space timing in HCLK cycles	CF 属性空间时序（HCLK 周期数） (CF attribute space timing in HCLK cycles)
 User Trimming	用户微调 (User Trimming)
 CRC Polynomial	CRC 多项式 (CRC Polynomial)
 Enable USB Support	启用通用串行总线支持 (Enable USB Support)
@@ -11878,9 +11878,9 @@ Io High port	输入/输出高端口 (Io High port)
 Port1 Hexa	端口 1 六线 (Port1 Hexa)
 HSYNC Polarity (set in LTDC)	HSYNC 极性（在液晶显示控制器中设置） (HSYNC Polarity (set in LTDC))
 Clock lane is always provided	时钟通道始终提供 (Clock lane is always provided)
-Address hold time in HCLK clock cycles	地址保持时间（HCLK 周期数）
+Address hold time in HCLK clock cycles	地址保持时间（HCLK 周期数） (Address hold time in HCLK clock cycles)
 YVU SDTV (16 bits) - DSI mode	YVU 标清（16 位）- 显示串行接口模式 (YVU SDTV (16 bits) - DSI mode)
-Vertical Back Porch (VBP) Period	垂直后沿 (VBP) 周期
+Vertical Back Porch (VBP) Period	垂直后沿 (VBP) 周期 (Vertical Back Porch (VBP) Period)
 Key Type	密钥类型 (Key Type)
 flash memory base address	闪存基地址 (flash memory base address)
 Octo SPI	八线串行外设接口 (Octo SPI)
@@ -11989,7 +11989,7 @@ Tamper 1 Mask Flag	篡改 1 掩码标志 (Tamper 1 Mask Flag)
 Little endianness preserved	保持小端字节序 (Little endianness preserved)
 Three Quarters Full	3/4 满 (Three Quarters Full)
 Pixel Clock Polarity	像素时钟极性 (Pixel Clock Polarity)
-NAND common space timing in HCLK cycles	NAND 公共空间时序（HCLK 周期数）
+NAND common space timing in HCLK cycles	NAND 公共空间时序（HCLK 周期数） (NAND common space timing in HCLK cycles)
 Data alignment	数据对齐 (Data alignment)
 Extended address setup time	扩展地址建立时间 (Extended address setup time)
 Match Value	匹配值 (Match Value)
@@ -12065,7 +12065,7 @@ Maximum time taken to perform a read command	读命令执行最长时间 (Maximu
 Activate Bank 1 WRP	启用存储区 1 写保护 (Activate Bank 1 WRP)
 CAD default resistor	CAD 默认电阻 (CAD default resistor)
 USB Communication Capable	支持通用串行总线通信 (USB Communication Capable)
-OPAMP 1	OPAMP 1（运算放大器 1）
+OPAMP 1	OPAMP 1（运算放大器 1） (OPAMP 1)
 SRAM2 Page1 power down in Stop (0, 1, 2)  mode	SRAM2 页 1 在停止（0、1、2）模式下掉电 (SRAM2 Page1 power down in Stop (0, 1, 2)  mode)
 Get Battery Capabitity and Status messages	获取电池能力与状态消息 (Get Battery Capabitity and Status messages)
 OPAMP2 output connection to COMP1 non-inverting input	运算放大器 2 输出连接到比较器 1 同相输入 (OPAMP2 output connection to COMP1 non-inverting input)
@@ -12084,7 +12084,7 @@ SMARTCARD IsTxPinLevelInvert	智能卡发送引脚电平反转 (SMARTCARD IsTxPi
 Null Packet Size	空包大小 (Null Packet Size)
 Port1 IO[5:4]	端口 1 输入/输出[5:4] (Port1 IO[5:4])
 NCS1 -- Port2 --	NCS1 -- 端口 2 -- (NCS1 -- Port2 --)
-Low Power Timer (LPTIM) Connection	低功耗定时器 (LPTIM) 连接
+Low Power Timer (LPTIM) Connection	低功耗定时器 (LPTIM) 连接 (Low Power Timer (LPTIM) Connection)
 OSPI IO Manager Chip Select Selector override	OSPI 输入/输出管理器片选覆盖 (OSPI IO Manager Chip Select Selector override)
 # ── 弱项外设界面文字（2026-11-10 第 29 批 J，清单收尾）──
 Attribute space hold time	属性空间保持时间 (Attribute space hold time)
@@ -12158,7 +12158,7 @@ WMSEC Start sector	WMSEC 起始扇区 (WMSEC Start sector)
 Decrement by a word	按字递减 (Decrement by a word)
 FIFO underrun interrupt disabled	FIFO 下溢中断已禁用 (FIFO underrun interrupt disabled)
 Resulting Maximum time taken by the D-PHY data lane to go from HS to LP transmission	合成时序的 D-物理层收发器数据通道从高速转低功耗的最长时间 (Resulting Maximum time taken by the D-PHY data lane to go from HS to LP transmission)
-Data setup time in HCLK clock cycles	数据建立时间（HCLK 周期数）
+Data setup time in HCLK clock cycles	数据建立时间（HCLK 周期数） (Data setup time in HCLK clock cycles)
 Peripheral Mode Smbus Master	外设模式系统管理总线主机 (Peripheral Mode Smbus Master)
 Privilege Backup register	备份寄存器特权 (Privilege Backup register)
 USART2 RX/TX DMA CH6 CH7 remap	通用同步/异步收发器 2 收发重映射到直接存储器访问通道 6/7 (USART2 RX/TX DMA CH6 CH7 remap)
@@ -12214,7 +12214,7 @@ DCS Short Write Zero parameter	DCS 短写（0 个参数） (DCS Short Write Zero
 Time Out Period Clock	超时周期时钟 (Time Out Period Clock)
 User Configuration 1	用户配置 1 (User Configuration 1)
 Instruction Size	指令大小 (Instruction Size)
-CF common space timing in HCLK cycles	CF 公共空间时序（HCLK 周期数）
+CF common space timing in HCLK cycles	CF 公共空间时序（HCLK 周期数） (CF common space timing in HCLK cycles)
 Write operation	写操作 (Write operation)
 Blue component of the rotation	旋转的蓝色分量 (Blue component of the rotation)
 Repeat Counter	重复计数器 (Repeat Counter)
@@ -12222,7 +12222,7 @@ SmartCard RX Pin Active Level Inversion	智能卡接收引脚有效电平反转 
 manually by Enabling the LTDC	通过手动使能液晶显示控制器 (manually by Enabling the LTDC)
 Unconstrained Power	不受限功率 (Unconstrained Power)
 Gpio Configuration	GPIO 配置 (Gpio Configuration)
-Bus turn around time in HCLK clock cycles	总线周转时间（HCLK 周期数）
+Bus turn around time in HCLK clock cycles	总线周转时间（HCLK 周期数） (Bus turn around time in HCLK clock cycles)
 No output on the TAMPER pin	篡改引脚无输出 (No output on the TAMPER pin)
 The Refresh of the Display Frame Buffer is Triggered	显示帧缓冲的刷新被触发 (The Refresh of the Display Frame Buffer is Triggered)
 UFP or CP product type	UFP 或 CP 产品类型 (UFP or CP product type)
@@ -14055,8 +14055,8 @@ TIM8_CH4N	TIM8_CH4N（定时器 8 互补通道 4）
 TIM9_CH1	TIM9_CH1（定时器 9 通道 1）
 TIM9_CH2	TIM9_CH2（定时器 9 通道 2）
 OTG_Dual_Role_Device	OTG_Dual_Role_Device（双角色设备）
-Host_Only	Host_Only（仅主机）
-Device_Only	Device_Only（仅设备）
+Host_Only	Host_Only（仅主机） (Host_Only)
+Device_Only	Device_Only（仅设备） (Device_Only)
 # ── 引脚配置全覆盖收尾（2026-11-10 第 29 批 Q）──
 ADC1_INP0	ADC1_INP0（模数转换器 1 差分输入 0 正端）
 ADC1_PDM_CLK	ADC1_PDM_CLK（模数转换器脉冲密度调制麦克风时钟）
@@ -14726,8 +14726,8 @@ NorPsramChipSelect2_1	NOR/PSRAM 片选 2_1 (NorPsramChipSelect2_1)
 NorPsramChipSelect2_2	NOR/PSRAM 片选 2_2 (NorPsramChipSelect2_2)
 NorPsramChipSelect2_3	NOR/PSRAM 片选 2_3 (NorPsramChipSelect2_3)
 NorPsramChipSelect2_4	NOR/PSRAM 片选 2_4 (NorPsramChipSelect2_4)
-OTG/Dual_Role_Device	OTG/Dual_Role_Device（双角色设备）
-OTG/Dual-Role-Device-FS	OTG/Dual-Role-Device-FS（双角色设备全速）
+OTG/Dual_Role_Device	OTG/Dual_Role_Device（双角色设备） (OTG/Dual_Role_Device)
+OTG/Dual-Role-Device-FS	OTG/Dual-Role-Device-FS（双角色设备全速） (OTG/Dual-Role-Device-FS)
 OTG/Dual-Role-Device-HS	OTG/Dual-Role-Device-HS（双角色设备高速）
 OTG/Dual_Role_Device_FS	OTG/Dual_Role_Device_FS（双角色设备全速）
 OTG/Dual_Role_Device_HS	OTG/Dual_Role_Device_HS（双角色设备高速）
@@ -14745,15 +14745,15 @@ IWDG Early Wakeup Interrupt	IWDG 早期唤醒中断 (IWDG Early Wakeup Interrupt
 Activate_NOE	Activate_NOE（激活输出使能）
 Activate_SOF	Activate_SOF（激活帧起始）
 Activate_SOF_FS	Activate_SOF_FS（激活帧起始全速）
-Activate_VBUS	Activate_VBUS（激活总线电压）
+Activate_VBUS	Activate_VBUS（激活总线电压） (Activate_VBUS)
 Activate_VBUS_BCD	Activate_VBUS_BCD（激活总线电压电池充电检测）
 BCD (Battery Charging Detection)	BCD（电池充电检测） (BCD (Battery Charging Detection))
 Device_DP_DM	Device_DP_DM（设备 DP/DM 信号）
 Device_mode	Device_mode（设备模式）
-Dual_Role_Device	Dual_Role_Device（双角色设备）
+Dual_Role_Device	Dual_Role_Device（双角色设备） (Dual_Role_Device)
 Endpoint 0 Max Packet size	端点 0 最大包大小 (Endpoint 0 Max Packet size)
-Hich Full Speed 12MBit/s	Hich Full Speed 12MBit/s（高速 12 Mbit/s）
-Host	Host（主机）
+Hich Full Speed 12MBit/s	Hich Full Speed 12MBit/s（高速 12 Mbit/s） (Hich Full Speed 12MBit/s)
+Host	Host（主机） (Host)
 Host Channels	主机通道数 (Host Channels)
 Host Full Speed 12MBit/s	主机全速 12 Mbit/s (Host Full Speed 12MBit/s)
 Host Low Speed 1.5MBit/s	主机低速 1.5 Mbit/s (Host Low Speed 1.5MBit/s)
@@ -14769,7 +14769,7 @@ IWDG_Activate	IWDG_Activate（激活）
 IWDG_State	IWDG_State（状态）
 System	系统 (System)
 Bypass mode	旁路模式 (Bypass mode)
-RNG_Activate	RNG_Activate（激活）
+RNG_Activate	RNG_Activate（激活） (RNG_Activate)
 RNG_S1	RNG_S1（RNG 模式 S1）
 RNG_S2	RNG_S2（RNG 模式 S2）
 RNG_State	RNG_State（状态）
@@ -14811,7 +14811,7 @@ MII Interrupt Control Register	MII 中断控制寄存器 (MII Interrupt Control 
 MII Interrupt Status and Misc. Control Register	MII 中断状态与杂项控制寄存器 (MII Interrupt Status and Misc. Control Register)
 Media Interface	介质接口 (Media Interface)
 PHY Link down inturrupt	PHY 链路断开中断 (PHY Link down inturrupt)
-PHY Reset delay these values are based on a 1 ms Systick interrupt	PHY 复位延迟（基于 1 ms SysTick 中断）
+PHY Reset delay these values are based on a 1 ms Systick interrupt	PHY 复位延迟（基于 1 ms SysTick 中断） (PHY Reset delay these values are based on a 1 ms Systick interrupt)
 PHY User name	PHY 用户名 (PHY User name)
 PHY name	PHY 名称 (PHY name)
 PHY name  arg	PHY 名称 (PHY name  arg)
@@ -14841,7 +14841,7 @@ static string	静态字符串 (static string)
 user PHY	用户 PHY (user PHY)
 Clock-Out	时钟输出 (Clock-Out)
 Clock-out	时钟输出 (Clock-out)
-Debug Serial Wire	串行线 (Serial Wire)调试
+Debug Serial Wire	串行线 (Serial Wire)调试 (Debug Serial Wire)
 DisableDeadBatterySignals	DisableDeadBatterySignals（禁用死电池信号）
 External voltage reference	外部电压参考 (External voltage reference)
 ExternalMode	ExternalMode（外部模式）
@@ -14867,7 +14867,7 @@ MCU-Clock-Out	MCU 时钟输出 (MCU-Clock-Out)
 MISC_REMAP	MISC_REMAP（杂项重映射）
 Main-Clock-Out	主时钟输出 (Main-Clock-Out)
 Master Clock Ouput	主时钟输出 (Master Clock Ouput)
-Miscellaneous features remapping (DAC and NVIC)	杂项功能重映射（DAC 与 NVIC）
+Miscellaneous features remapping (DAC and NVIC)	杂项功能重映射（DAC 与 NVIC） (Miscellaneous features remapping (DAC and NVIC))
 Mode_PVD_Ext	Mode_PVD_Ext（PVD 外部）
 Mode_PVD_Int	Mode_PVD_Int（PVD 内部）
 No Debug	不调试 (No Debug)
@@ -14925,7 +14925,7 @@ Switch between PA14-BOOT(),PA15,PB5,PB8	在 PA14-BOOT()、PA15、PB5、PB8 间�
 Switch between PB0,PB1,PA8,PA11[PA9]	在 PB0、PB1、PA8、PA11[PA9] 间切换 (Switch between PB0,PB1,PA8,PA11[PA9])
 Switch between PB7,PB8,PB9,PC14-OSC32_IN	在 PB7、PB8、PB9、PC14-OSC32_IN 间切换 (Switch between PB7,PB8,PB9,PC14-OSC32_IN)
 Switch between PF2-NRST,PA0,PA1,PA2	在 PF2-NRST、PA0、PA1、PA2 间切换 (Switch between PF2-NRST,PA0,PA1,PA2)
-SysTick	SysTick（系统滴答定时器）
+SysTick	SysTick（系统滴答定时器） (SysTick)
 System Wake-Up	系统唤醒 (System Wake-Up)
 System Wake-Up 0	系统唤醒 0 (System Wake-Up 0)
 System Wake-Up 1	系统唤醒 1 (System Wake-Up 1)
@@ -15024,10 +15024,10 @@ WakeUp6	WakeUp6（唤醒 6）
 WakeUp7	WakeUp7（唤醒 7）
 WakeUp8	WakeUp8（唤醒 8）
 WakeUp9	WakeUp9（唤醒 9）
-isolationVdda	isolationVdda（VDDA 隔离）
+isolationVdda	isolationVdda（VDDA 隔离） (isolationVdda)
 PWR switching on the fly interrupt, PWR end of BLE activity interrupt, PWR end of critical radio phase interrupt	电源动态切换中断、BLE 活动结束中断、关键射频阶段结束中断 (PWR switching on the fly interrupt, PWR end of BLE activity interrupt, PWR end of critical radio phase interrupt)
 PWR switching on the fly, end of BLE activity, end of 802.15.4 activity, end of critical radio phase interrupt	电源动态切换、BLE 活动结束、802.15.4 活动结束、关键射频阶段结束中断 (PWR switching on the fly, end of BLE activity, end of 802.15.4 activity, end of critical radio phase interrupt)
-Processor_SAFETY_interrupt due lost LOOKUP	处理器 SAFETY 中断（LOOKUP 丢失）
+Processor_SAFETY_interrupt due lost LOOKUP	处理器 SAFETY 中断（LOOKUP 丢失） (Processor_SAFETY_interrupt due lost LOOKUP)
 RTC Tamper and TimeStamp and RCC LSE CSS interrupts through the EXTI	经 EXTI 的 RTC 篡改与时间戳及 RCC LSE CSS 中断 (RTC Tamper and TimeStamp and RCC LSE CSS interrupts through the EXTI)
 RTC tamper and time stamp, CSS on LSE interrupts through EXTI line 18	经 EXTI 线 18 的 RTC 篡改与时间戳、LSE CSS 中断 (RTC tamper and time stamp, CSS on LSE interrupts through EXTI line 18)
 RTC tamper and time stamp, CSS on LSE interrupts through EXTI line 19	经 EXTI 线 19 的 RTC 篡改与时间戳、LSE CSS 中断 (RTC tamper and time stamp, CSS on LSE interrupts through EXTI line 19)
@@ -15096,7 +15096,7 @@ AlternateFunctionPushPull_RI_Timer_IC1	AlternateFunctionPushPull_RI_Timer_IC1（
 AlternateFunctionPushPull_RI_Timer_IC2	AlternateFunctionPushPull_RI_Timer_IC2（复用功能：推挽，路由接口，定时器，输入捕获 2）
 AlternateFunctionPushPull_RI_Timer_IC3	AlternateFunctionPushPull_RI_Timer_IC3（复用功能：推挽，路由接口，定时器，输入捕获 3）
 AlternateFunctionPushPull_RI_Timer_IC4	AlternateFunctionPushPull_RI_Timer_IC4（复用功能：推挽，路由接口，定时器，输入捕获 4）
-AnalogForADC	AnalogForADC（模数转换器模拟输入）
+AnalogForADC	AnalogForADC（模数转换器模拟输入） (AnalogForADC)
 HAL_BIND_SO8_PIN1_PB7	HAL_BIND_SO8_PIN1_PB7（SO8 封装引脚 1 绑定 PB7）
 HAL_BIND_SO8_PIN1_PC14	HAL_BIND_SO8_PIN1_PC14（SO8 封装引脚 1 绑定 PC14）
 HAL_BIND_SO8_PIN4_PA0	HAL_BIND_SO8_PIN4_PA0（SO8 封装引脚 4 绑定 PA0）
@@ -15202,14 +15202,14 @@ Sram1	SRAM 1
 Sram2	SRAM 2
 Sram3	SRAM 3
 Sram4	SRAM 4
-Dead battery signals                           Call in MX_SystemPower_Config()	死电池信号（在 MX_SystemPower_Config() 中调用）
-SRAM fast wakeup                             Call in MX_SystemPower_Config()	SRAM 快速唤醒（在 MX_SystemPower_Config() 中调用）
-SRAM power down in Stop mode         Call in MX_SystemPower_Config()	停止模式下 SRAM 断电（在 MX_SystemPower_Config() 中调用）
-Smart run domain in Run mode            Call in MX_SystemPower_Config()	智能运行域运行模式（在 MX_SystemPower_Config() 中调用）
-Smart run domain in Run mode Call in MX_SystemPower_Config()	智能运行域运行模式（在 MX_SystemPower_Config() 中调用）
-System power supply                          Call in MX_SystemPower_Config()	系统供电（在 MX_SystemPower_Config() 中调用）
+Dead battery signals                           Call in MX_SystemPower_Config()	死电池信号（在 MX_SystemPower_Config() 中调用） (Dead battery signals                           Call in MX_SystemPower_Config())
+SRAM fast wakeup                             Call in MX_SystemPower_Config()	SRAM 快速唤醒（在 MX_SystemPower_Config() 中调用） (SRAM fast wakeup                             Call in MX_SystemPower_Config())
+SRAM power down in Stop mode         Call in MX_SystemPower_Config()	停止模式下 SRAM 断电（在 MX_SystemPower_Config() 中调用） (SRAM power down in Stop mode         Call in MX_SystemPower_Config())
+Smart run domain in Run mode            Call in MX_SystemPower_Config()	智能运行域运行模式（在 MX_SystemPower_Config() 中调用） (Smart run domain in Run mode            Call in MX_SystemPower_Config())
+Smart run domain in Run mode Call in MX_SystemPower_Config()	智能运行域运行模式（在 MX_SystemPower_Config() 中调用） (Smart run domain in Run mode Call in MX_SystemPower_Config())
+System power supply                          Call in MX_SystemPower_Config()	系统供电（在 MX_SystemPower_Config() 中调用） (System power supply                          Call in MX_SystemPower_Config())
 EnabledDeadBatteryUCPD1	EnabledDeadBatteryUCPD1（UCPD1 死电池信号使能）
-No_Debug	No_Debug（不调试）
+No_Debug	No_Debug（不调试） (No_Debug)
 PINREMAP	PINREMAP（引脚重映射）
 VREFBUFMODE	VREFBUFMODE（VREFBUF 模式）
 VREFBUFOFFMode	VREFBUFOFFMode（VREFBUF 关闭）
@@ -15222,12 +15222,12 @@ Voltage Reference Out	电压参考输出 (Voltage Reference Out)
 Voltage_Reference	Voltage_Reference（电压参考）
 Voltage_Reference_Buffer_Settings	电压参考缓冲设置 (Voltage_Reference_Buffer_Settings)
 Voltage_reference	Voltage_reference（电压参考）
-AnalogForADC_NoPuPd	模数转换器模拟输入（无上下拉）（AnalogForADC_NoPuPd）
+AnalogForADC_NoPuPd	模数转换器模拟输入（无上下拉）（AnalogForADC_NoPuPd） (AnalogForADC_NoPuPd)
 Analog_NoPuPd	模拟输入（无上下拉）（Analog_NoPuPd）
 EXTI1	EXTI1（外部中断 1）
 EXTI2	EXTI2（外部中断 2）
 EXTIRisingFalling	EXTIRisingFalling（外部中断上升/下降沿）
-ExternalMemoryLoader	ExternalMemoryLoader（外部存储器加载器）
+ExternalMemoryLoader	ExternalMemoryLoader（外部存储器加载器） (ExternalMemoryLoader)
 InputFloating	输入浮空（InputFloating）
 InputPullDown	输入下拉（InputPullDown）
 LL_APB4_GRP1_PERIPH_SBS	LL_APB4_GRP1_PERIPH_SBS（低层库 APB4 组 1 外设系统总线）
@@ -15249,7 +15249,7 @@ Very Low	非常低 (Very Low)
 8192 bytes	8192 字节 (8192 bytes)
 8b-dmux1	8b-dmux1（8 位数据复用 1）
 8b-dmux2	8b-dmux2（8 位数据复用 2）
-ALE low to RE low delay in HCLK cycles	ALE 低电平至 RE 低电平延迟（HCLK 周期数）
+ALE low to RE low delay in HCLK cycles	ALE 低电平至 RE 低电平延迟（HCLK 周期数） (ALE low to RE low delay in HCLK cycles)
 Address1	地址 1 (Address1)
 Address2	地址 2 (Address2)
 Address3	地址 3 (Address3)
@@ -17682,7 +17682,7 @@ DAC4_OUT2 (PA5) connected to comparator 7 inverting input	DAC4_OUT2（PA5）连�
 DAC4_OUT2 (PA6) connected to comparator 7 inverting input	DAC4_OUT2（PA6）连接到比较器 7 反相输入 (DAC4_OUT2 (PA6) connected to comparator 7 inverting input)
 DAC_OUT1 (PA4) connected to comparator 2 inverting input	DAC_OUT1（PA4）连接到比较器 2 反相输入 (DAC_OUT1 (PA4) connected to comparator 2 inverting input)
 DAC2_OUT (PA5) connected to comparator 2 inverting input	DAC2_OUT（PA5）连接到比较器 2 反相输入 (DAC2_OUT (PA5) connected to comparator 2 inverting input)
-External I/O (COMP1 : Internal Connection to VREFINT)	外部 I/O（COMP1：内部连接到 VREFINT）
+External I/O (COMP1 : Internal Connection to VREFINT)	外部 I/O（COMP1：内部连接到 VREFINT） (External I/O (COMP1 : Internal Connection to VREFINT))
 Rising/Falling	上升/下降 (Rising/Falling)
 BOTH	两者 (BOTH)
 Switch with DAC1_OUT1	与 DAC1_OUT1 切换 (Switch with DAC1_OUT1)
@@ -17742,7 +17742,7 @@ CH3 IO usage	CH3 IO 用途 (CH3 IO usage)
 Compare on CH3 IO	在 CH3 IO 上比较 (Compare on CH3 IO)
 CH4 IO usage	CH4 IO 用途 (CH4 IO usage)
 Compare on CH4 IO	在 CH4 IO 上比较 (Compare on CH4 IO)
-Both Edges (Requires internal clock freq. > 4 x Fin1)	双边沿（需内部时钟频率 > 4 倍 Fin1）
+Both Edges (Requires internal clock freq. > 4 x Fin1)	双边沿（需内部时钟频率 > 4 倍 Fin1） (Both Edges (Requires internal clock freq. > 4 x Fin1))
 Connection to :	连接到： (Connection to :)
 Counter mode on internal clock	内部时钟计数模式 (Counter mode on internal clock)
 Countersource External	计数源：外部 (Countersource External)
@@ -17858,11 +17858,11 @@ ADC conversion rate at F_ADC_CLK /128	ADC 转换速率：F_ADC_CLK / 128 (ADC co
 ADC conversion rate at F_ADC_CLK /132	ADC 转换速率：F_ADC_CLK / 132 (ADC conversion rate at F_ADC_CLK /132)
 ADC conversion rate at F_ADC_CLK /136	ADC 转换速率：F_ADC_CLK / 136 (ADC conversion rate at F_ADC_CLK /136)
 ADC conversion rate at F_ADC_CLK /140	ADC 转换速率：F_ADC_CLK / 140 (ADC conversion rate at F_ADC_CLK /140)
-Dual combined injected simultaneous + fast interleaved mode (delay between ADC sampling phases: 7 ADC clock cycles)	双路组合注入同时 + 快速交替模式（ADC 采样相位间延迟 7 个 ADC 时钟）
-Dual combined injected simultaneous + slow interleaved mode (delay between ADC sampling phases: 14 ADC clock cycles)	双路组合注入同时 + 慢速交替模式（ADC 采样相位间延迟 14 个 ADC 时钟）
+Dual combined injected simultaneous + fast interleaved mode (delay between ADC sampling phases: 7 ADC clock cycles)	双路组合注入同时 + 快速交替模式（ADC 采样相位间延迟 7 个 ADC 时钟） (Dual combined injected simultaneous + fast interleaved mode (delay between ADC sampling phases: 7 ADC clock cycles))
+Dual combined injected simultaneous + slow interleaved mode (delay between ADC sampling phases: 14 ADC clock cycles)	双路组合注入同时 + 慢速交替模式（ADC 采样相位间延迟 14 个 ADC 时钟） (Dual combined injected simultaneous + slow interleaved mode (delay between ADC sampling phases: 14 ADC clock cycles))
 Dual combined regular simultaneous + injected simultaneous mode	双路组合规则同时 + 注入同时模式 (Dual combined regular simultaneous + injected simultaneous mode)
-Dual fast interleaved mode only (delay between ADC sampling phases: 7 ADC clock cycles)	仅双路快速交替模式（ADC 采样相位间延迟 7 个 ADC 时钟）
-Dual slow interleaved mode only (delay between ADC sampling phases: 14 ADC clock cycles)	仅双路慢速交替模式（ADC 采样相位间延迟 14 个 ADC 时钟）
+Dual fast interleaved mode only (delay between ADC sampling phases: 7 ADC clock cycles)	仅双路快速交替模式（ADC 采样相位间延迟 7 个 ADC 时钟） (Dual fast interleaved mode only (delay between ADC sampling phases: 7 ADC clock cycles))
+Dual slow interleaved mode only (delay between ADC sampling phases: 14 ADC clock cycles)	仅双路慢速交替模式（ADC 采样相位间延迟 14 个 ADC 时钟） (Dual slow interleaved mode only (delay between ADC sampling phases: 14 ADC clock cycles))
 Triple combined regular simultaneous + alternate trigger mode	三路组合规则同时 + 交替触发模式 (Triple combined regular simultaneous + alternate trigger mode)
 Triple combined regular simultaneous + injected simultaneous mode	三路组合规则同时 + 注入同时模式 (Triple combined regular simultaneous + injected simultaneous mode)
 Enable the rank of the selected channels. Rank is defined by each channel number (channel 0 fixed on rank 0, channel 1 fixed on rank1, ...)	启用所选通道的排序。顺序由通道编号决定（通道 0 固定为顺序 0，通道 1 固定为顺序 1……） (Enable the rank of the selected channels. Rank is defined by each channel number (channel 0 fixed on rank 0, channel 1 fixed on rank1, ...))
