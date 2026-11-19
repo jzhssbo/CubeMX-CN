@@ -1,3 +1,24 @@
+> **📘 增强词库版说明**
+> 本 fork 仅扩充 `translations/zh_CN.tsv`：1,122 → **17,825 条**，
+> 主要补充引脚信号名、模式下拉、外设面板参数、时钟树标签等界面文案，
+> 侧重点在 F1 / F4 / G0 / G4 / H5 / H7 / L 等常用系列。
+>
+> **安装方法**：先按原作者说明下载 Release 启动器并完整解压，
+> 再用本仓库的 `translations/zh_CN.tsv` 覆盖解压目录中的同名文件。
+> 验证：启动日志中 `dictionary_entries = 17825`。
+>
+> 非官方汉化，与 STMicroelectronics 无关；不改原项目任何代码。
+>
+> **关于质量**：本词库由 AI 辅助生成、人工审读修订，**并非逐条对照真实软件界面验证过**。
+> 因此可能存在三类问题：
+> ① **遗漏**——某些界面文案尚未收录，运行时仍显示英文；
+> ② **不当翻译**——个别词条译法生硬、术语不统一，或本应保留英文（如型号、寄存器名、协议名）却被译出；
+> ③ **少量键名与软件内字符串不完全一致**，导致该条不生效。
+>
+> **使用建议**：以上都属于已知风险，本词库不适合替代原版直接分发使用。
+> 若某个型号或外设的翻译不合你的用途，**请自行修改 `translations/zh_CN.tsv` 中对应部分后使用**——
+> 删除不需要的词条、或改写成你要的译法都可以，改动只影响你自己的副本。
+
 # CubeMX-CN
 
 [![Windows build and tests](https://github.com/NingZiXi/CubeMX-CN/actions/workflows/build.yml/badge.svg)](https://github.com/NingZiXi/CubeMX-CN/actions/workflows/build.yml)
