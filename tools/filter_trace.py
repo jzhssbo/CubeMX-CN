@@ -105,6 +105,8 @@ def classify(text: str, translated_values: set[str]) -> str:
 
     if not core:
         return "skip-blank"
+    if s.strip() and ("\n" in s or "\\n" in s or "\t" in s) and _tooltip_body(s):
+        return "tip-body"
     if PLACEHOLDER.search(s) or "\n" in s or "\t" in s:
         return "skip-multiline"
     if len(core) <= 2:
@@ -226,7 +228,7 @@ def collect(paths: list[Path], entries: dict[str, str], translated: set[str]):
     split and only the state is checked instead of discarding the whole line.
     """
     groups: dict[str, dict[str, str]] = {
-        "pin": {}, "clock": {}, "combo": {}, "other": {},
+        "pin": {}, "clock": {}, "combo": {}, "other": {}, "tip": {},
     }
     buckets: dict[str, int] = {}
     seen = 0
@@ -237,6 +239,27 @@ def collect(paths: list[Path], entries: dict[str, str], translated: set[str]):
             if hit == "1":
                 continue
             if original in entries:
+                continue
+            # The same label reaches the renderer with and without surrounding padding,
+            # e.g. "AMC Timer" and "AMC Timer ". translate() strips before looking up, so
+            # the padded form is translated too and must not be reported as a gap.
+            core_text = original.strip()
+            if core_text in entries:
+                continue
+            # Tooltip paragraphs reach the renderer wrapped in escaped newlines and
+            # indentation. A dictionary entry written in the clean form still counts as
+            # translated, so check the collapsed text too.
+            if "\\n" in original or "\n" in original:
+                collapsed = " ".join(
+                    part.strip()
+                    for part in original.replace("\\n", "\n").splitlines()
+                    if part.strip()
+                )
+                if collapsed in entries:
+                    continue
+            # Same treatment for inner whitespace runs (literal \n included).
+            squashed = " ".join(core_text.replace("\\n", " ").split())
+            if squashed and squashed != core_text and squashed in entries:
                 continue
 
             # A pin-table row: keep the state word, drop the pin name.
@@ -254,6 +277,15 @@ def collect(paths: list[Path], entries: dict[str, str], translated: set[str]):
 
             bucket = classify(original, translated)
             buckets[bucket] = buckets.get(bucket, 0) + 1
+            if bucket == "tip-body":
+                # Collapse the indented block back into one readable line.
+                body = " ".join(
+                    part.strip()
+                    for part in original.replace("\\n", "\n").splitlines()
+                    if part.strip()
+                )
+                groups["tip"].setdefault(body, bucket)
+                continue
             if bucket not in ("gap-phrase", "gap-word", "review-truncated"):
                 continue
 
@@ -261,6 +293,24 @@ def collect(paths: list[Path], entries: dict[str, str], translated: set[str]):
             groups[area].setdefault(original.strip(), bucket)
 
     return groups, buckets, seen
+
+
+def _tooltip_body(text: str) -> bool:
+    """Peripheral help text arrives as an indented multi-line block.
+
+    Tooltips carry no widget flag of their own -- they render as ordinary labels --
+    but the surrounding whitespace/newlines survive into the trace and are a reliable
+    marker. Only keep blocks that read like prose, not stray blank lines.
+    """
+    core = " ".join(part.strip() for part in text.replace("\\n", "\n").splitlines() if part.strip())
+    if len(core) < 40:
+        return False
+    if not re.search(r"[A-Za-z]{4,}", core):
+        return False
+    if CJK.search(core):
+        return False
+    # At least three words, and it should read like a sentence or a noun phrase.
+    return len(core.split()) >= 4
 
 
 def area_of(text: str, kind: str) -> str:
@@ -314,7 +364,8 @@ def main() -> int:
         ("pin", "一、引脚配置（优先，全部保留）"),
         ("clock", "二、时钟树"),
         ("combo", "三、下拉/列表选项"),
-        ("other", "四、其余界面文案"),
+        ("tip", "四、外设说明（鼠标悬停才会出现）"),
+        ("other", "五、其余界面文案"),
     ]
     total = sum(len(groups[name]) for name, _ in sections)
 

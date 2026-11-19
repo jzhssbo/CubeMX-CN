@@ -995,7 +995,7 @@ DDR Tests	双倍数据速率存储器测试 (DDR Tests)
 DDR base address	双倍数据速率存储器基地址 (DDR base address)
 Default : this will map on the suitable strategy depending on RTOS selection.	默认：根据所选 RTOS 使用合适的策略。 (Default : this will map on the suitable strategy depending on RTOS selection.)
 Default task, mainly in charge of middlewares init (when some are selected).	默认任务，主要负责初始化已选中的中间件。 (Default task, mainly in charge of middlewares init (when some are selected).)
-Default: generates an empty function in main.c/freertos.c) as global	默认：在 main.c/freertos.c 中生成空的全局函数 (Default: generates an empty function in main.c/freertos.c as global)
+Default: generates an empty function in main.c/freertos.c) as global	默认：在 main.c/freertos.c 中生成空的全局函数
 Delegated	已委派 (Delegated)
 Delegation	委派 (Delegation)
 Deny lock usage from interrupts. This implementation assumes single thread of execution.	禁止在中断中使用锁。此实现假定只有单个执行线程。 (Deny lock usage from interrupts. This implementation assumes single thread of execution.)
@@ -1039,7 +1039,7 @@ No software component found	未找到软件组件 (No software component found)
 No solution found	未找到方案 (No solution found)
 Note:	注意： (Note:)
 Offset	偏移量 (Offset)
-Optional parameter: can be NULL, otherwise should be something casted to (void *) type.	可选参数：可以为 NULL，否则应转换为 (void *) 类型。
+Optional parameter: can be NULL, otherwise should be something casted to (void *) type.	可选参数：可以为 NULL，否则应转换为 (void *) 类型。 (Optional parameter: can be NULL, otherwise should be something casted to (void *) type.)
 Pack Status	软件包状态 (Pack Status)
 Please copy and open this URL manually:	请复制并手动打开此网址： (Please copy and open this URL manually:)
 Please create or activate a LPBAM application first	请先创建或激活 LPBAM 应用 (Please create or activate a LPBAM application first)
@@ -1075,7 +1075,7 @@ Surface Capacitance support only	仅支持表面电容 (Surface Capacitance supp
 The Code is successfully generated under :	代码已成功生成于： (The Code is successfully generated under :)
 The ExternalMemoryLoader project doesn't support Software Pack.	ExternalMemoryLoader 工程不支持软件包。 (The ExternalMemoryLoader project doesn't support Software Pack.)
 The database file containing the examples is missing.	示例数据库文件缺失。 (The database file containing the examples is missing.)
-The idle task (created by the FreeRTOS scheduler)	空闲任务（由 FreeRTOS 调度器创建）
+The idle task (created by the FreeRTOS scheduler)	空闲任务（由 FreeRTOS 调度器创建） (The idle task (created by the FreeRTOS scheduler))
 The middleware can be switched between TrustZone Contexts	可在 TrustZone 上下文之间切换此中间件 (The middleware can be switched between TrustZone Contexts)
 The peripheral can be switched between TrustZone Contexts	可在 TrustZone 上下文之间切换此外设 (The peripheral can be switched between TrustZone Contexts)
 The signal list panel is visible in a  popup by [LEFT] clicking on a pin.	左键点击引脚可弹出信号列表面板。 (The signal list panel is visible in a  popup by [LEFT] clicking on a pin.)
@@ -1084,7 +1084,7 @@ The software packs database has not been built: the IOC cannot be correctly load
 The start of the queue execution can impact the functional aspect of LPBAM application.	队列开始执行的时机会影响 LPBAM 应用功能。 (The start of the queue execution can impact the functional aspect of LPBAM application.)
 The stubs in st_lock_custom.h needs to be implemented to gain thread-safety.	需要在 st_lock_custom.h 中实现桩函数才能保证线程安全。 (The stubs in st_lock_custom.h needs to be implemented to gain thread-safety.)
 The suffix is applied to all application region sections in the linker file	该后缀应用于链接文件中所有应用区域段 (The suffix is applied to all application region sections in the linker file)
-The timer service task (created by the FreeRTOS scheduler)	定时器服务任务（由 FreeRTOS 调度器创建）
+The timer service task (created by the FreeRTOS scheduler)	定时器服务任务（由 FreeRTOS 调度器创建） (The timer service task (created by the FreeRTOS scheduler))
 The value of CID SELECTION can not be modified	无法修改 CID 选择的值 (The value of CID SELECTION can not be modified)
 They are read-only in the Software Component Selector window.	这些项目在软件组件选择器窗口中为只读。 (They are read-only in the Software Component Selector window.)
 They may be used to solve other packs dependencies.	这些项目可用于满足其他软件包的依赖关系。 (They may be used to solve other packs dependencies.)
@@ -1107,7 +1107,7 @@ Total amount of RAM used by defined mutexes and semaphores .	已定义互斥锁�
 Total amount of RAM used by defined queues (including the timer queue, when applicable)	已定义队列占用的 RAM 总量（适用时包含定时器队列） (Total amount of RAM used by defined queues (including the timer queue, when applicable))
 Total amount of RAM used by defined tasks.	已定义任务占用的 RAM 总量。 (Total amount of RAM used by defined tasks.)
 Total amount of RAM used by defined timers.	已定义定时器占用的 RAM 总量。 (Total amount of RAM used by defined timers.)
-Total amount of the heap used by known objects (user objects, internal freertos objects)	已知对象使用的堆总量（用户对象和 FreeRTOS 内部对象）
+Total amount of the heap used by known objects (user objects, internal freertos objects)	已知对象使用的堆总量（用户对象和 FreeRTOS 内部对象） (Total amount of the heap used by known objects (user objects, internal freertos objects))
 Unable to open the default browser automatically.	无法自动打开默认浏览器。 (Unable to open the default browser automatically.)
 User action required	需要用户操作 (User action required)
 User message queue.	用户消息队列。 (User message queue.)
@@ -1360,22 +1360,22 @@ half full configuration	半满 (half full configuration)
 3 bits for pre-emption priority 1 bits for subpriority	抢占优先级 3 位，子优先级 1 位 (3 bits for pre-emption priority 1 bits for subpriority)
 4 bits for pre-emption priority 0 bits for subpriority	抢占优先级 4 位，子优先级 0 位 (4 bits for pre-emption priority 0 bits for subpriority)
 ADC Interrupt	模数转换器中断 (ADC Interrupt)
-ADC and COMP interrupts (COMP interrupts through EXTI lines 21 and 22)	模数转换器与比较器中断 (COMP 中断经 EXTI 线 21 与 22)
+ADC and COMP interrupts (COMP interrupts through EXTI lines 21 and 22)	模数转换器与比较器中断 (COMP 中断经 EXTI 线 21 与 22) (ADC and COMP interrupts (COMP interrupts through EXTI lines 21 and 22))
 ADC global interrupt	模数转换器全局中断 (ADC global interrupt)
 ADC interrupt	模数转换器中断 (ADC interrupt)
-ADC, COMP1 and COMP2 interrupts (COMP interrupts through EXTI lines 21 and 22)	模数转换器、比较器 1 与比较器 2 中断 (COMP 中断经 EXTI 线 21 与 22)
+ADC, COMP1 and COMP2 interrupts (COMP interrupts through EXTI lines 21 and 22)	模数转换器、比较器 1 与比较器 2 中断 (COMP 中断经 EXTI 线 21 与 22) (ADC, COMP1 and COMP2 interrupts (COMP interrupts through EXTI lines 21 and 22))
 ADC1 Interrupt	模数转换器 1 中断 (ADC1 Interrupt)
 ADC1 and ADC2 global interrupt	模数转换器 1 与模数转换器 2 全局中断 (ADC1 and ADC2 global interrupt)
 ADC1 and ADC2 global interrupts	模数转换器 1 与模数转换器 2 全局中断 (ADC1 and ADC2 global interrupts)
 ADC1 and ADC2 interrupts	模数转换器 1 与模数转换器 2 中断 (ADC1 and ADC2 interrupts)
-ADC1 and COMP1 Interrupts (combined with EXTI 17 &amp; 18)	模数转换器 1 与比较器 1 中断（与 EXTI 17、18 合并）
+ADC1 and COMP1 Interrupts (combined with EXTI 17 &amp; 18)	模数转换器 1 与比较器 1 中断（与 EXTI 17、18 合并） (ADC1 and COMP1 Interrupts (combined with EXTI 17 &amp; 18))
 ADC1 global interrupt	模数转换器 1 全局中断 (ADC1 global interrupt)
 ADC1 interrupt	模数转换器 1 中断 (ADC1 interrupt)
 ADC1, ADC2 and ADC3 global interrupts	模数转换器 1、模数转换器 2 与模数转换器 3 全局中断 (ADC1, ADC2 and ADC3 global interrupts)
 ADC1, ADC2 and ADC3 interrupts	模数转换器 1, 模数转换器 2 与模数转换器 3 中断 (ADC1, ADC2 and ADC3 interrupts)
-ADC1, COMP1 and COMP2 Interrupts (combined with EXTI 17 &amp; 18)	模数转换器 1、比较器 1 与比较器 2 中断（与 EXTI 17、18 合并）
-ADC1, COMP1 and COMP2 interrupts (COMP interrupts through EXTI lines 17 and 18)	模数转换器 1、比较器 1 与比较器 2 中断 (COMP 中断经 EXTI 线 17 与 18)
-ADC1, COMP1,COMP2, COMP3 Interrupts (combined with EXTI 17 &amp; 18)	模数转换器 1、比较器 1、比较器 2、比较器 3 中断（与 EXTI 17、18 合并）
+ADC1, COMP1 and COMP2 Interrupts (combined with EXTI 17 &amp; 18)	模数转换器 1、比较器 1 与比较器 2 中断（与 EXTI 17、18 合并） (ADC1, COMP1 and COMP2 Interrupts (combined with EXTI 17 &amp; 18))
+ADC1, COMP1 and COMP2 interrupts (COMP interrupts through EXTI lines 17 and 18)	模数转换器 1、比较器 1 与比较器 2 中断 (COMP 中断经 EXTI 线 17 与 18) (ADC1, COMP1 and COMP2 interrupts (COMP interrupts through EXTI lines 17 and 18))
+ADC1, COMP1,COMP2, COMP3 Interrupts (combined with EXTI 17 &amp; 18)	模数转换器 1、比较器 1、比较器 2、比较器 3 中断（与 EXTI 17、18 合并） (ADC1, COMP1,COMP2, COMP3 Interrupts (combined with EXTI 17 &amp; 18))
 ADC2 global interrupt	模数转换器 2 全局中断 (ADC2 global interrupt)
 ADC3 global interrupt	模数转换器 3 全局中断 (ADC3 global interrupt)
 ADC4 (12bits) global interrupt	模数转换器 4（12 位）全局中断 (ADC4 (12bits) global interrupt)
@@ -1858,7 +1858,7 @@ PKA interrupt	公钥加速器中断 (PKA interrupt)
 PSSI global interrupt	并行像素采样接口全局中断 (PSSI global interrupt)
 PVD and AVD interrupt through EXTI line 16	可编程电压检测与 AVD 中断经外部中断线 16 (PVD and AVD interrupt through EXTI line 16)
 PVD and AVD interrupts through EXTI line 16	可编程电压检测与 AVD 中断经外部中断线 16 (PVD and AVD interrupts through EXTI line 16)
-PVD and PVM detector	可编程电压检测和 PVM 检测器 (PVD and PVM detector)
+PVD and PVM detector	可编程电压检测器 (PVD) 与电压监测器 (PVM)
 PVD and PVM interrupts through EXTI line	可编程电压检测和 PVM 中断经外部中断线 (PVD and PVM interrupts through EXTI line)
 PVD and VDDIO2 supply comparator interrupts through EXTI lines 16 and 31	可编程电压检测和 VDDIO2 供电比较器中断经外部中断线 16 和 31 (PVD and VDDIO2 supply comparator interrupts through EXTI lines 16 and 31)
 PVD interrupt	可编程电压检测中断 (PVD interrupt)
@@ -1866,7 +1866,7 @@ PVD interrupt through EXTI Line16	可编程电压检测中断经外部中断线 
 PVD interrupt through EXTI line 16	经外部中断线 16 的可编程电压检测中断 (PVD interrupt through EXTI line 16)
 PVD interrupt through EXTI line16	可编程电压检测中断经外部中断线 16 (PVD interrupt through EXTI line16)
 PVD through EXTI Line detection Interrupt	可编程电压检测经外部中断线检测中断 (PVD through EXTI Line detection Interrupt)
-PVD through EXTI Line detection Interrupt(EXTI lines 16/19/20/21)	可编程电压检测经外部中断线检测中断(EXTI 线 16/19/20/21)
+PVD through EXTI Line detection Interrupt(EXTI lines 16/19/20/21)	可编程电压检测经外部中断线检测中断(EXTI 线 16/19/20/21) (PVD through EXTI Line detection Interrupt(EXTI lines 16/19/20/21))
 PVD through EXTI line 16	可编程电压检测经外部中断线 16 (PVD through EXTI line 16)
 PVD through EXTI line 16, PVM (monit. VDDIO2) through EXTI line 34	可编程电压检测（经外部中断线 16）、PVM（监测 VDDIO2，经外部中断线 34） (PVD through EXTI line 16, PVM (monit. VDDIO2) through EXTI line 34)
 PVD/AVD through EXTI Line detection Interrupt	可编程电压检测/AVD 经外部中断线检测中断 (PVD/AVD through EXTI Line detection Interrupt)
@@ -2064,10 +2064,10 @@ TIM6 global interrupt, DAC1 and DAC3 channel underrun error interrupts	定时器
 TIM6 global interrupt, DAC1_CH1 and DAC1_CH2 underrun error interrupts	定时器 6 全局中断、数模转换器 1 通道 1 与通道 2 欠载错误中断 (TIM6 global interrupt, DAC1_CH1 and DAC1_CH2 underrun error interrupts)
 TIM6, DAC and LPTIM1 global Interrupts	定时器 6, 数模转换器与低功耗定时器 1 全局中断 (TIM6, DAC and LPTIM1 global Interrupts)
 TIM6, DAC and LPTIM1 global Interrupts (combined with EXTI 31)	定时器 6, 数模转换器与低功耗定时器 1 全局中断 (与 EXTI 31) (TIM6, DAC and LPTIM1 global Interrupts (combined with EXTI 31))
-TIM6, DAC1 and LPTIM1 interrupts (LPTIM1 interrupt through EXTI line 29)	定时器 6, 数模转换器 1 与低功耗定时器 1 中断 (LPTIM1 中断经 EXTI 线 29)
+TIM6, DAC1 and LPTIM1 interrupts (LPTIM1 interrupt through EXTI line 29)	定时器 6, 数模转换器 1 与低功耗定时器 1 中断 (LPTIM1 中断经 EXTI 线 29) (TIM6, DAC1 and LPTIM1 interrupts (LPTIM1 interrupt through EXTI line 29))
 TIM7 and LPTIM2 global Interrupt	定时器 7 与低功耗定时器 2 全局中断 (TIM7 and LPTIM2 global Interrupt)
 TIM7 and LPTIM2 global Interrupt (combined with EXTI 32)	定时器 7 与低功耗定时器 2 全局中断 (与 EXTI 32) (TIM7 and LPTIM2 global Interrupt (combined with EXTI 32))
-TIM7 and LPTIM2 interrupts (LPTIM2 interrupt through EXTI line 30)	定时器 7 与低功耗定时器 2 中断 (LPTIM2 中断经 EXTI 线 30)
+TIM7 and LPTIM2 interrupts (LPTIM2 interrupt through EXTI line 30)	定时器 7 与低功耗定时器 2 中断 (LPTIM2 中断经 EXTI 线 30) (TIM7 and LPTIM2 interrupts (LPTIM2 interrupt through EXTI line 30))
 TIM7 global Interrupt	定时器 7 全局中断 (TIM7 global Interrupt)
 TIM7 global and DAC2 underrun error interrupts	定时器 7 全局和数模转换器 2 欠载错误中断 (TIM7 global and DAC2 underrun error interrupts)
 TIM7 global interrupt	定时器 7 全局中断 (TIM7 global interrupt)
@@ -2524,12 +2524,12 @@ XSPI2 Mode and Configuration	扩展串行外设接口 2 模式与配置 (XSPI2 M
 XSPI2 Settings	扩展串行外设接口 2 设置 (XSPI2 Settings)
 XSPI3 Mode and Configuration	扩展串行外设接口 3 模式与配置 (XSPI3 Mode and Configuration)
 XSPI3 Settings	扩展串行外设接口 3 设置 (XSPI3 Settings)
-SD 1 bit	SD 1 位 (SD 1 bit)
-SD 4 bits Wide bus	SD 4 位宽总线 (SD 4 bits Wide bus)
-SD 8 bits Wide bus	SD 8 位宽总线 (SD 8 bits Wide bus)
-MMC 1 bit	MMC 1 位 (MMC 1 bit)
-MMC 4 bits Wide bus	MMC 4 位宽总线 (MMC 4 bits Wide bus)
-MMC 8 bits Wide bus	MMC 8 位宽总线 (MMC 8 bits Wide bus)
+SD 1 bit	SD 安全数字卡 1 位模式
+SD 4 bits Wide bus	SD 安全数字卡 4 位宽总线模式
+SD 8 bits Wide bus	SD 安全数字卡 8 位宽总线模式
+MMC 1 bit	MMC 多媒体卡 1 位模式
+MMC 4 bits Wide bus	MMC 多媒体卡 4 位宽总线模式
+MMC 8 bits Wide bus	MMC 多媒体卡 8 位宽总线模式
 Unused GPIOs	未使用 GPIO (Unused GPIOs)
 Unused GPIOs:	未使用 GPIO： (Unused GPIOs:)
 Reset Configuration	重置配置 (Reset Configuration)
@@ -2597,7 +2597,7 @@ SAI1	SAI1（串行音频接口）
 SAI2	SAI2（串行音频接口）
 SAI3	SAI3（串行音频接口）
 SAI4	SAI4（串行音频接口）
-SDIO	SDIO（安全数字输入输出接口）
+SDIO	SDIO（安全数字 I/O 接口）
 SDMMC1	SDMMC1（SD/MMC 卡接口）
 SDMMC2	SDMMC2（SD/MMC 卡接口）
 SDMMC3	SDMMC3（SD/MMC 卡接口）
@@ -4804,20 +4804,20 @@ Dead Time	死区时间 (Dead Time)
 DeadTime Preload	死区时间预装载 (DeadTime Preload)
 Digital Input Polarity	数字输入极性 (Digital Input Polarity)
 Dithering	抖动 (Dithering)
-ETR remap capabilities for TIM1	定时器 1 的外部触发重映射能力 (ETR remap capabilities for TIM1)
+ETR remap capabilities for TIM1	定时器 1 的外部触发输入 (ETR) 重映射能力
 ETR remap capabilities for TIM10	定时器 10 的外部触发重映射能力 (ETR remap capabilities for TIM10)
 ETR remap capabilities for TIM11	定时器 11 的外部触发重映射能力 (ETR remap capabilities for TIM11)
 ETR remap capabilities for TIM15	定时器 15 的外部触发重映射能力 (ETR remap capabilities for TIM15)
-ETR remap capabilities for TIM2	定时器 2 的外部触发重映射能力 (ETR remap capabilities for TIM2)
+ETR remap capabilities for TIM2	定时器 2 的外部触发输入 (ETR) 重映射能力
 ETR remap capabilities for TIM20	定时器 20 的外部触发重映射能力 (ETR remap capabilities for TIM20)
 ETR remap capabilities for TIM21	定时器 21 的外部触发重映射能力 (ETR remap capabilities for TIM21)
 ETR remap capabilities for TIM22	定时器 22 的外部触发重映射能力 (ETR remap capabilities for TIM22)
 ETR remap capabilities for TIM23	定时器 23 的外部触发重映射能力 (ETR remap capabilities for TIM23)
 ETR remap capabilities for TIM24	定时器 24 的外部触发重映射能力 (ETR remap capabilities for TIM24)
-ETR remap capabilities for TIM3	定时器 3 的外部触发重映射能力 (ETR remap capabilities for TIM3)
-ETR remap capabilities for TIM4	定时器 4 的外部触发重映射能力 (ETR remap capabilities for TIM4)
-ETR remap capabilities for TIM5	定时器 5 的外部触发重映射能力 (ETR remap capabilities for TIM5)
-ETR remap capabilities for TIM8	定时器 8 的外部触发重映射能力 (ETR remap capabilities for TIM8)
+ETR remap capabilities for TIM3	定时器 3 的外部触发输入 (ETR) 重映射能力
+ETR remap capabilities for TIM4	定时器 4 的外部触发输入 (ETR) 重映射能力
+ETR remap capabilities for TIM5	定时器 5 的外部触发输入 (ETR) 重映射能力
+ETR remap capabilities for TIM8	定时器 8 的外部触发输入 (ETR) 重映射能力
 Encoder Mode	编码器模式 (Encoder Mode)
 Encoder remap capabilities for TIM15	定时器 15 的编码器重映射能力 (Encoder remap capabilities for TIM15)
 Falling Dead Time	下降沿死区时间 (Falling Dead Time)
@@ -4840,7 +4840,7 @@ Input Trigger	输入触发 (Input Trigger)
 Internal Clock Division (CKD)	内部时钟分频 (CKD)
 Lock Configuration	锁定配置 (Lock Configuration)
 Master/Slave Mode (MSM bit)	主/从模式 (MSM 位)
-Off State Selection for Idle Mode (OSSI)	空闲模式下的关闭状态选择 (OSSI)
+Off State Selection for Idle Mode (OSSI)	空闲模式下的关闭状态选择 (OSSI) (Off State Selection for Idle Mode (OSSI))
 Off State Selection for Run Mode (OSSR)	运行模式下的关闭状态选择 (OSSR)
 One Pulse Mode	单脉冲模式 (One Pulse Mode)
 Output Channel	输出通道 (Output Channel)
@@ -4856,7 +4856,7 @@ Pulse (32 bits value)	脉冲宽度（32 位值） (Pulse (32 bits value))
 Pulse Width	脉冲宽度 (Pulse Width)
 Pulse Width Prescaler	脉冲宽度预分频 (Pulse Width Prescaler)
 Repetition Counter	重复计数器 (Repetition Counter)
-Repetition Counter (RCR - 16 bits value)	重复计数器 (RCR - 16 位值)
+Repetition Counter (RCR - 16 bits value)	重复计数器 (RCR - 16 位值) (Repetition Counter (RCR - 16 bits value))
 Repetition Counter (RCR - 8 bits value)	重复计数器 (RCR - 8 位值)
 Repetition Counter (RCR)	重复计数器 (RCR)
 Slave Mode Controller	从模式控制器 (Slave Mode Controller)
@@ -7711,7 +7711,7 @@ Header(B1) size	报头(B1) 大小 (Header(B1) size)
 High	高 (High)
 High Interrupt Threshold	高中断阈值 (High Interrupt Threshold)
 High Level	高电平 (High Level)
-High Priority Read CAM Register 1 (PERFHPR1)	高优先级读 CAM 寄存器 1 (PERFHPR1)
+High Priority Read CAM Register 1 (PERFHPR1)	高优先级读 CAM 寄存器 1 (PERFHPR1) (High Priority Read CAM Register 1 (PERFHPR1))
 High impedance mode	高阻模式 (High impedance mode)
 High level	高电平 (High level)
 High polarity	高极性 (High polarity)
@@ -7881,7 +7881,7 @@ LoRaWAN device EUI	LoRaWAN 设备 EUI (LoRaWAN device EUI)
 Lock configuration	锁定配置 (Lock configuration)
 Low Interrupt Threshold	低中断阈值 (Low Interrupt Threshold)
 Low Level	低电平 (Low Level)
-Low Priority Read CAM Register 1 (PERFLPR1)	低优先级读 CAM 寄存器 1 (PERFLPR1)
+Low Priority Read CAM Register 1 (PERFLPR1)	低优先级读 CAM 寄存器 1 (PERFLPR1) (Low Priority Read CAM Register 1 (PERFLPR1))
 Low polarity	低极性 (Low polarity)
 MASTER	主 (MASTER)
 MAX RAM SIZE	最大 RAM 大小 (MAX RAM SIZE)
@@ -8097,7 +8097,7 @@ PHY Duplex mask	物理层收发器双工掩码 (PHY Duplex mask)
 PHY Enable interrupts	物理层收发器使能中断 (PHY Enable interrupts)
 PHY Enable output interrupt events	物理层收发器使能输出中断事件 (PHY Enable output interrupt events)
 PHY Frequency Range	物理层收发器频率范围 (PHY Frequency Range)
-PHY General Configuration Register (PGCR)	物理层收发器通用配置寄存器 (PGCR)
+PHY General Configuration Register (PGCR)	物理层收发器通用配置寄存器 (PGCR) (PHY General Configuration Register (PGCR))
 PHY Initialization Register (PIR)	物理层收发器初始化寄存器 (PIR)
 PHY Interrupt Source Flag register Offset	物理层收发器中断源标志寄存器偏移 (PHY Interrupt Source Flag register Offset)
 PHY Read TimeOut	物理层收发器读超时 (PHY Read TimeOut)
@@ -9004,7 +9004,7 @@ Write Mask	写掩码 (Write Mask)
 Write Value	写值 (Write Value)
 XBAR Channel	XBAR 通道 (XBAR Channel)
 XSPI1 and XSPI2	扩展串行外设接口 1 和扩展串行外设接口 2 (XSPI1 and XSPI2)
-YUV BT601 full range to RGB	YUV BT601 满范围至 RGB (YUV BT601 full range to RGB)
+YUV BT601 full range to RGB	YUV 色彩空间（BT.601 全范围）转 RGB
 YUV BT709 full range  to RGB	YUV BT709 满范围至 RGB (YUV BT709 full range  to RGB)
 YUV420 10bit	YUV420 10 位 (YUV420 10bit)
 YUV420 2-buffer 12bpp	YUV420 2-缓冲区 12bpp (YUV420 2-buffer 12bpp)
@@ -9544,7 +9544,7 @@ APB1 peripheral clocks (MHz)	APB1 外设时钟 (MHz)
 APB1 Timer clocks (MHz)	APB1 定时器时钟 (MHz)
 APB2 peripheral clocks (MHz)	APB2 外设时钟 (MHz)
 APB2 Timer clocks (MHz)	APB2 定时器时钟 (MHz)
-HCLK to AHB bus, core, memory and DMA (MHz)	AHB 总线/内核/存储器/直接存储器访问的 HCLK (MHz)
+HCLK to AHB bus, core, memory and DMA (MHz)	AHB 总线/内核/存储器/直接存储器访问的 HCLK (MHz) (HCLK to AHB bus, core, memory and DMA (MHz))
 PLLMul	PLL 倍频
 PLLDiv	PLL 分频
 Bit Timings Parameters	位时序参数 (Bit Timings Parameters)
@@ -9726,7 +9726,7 @@ Burst Length (BL)	突发长度 (BL) (Burst Length (BL))
 CEC instance	CEC 实例 (CEC instance)
 Calibration Rate	校准速率 (Calibration Rate)
 Charging unit	充电单元 (Charging unit)
-DFI Low Power Configuration Register 0 (DFILPCFG0)	DFI 低功耗配置寄存器 0 (DFILPCFG0)
+DFI Low Power Configuration Register 0 (DFILPCFG0)	DFI 低功耗配置寄存器 0 (DFILPCFG0) (DFI Low Power Configuration Register 0 (DFILPCFG0))
 DSI Link	显示串行接口链路 (DSI Link)
 DSLI Link	DSLI 链路 (DSLI Link)
 Default USB Power	默认通用串行总线电源 (Default USB Power)
@@ -10802,7 +10802,7 @@ ETI_ED	ETI_ED（外部触发边沿）
 Activate Break-Input	启用刹车输入 (Activate Break-Input)
 Use ETR as Clearing Source	使用外部触发作为清除源 (Use ETR as Clearing Source)
 XOR activation	XOR 三重异或 (XOR activation)
-The Code is successfully generated under : 	代码已成功生成于： (The Code is successfully generated under : )
+The Code is successfully generated under : 	代码已成功生成于： (The Code is successfully generated under :)
 Project language  : C	工程语言：C (Project language  : C)
 Project language  : C++	工程语言：C++ (Project language  : C++)
 CEC	CEC（HDMI-CEC 接口）
@@ -11016,7 +11016,7 @@ Binary AutoControl	二进制自动控制 (Binary AutoControl)
 Luminance First (from LSB)	亮度在前（自最低有效位起） (Luminance First (from LSB))
 Sector 2	扇区 2 (Sector 2)
 Specifies whether external transceiver is enabled or disabled	指定是否启用外部收发器 (Specifies whether external transceiver is enabled or disabled)
-Traditional Chinese Big5 (DBCS, OEM, Windows)	繁体中文 Big5 (DBCS, OEM, Windows)
+Traditional Chinese Big5 (DBCS, OEM, Windows)	繁体中文 Big5 (DBCS, OEM, Windows) (Traditional Chinese Big5 (DBCS, OEM, Windows))
 NCS Port	NCS 端口 (NCS Port)
 Precharge Duration = 2 RTCCLK cycles	预充电时长 = 2 个 RTCCLK 周期 (Precharge Duration = 2 RTCCLK cycles)
 Tamper 3 No Erase	篡改 3 不擦除 (Tamper 3 No Erase)
@@ -11848,8 +11848,8 @@ Refresh Rate	刷新率 (Refresh Rate)
 NOR Flash/PSRAM/SRAM/ROM/LCD 2	NOR 闪存/PSRAM/SRAM/ROM/液晶显示 2 (NOR Flash/PSRAM/SRAM/ROM/LCD 2)
 Red component of the rotation	旋转的红色分量 (Red component of the rotation)
 Peak over2	峰值超出 2 (Peak over2)
-Simplified Chinese GBK (DBCS, OEM, Windows)	简体中文 GBK (DBCS, OEM, Windows)
-SDIO 8 bits Wide bus	SDIO 8 位宽总线 (SDIO 8 bits Wide bus)
+Simplified Chinese GBK (DBCS, OEM, Windows)	简体中文 GBK (DBCS, OEM, Windows) (Simplified Chinese GBK (DBCS, OEM, Windows))
+SDIO 8 bits Wide bus	SDIO 安全数字 I/O 8 位宽总线模式
 Unpacked at the destination data width when src data width bigger than dest data width	源数据宽于目标宽度时按目标宽度解包 (Unpacked at the destination data width when src data width bigger than dest data width)
 Fast Role Swap	快速角色交换 (Fast Role Swap)
 Window mode disabled (Plus input of comparator 1 connected to PA2)	窗口模式禁用（比较器 1 同相输入接 PA2） (Window mode disabled (Plus input of comparator 1 connected to PA2))
@@ -12251,7 +12251,7 @@ Enabled with 10 functions removed	启用（移除 10 个功能） (Enabled with 
 In case of window mode: No I/O pin connection to COMP1 non-inverting input. Instead, connection to COMP2 non-inverting input.	窗口模式下：输入/输出引脚不连接比较器 1 同相输入，而是连接比较器 2 同相输入 (In case of window mode: No I/O pin connection to COMP1 non-inverting input. Instead, connection to COMP2 non-inverting input.)
 Flexible ARGB	灵活 ARGB (Flexible ARGB)
 CF Coherent Pinout	CF 一致性引脚 (CF Coherent Pinout)
-SDIO 4 bits Wide bus	SDIO 4 位宽总线 (SDIO 4 bits Wide bus)
+SDIO 4 bits Wide bus	SDIO 安全数字 I/O 4 位宽总线模式
 Timestamp Routed to AF1	时间戳路由到 AF1 (Timestamp Routed to AF1)
 Memory-mapped (Write)	内存映射（写） (Memory-mapped (Write))
 Octo SPI -- MULTIPLEXED --	八线串行外设接口 -- 复用 -- (Octo SPI -- MULTIPLEXED --)
@@ -15038,63 +15038,63 @@ Tamper and TimeStamp interrupts through the EXTI line	经 EXTI 线的篡改与�
 USART3 to USART8 global interrupts / USART3 wake-up interrupt through EXTI line 28	USART3 至 USART8 全局中断 / 经 EXTI 线 28 的 USART3 唤醒中断 (USART3 to USART8 global interrupts / USART3 wake-up interrupt through EXTI line 28)
 AlternateFunctionNoPushPullHigh	AlternateFunctionNoPushPullHigh（复用功能：非推挽，高速）
 AlternateFunctionNoPushPullVeryHigh	AlternateFunctionNoPushPullVeryHigh（复用功能：非推挽，超高速）
-AlternateFunctionNoPushPullVeryHighControllerMode	AlternateFunctionNoPushPullVeryHighControllerMode（复用功能：非推挽，超高速，控制器模式）
-AlternateFunctionNoPushPullVeryHighTargetMode	AlternateFunctionNoPushPullVeryHighTargetMode（复用功能：非推挽，超高速，目标模式）
+AlternateFunctionNoPushPullVeryHighControllerMode	AlternateFunctionNoPushPullVeryHighControllerMode（复用功能：非推挽，超高速，控制器模式） (AlternateFunctionNoPushPullVeryHighControllerMode)
+AlternateFunctionNoPushPullVeryHighTargetMode	AlternateFunctionNoPushPullVeryHighTargetMode（复用功能：非推挽，超高速，目标模式） (AlternateFunctionNoPushPullVeryHighTargetMode)
 AlternateFunctionOpenDrain	AlternateFunctionOpenDrain（复用功能：开漏）
 AlternateFunctionOpenDrainAllPullValues	AlternateFunctionOpenDrainAllPullValues（复用功能：开漏，支持全部上下拉）
 AlternateFunctionOpenDrainAndPushPull	AlternateFunctionOpenDrainAndPushPull（复用功能：开漏或推挽）
-AlternateFunctionOpenDrainAndPushPullDefaultOD	AlternateFunctionOpenDrainAndPushPullDefaultOD（复用功能：开漏或推挽，默认开漏）
-AlternateFunctionOpenDrainAndPushPullDefaultODLowSpeed	AlternateFunctionOpenDrainAndPushPullDefaultODLowSpeed（复用功能：开漏或推挽，默认开漏，低速）
-AlternateFunctionOpenDrainAndPushPullDefaultPP	AlternateFunctionOpenDrainAndPushPullDefaultPP（复用功能：开漏或推挽，默认推挽）
-AlternateFunctionOpenDrainAndPushPullDefaultPPHIGHSPEED	AlternateFunctionOpenDrainAndPushPullDefaultPPHIGHSPEED（复用功能：开漏或推挽，默认推挽，高速）
-AlternateFunctionOpenDrainAndPushPullDefaultPPLowSpeed	AlternateFunctionOpenDrainAndPushPullDefaultPPLowSpeed（复用功能：开漏或推挽，默认推挽，低速）
-AlternateFunctionOpenDrainAndPushPullDefaultPPWildcat	AlternateFunctionOpenDrainAndPushPullDefaultPPWildcat（复用功能：开漏或推挽，默认推挽，Wildcat）
+AlternateFunctionOpenDrainAndPushPullDefaultOD	AlternateFunctionOpenDrainAndPushPullDefaultOD（复用功能：开漏或推挽，默认开漏） (AlternateFunctionOpenDrainAndPushPullDefaultOD)
+AlternateFunctionOpenDrainAndPushPullDefaultODLowSpeed	AlternateFunctionOpenDrainAndPushPullDefaultODLowSpeed（复用功能：开漏或推挽，默认开漏，低速） (AlternateFunctionOpenDrainAndPushPullDefaultODLowSpeed)
+AlternateFunctionOpenDrainAndPushPullDefaultPP	AlternateFunctionOpenDrainAndPushPullDefaultPP（复用功能：开漏或推挽，默认推挽） (AlternateFunctionOpenDrainAndPushPullDefaultPP)
+AlternateFunctionOpenDrainAndPushPullDefaultPPHIGHSPEED	AlternateFunctionOpenDrainAndPushPullDefaultPPHIGHSPEED（复用功能：开漏或推挽，默认推挽，高速） (AlternateFunctionOpenDrainAndPushPullDefaultPPHIGHSPEED)
+AlternateFunctionOpenDrainAndPushPullDefaultPPLowSpeed	AlternateFunctionOpenDrainAndPushPullDefaultPPLowSpeed（复用功能：开漏或推挽，默认推挽，低速） (AlternateFunctionOpenDrainAndPushPullDefaultPPLowSpeed)
+AlternateFunctionOpenDrainAndPushPullDefaultPPWildcat	AlternateFunctionOpenDrainAndPushPullDefaultPPWildcat（复用功能：开漏或推挽，默认推挽，Wildcat） (AlternateFunctionOpenDrainAndPushPullDefaultPPWildcat)
 AlternateFunctionOpenDrainLowSpeed	AlternateFunctionOpenDrainLowSpeed（复用功能：开漏，低速）
 AlternateFunctionOpenDrainNoPull	AlternateFunctionOpenDrainNoPull（复用功能：开漏，无上下拉）
-AlternateFunctionOpenDrainNoPullOrPullUp	AlternateFunctionOpenDrainNoPullOrPullUp（复用功能：开漏，无上拉或上拉）
+AlternateFunctionOpenDrainNoPullOrPullUp	AlternateFunctionOpenDrainNoPullOrPullUp（复用功能：开漏，无上拉或上拉） (AlternateFunctionOpenDrainNoPullOrPullUp)
 AlternateFunctionPuOnly	AlternateFunctionPuOnly（复用功能：仅上拉）
 AlternateFunctionPuPdOnly	AlternateFunctionPuPdOnly（复用功能：仅上下拉）
 AlternateFunctionPuPdOnlyIORetiming	AlternateFunctionPuPdOnlyIORetiming（复用功能：仅上下拉，IO 重定时）
-AlternateFunctionPuPdOnlyIORetimingDCMIPP	AlternateFunctionPuPdOnlyIORetimingDCMIPP（复用功能：仅上下拉，IO 重定时，DCMIPP）
-AlternateFunctionPuPdOnlyIORetimingDCMIPP_PIXCLK	AlternateFunctionPuPdOnlyIORetimingDCMIPP_PIXCLK（复用功能：仅上下拉，IO 重定时，DCMIPP，像素时钟）
-AlternateFunctionPuPdOnlyIORetimingRGMII	AlternateFunctionPuPdOnlyIORetimingRGMII（复用功能：仅上下拉，IO 重定时，RGMII）
-AlternateFunctionPuPdOnlyIORetimingRGMII_ID	AlternateFunctionPuPdOnlyIORetimingRGMII_ID（复用功能：仅上下拉，IO 重定时，RGMII ID）
-AlternateFunctionPuPdOnlyIORetimingRGMII_ID_GTX_CLK	AlternateFunctionPuPdOnlyIORetimingRGMII_ID_GTX_CLK（复用功能：仅上下拉，IO 重定时，RGMII ID，GTX 时钟）
-AlternateFunctionPuPdOnlyIORetimingRGMII_ID_RX_CTL	AlternateFunctionPuPdOnlyIORetimingRGMII_ID_RX_CTL（复用功能：仅上下拉，IO 重定时，RGMII ID，接收控制）
+AlternateFunctionPuPdOnlyIORetimingDCMIPP	AlternateFunctionPuPdOnlyIORetimingDCMIPP（复用功能：仅上下拉，IO 重定时，DCMIPP） (AlternateFunctionPuPdOnlyIORetimingDCMIPP)
+AlternateFunctionPuPdOnlyIORetimingDCMIPP_PIXCLK	AlternateFunctionPuPdOnlyIORetimingDCMIPP_PIXCLK（复用功能：仅上下拉，IO 重定时，DCMIPP，像素时钟） (AlternateFunctionPuPdOnlyIORetimingDCMIPP_PIXCLK)
+AlternateFunctionPuPdOnlyIORetimingRGMII	AlternateFunctionPuPdOnlyIORetimingRGMII（复用功能：仅上下拉，IO 重定时，RGMII） (AlternateFunctionPuPdOnlyIORetimingRGMII)
+AlternateFunctionPuPdOnlyIORetimingRGMII_ID	AlternateFunctionPuPdOnlyIORetimingRGMII_ID（复用功能：仅上下拉，IO 重定时，RGMII ID） (AlternateFunctionPuPdOnlyIORetimingRGMII_ID)
+AlternateFunctionPuPdOnlyIORetimingRGMII_ID_GTX_CLK	AlternateFunctionPuPdOnlyIORetimingRGMII_ID_GTX_CLK（复用功能：仅上下拉，IO 重定时，RGMII ID，GTX 时钟） (AlternateFunctionPuPdOnlyIORetimingRGMII_ID_GTX_CLK)
+AlternateFunctionPuPdOnlyIORetimingRGMII_ID_RX_CTL	AlternateFunctionPuPdOnlyIORetimingRGMII_ID_RX_CTL（复用功能：仅上下拉，IO 重定时，RGMII ID，接收控制） (AlternateFunctionPuPdOnlyIORetimingRGMII_ID_RX_CTL)
 AlternateFunctionPushPull	AlternateFunctionPushPull（复用功能：推挽）
 AlternateFunctionPushPullHigh	AlternateFunctionPushPullHigh（复用功能：推挽，高速）
 AlternateFunctionPushPullHighDefault	AlternateFunctionPushPullHighDefault（复用功能：推挽，高速，默认）
 AlternateFunctionPushPullHighSpeed	AlternateFunctionPushPullHighSpeed（复用功能：推挽，高速）
-AlternateFunctionPushPullHighSpeedByDefault	AlternateFunctionPushPullHighSpeedByDefault（复用功能：推挽，高速，默认）
-AlternateFunctionPushPullHighSpeedByDefaultIORetiming	AlternateFunctionPushPullHighSpeedByDefaultIORetiming（复用功能：推挽，高速，默认，IO 重定时）
-AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII	AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII（复用功能：推挽，高速，默认，IO 重定时，RGMII）
-AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMIIETHx	AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMIIETHx（复用功能：推挽，高速，默认，IO 重定时，RGMII，以太网）
-AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII_ID	AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII_ID（复用功能：推挽，高速，默认，IO 重定时，RGMII ID）
-AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII_TX_CTL	AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII_TX_CTL（复用功能：推挽，高速，默认，IO 重定时，RGMII，发送控制）
-AlternateFunctionPushPullHighSpeedByDefaultRGMIIID_IORetiming	AlternateFunctionPushPullHighSpeedByDefaultRGMIIID_IORetiming（复用功能：推挽，高速，默认，RGMII ID，IO 重定时）
-AlternateFunctionPushPullHighSpeedDefault	AlternateFunctionPushPullHighSpeedDefault（复用功能：推挽，高速，默认）
-AlternateFunctionPushPullHighSpeedDefaultH5	AlternateFunctionPushPullHighSpeedDefaultH5（复用功能：推挽，高速，默认，H5）
-AlternateFunctionPushPullHighSpeedDefaultIORetiming	AlternateFunctionPushPullHighSpeedDefaultIORetiming（复用功能：推挽，高速，默认，IO 重定时）
-AlternateFunctionPushPullHighSpeedDefaultIORetimingOthersTRACEx	AlternateFunctionPushPullHighSpeedDefaultIORetimingOthersTRACEx（复用功能：推挽，高速，默认，IO 重定时，其他/跟踪）
-AlternateFunctionPushPullHighSpeedDefaultIORetimingRGMIIOthers	AlternateFunctionPushPullHighSpeedDefaultIORetimingRGMIIOthers（复用功能：推挽，高速，默认，IO 重定时，RGMII，其他）
+AlternateFunctionPushPullHighSpeedByDefault	AlternateFunctionPushPullHighSpeedByDefault（复用功能：推挽，高速，默认） (AlternateFunctionPushPullHighSpeedByDefault)
+AlternateFunctionPushPullHighSpeedByDefaultIORetiming	AlternateFunctionPushPullHighSpeedByDefaultIORetiming（复用功能：推挽，高速，默认，IO 重定时） (AlternateFunctionPushPullHighSpeedByDefaultIORetiming)
+AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII	AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII（复用功能：推挽，高速，默认，IO 重定时，RGMII） (AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII)
+AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMIIETHx	AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMIIETHx（复用功能：推挽，高速，默认，IO 重定时，RGMII，以太网） (AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMIIETHx)
+AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII_ID	AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII_ID（复用功能：推挽，高速，默认，IO 重定时，RGMII ID） (AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII_ID)
+AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII_TX_CTL	AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII_TX_CTL（复用功能：推挽，高速，默认，IO 重定时，RGMII，发送控制） (AlternateFunctionPushPullHighSpeedByDefaultIORetimingRGMII_TX_CTL)
+AlternateFunctionPushPullHighSpeedByDefaultRGMIIID_IORetiming	AlternateFunctionPushPullHighSpeedByDefaultRGMIIID_IORetiming（复用功能：推挽，高速，默认，RGMII ID，IO 重定时） (AlternateFunctionPushPullHighSpeedByDefaultRGMIIID_IORetiming)
+AlternateFunctionPushPullHighSpeedDefault	AlternateFunctionPushPullHighSpeedDefault（复用功能：推挽，高速，默认） (AlternateFunctionPushPullHighSpeedDefault)
+AlternateFunctionPushPullHighSpeedDefaultH5	AlternateFunctionPushPullHighSpeedDefaultH5（复用功能：推挽，高速，默认，H5） (AlternateFunctionPushPullHighSpeedDefaultH5)
+AlternateFunctionPushPullHighSpeedDefaultIORetiming	AlternateFunctionPushPullHighSpeedDefaultIORetiming（复用功能：推挽，高速，默认，IO 重定时） (AlternateFunctionPushPullHighSpeedDefaultIORetiming)
+AlternateFunctionPushPullHighSpeedDefaultIORetimingOthersTRACEx	AlternateFunctionPushPullHighSpeedDefaultIORetimingOthersTRACEx（复用功能：推挽，高速，默认，IO 重定时，其他/跟踪） (AlternateFunctionPushPullHighSpeedDefaultIORetimingOthersTRACEx)
+AlternateFunctionPushPullHighSpeedDefaultIORetimingRGMIIOthers	AlternateFunctionPushPullHighSpeedDefaultIORetimingRGMIIOthers（复用功能：推挽，高速，默认，IO 重定时，RGMII，其他） (AlternateFunctionPushPullHighSpeedDefaultIORetimingRGMIIOthers)
 AlternateFunctionPushPullIORetiming	AlternateFunctionPushPullIORetiming（复用功能：推挽，IO 重定时）
-AlternateFunctionPushPullIORetimingDCMIPP	AlternateFunctionPushPullIORetimingDCMIPP（复用功能：推挽，IO 重定时，DCMIPP）
-AlternateFunctionPushPullIORetimingDCMIPPOtherIPs	AlternateFunctionPushPullIORetimingDCMIPPOtherIPs（复用功能：推挽，IO 重定时，DCMIPP，其他 IP）
+AlternateFunctionPushPullIORetimingDCMIPP	AlternateFunctionPushPullIORetimingDCMIPP（复用功能：推挽，IO 重定时，DCMIPP） (AlternateFunctionPushPullIORetimingDCMIPP)
+AlternateFunctionPushPullIORetimingDCMIPPOtherIPs	AlternateFunctionPushPullIORetimingDCMIPPOtherIPs（复用功能：推挽，IO 重定时，DCMIPP，其他 IP） (AlternateFunctionPushPullIORetimingDCMIPPOtherIPs)
 AlternateFunctionPushPullIORetimingETH	AlternateFunctionPushPullIORetimingETH（复用功能：推挽，IO 重定时，以太网）
-AlternateFunctionPushPullIORetimingETHRGMII	AlternateFunctionPushPullIORetimingETHRGMII（复用功能：推挽，IO 重定时，以太网 RGMII）
-AlternateFunctionPushPullIORetimingETHRGMII_ID	AlternateFunctionPushPullIORetimingETHRGMII_ID（复用功能：推挽，IO 重定时，以太网 RGMII ID）
-AlternateFunctionPushPullIORetimingLTDCOtherIPs	AlternateFunctionPushPullIORetimingLTDCOtherIPs（复用功能：推挽，IO 重定时，LCD 控制器，其他 IP）
+AlternateFunctionPushPullIORetimingETHRGMII	AlternateFunctionPushPullIORetimingETHRGMII（复用功能：推挽，IO 重定时，以太网 RGMII） (AlternateFunctionPushPullIORetimingETHRGMII)
+AlternateFunctionPushPullIORetimingETHRGMII_ID	AlternateFunctionPushPullIORetimingETHRGMII_ID（复用功能：推挽，IO 重定时，以太网 RGMII ID） (AlternateFunctionPushPullIORetimingETHRGMII_ID)
+AlternateFunctionPushPullIORetimingLTDCOtherIPs	AlternateFunctionPushPullIORetimingLTDCOtherIPs（复用功能：推挽，IO 重定时，LCD 控制器，其他 IP） (AlternateFunctionPushPullIORetimingLTDCOtherIPs)
 AlternateFunctionPushPullInputI2S	AlternateFunctionPushPullInputI2S（复用功能：推挽，I2S 输入）
 AlternateFunctionPushPullLowSpeed	AlternateFunctionPushPullLowSpeed（复用功能：推挽，低速）
 AlternateFunctionPushPullMediumSpeed	AlternateFunctionPushPullMediumSpeed（复用功能：推挽，中速）
-AlternateFunctionPushPullMediumSpeedDefault	AlternateFunctionPushPullMediumSpeedDefault（复用功能：推挽，中速，默认）
-AlternateFunctionPushPullMediumSpeedDefaultIORetiming	AlternateFunctionPushPullMediumSpeedDefaultIORetiming（复用功能：推挽，中速，默认，IO 重定时）
-AlternateFunctionPushPullMediumSpeedDefaultIORetimingETH	AlternateFunctionPushPullMediumSpeedDefaultIORetimingETH（复用功能：推挽，中速，默认，IO 重定时，以太网）
+AlternateFunctionPushPullMediumSpeedDefault	AlternateFunctionPushPullMediumSpeedDefault（复用功能：推挽，中速，默认） (AlternateFunctionPushPullMediumSpeedDefault)
+AlternateFunctionPushPullMediumSpeedDefaultIORetiming	AlternateFunctionPushPullMediumSpeedDefaultIORetiming（复用功能：推挽，中速，默认，IO 重定时） (AlternateFunctionPushPullMediumSpeedDefaultIORetiming)
+AlternateFunctionPushPullMediumSpeedDefaultIORetimingETH	AlternateFunctionPushPullMediumSpeedDefaultIORetimingETH（复用功能：推挽，中速，默认，IO 重定时，以太网） (AlternateFunctionPushPullMediumSpeedDefaultIORetimingETH)
 AlternateFunctionPushPullPULLDOWN	AlternateFunctionPushPullPULLDOWN（复用功能：推挽，下拉）
 AlternateFunctionPushPullPULLUP	AlternateFunctionPushPullPULLUP（复用功能：推挽，上拉）
 AlternateFunctionPushPullUp	AlternateFunctionPushPullUp（复用功能：推挽，上拉）
 AlternateFunctionPushPullVeryHighSpeed	AlternateFunctionPushPullVeryHighSpeed（复用功能：推挽，超高速）
-AlternateFunctionPushPullVeryHighSpeedDefault	AlternateFunctionPushPullVeryHighSpeedDefault（复用功能：推挽，超高速，默认）
+AlternateFunctionPushPullVeryHighSpeedDefault	AlternateFunctionPushPullVeryHighSpeedDefault（复用功能：推挽，超高速，默认） (AlternateFunctionPushPullVeryHighSpeedDefault)
 AlternateFunctionPushPull_RI_Timer_IC1	AlternateFunctionPushPull_RI_Timer_IC1（复用功能：推挽，路由接口，定时器，输入捕获 1）
 AlternateFunctionPushPull_RI_Timer_IC2	AlternateFunctionPushPull_RI_Timer_IC2（复用功能：推挽，路由接口，定时器，输入捕获 2）
 AlternateFunctionPushPull_RI_Timer_IC3	AlternateFunctionPushPull_RI_Timer_IC3（复用功能：推挽，路由接口，定时器，输入捕获 3）
@@ -17881,6 +17881,460 @@ LPBAM Manager	LPBAM 管理器 (LPBAM Manager)
 Show User Label	显示用户标签 (Show User Label)
 Terms of Use.	使用条款。 (Terms of Use.)
 For details please see our	详情请参阅我们的 (For details please see our)
-For this Cortex-M7 device, it is highly recommended to preconfigure the Memory Protection Unit	对于此 Cortex-M7 器件，强烈建议预先配置内存保护单元 (Memory Protection Unit)
-to optimize the Speculative Read access of the core.	以优化内核的推测读取访问 (Speculative Read)
+For this Cortex-M7 device, it is highly recommended to preconfigure the Memory Protection Unit	对于此 Cortex-M7 器件，强烈建议预先配置内存保护单元 (For this Cortex-M7 device, it is highly recommended to preconfigure the Memory Protection Unit)
+to optimize the Speculative Read access of the core.	以优化内核的推测读取访问 (Speculative Read) (to optimize the Speculative Read access of the core.)
 Do you want to apply now such default configuration ?	是否现在应用此默认配置？ (Do you want to apply now such default configuration ?)
+Advanced-control timer	高级控制定时器 (Advanced-control timer)
+Analog to digital converter	模数转换器 (Analog to digital converter)
+Controller Area Network	控制器局域网 (Controller Area Network)
+Cyclic Redundancy Check	循环冗余校验 (Cyclic Redundancy Check)
+Direct Memory Access controller	直接存储器访问控制器 (Direct Memory Access controller)
+General Purpose Input/Output	通用输入/输出 (General Purpose Input/Output)
+Real-Time Clock	实时时钟 (Real-Time Clock)
+Reset and Clock Controler	复位与时钟控制器 (Reset and Clock Controler)
+System Window WatchDoG	系统窗口看门狗 (System Window WatchDoG)
+Independent WatchDoG	独立看门狗 (Independent WatchDoG)
+Dual Watchdog	双看门狗 (Dual Watchdog)
+Universal Serial Bus full-speed device interface	通用串行总线全速设备接口 (Universal Serial Bus full-speed device interface)
+Camera Interface	摄像头接口 (Camera Interface)
+Crypto Engine	加密引擎 (Crypto Engine)
+Audio Device Class	音频设备类 (Audio Device Class)
+COMMUNICATION INTERFACE	通信接口 (COMMUNICATION INTERFACE)
+EXTERNAL MEMORY INTERFACE	外部存储器接口 (EXTERNAL MEMORY INTERFACE)
+Double-precision FPU	双精度浮点单元 (Double-precision FPU)
+Half-precision FPU	半精度浮点单元 (Half-precision FPU)
+DRAM Support	动态随机存储器支持 (DRAM Support)
+Flash Support	闪存支持 (Flash Support)
+ITCM/DTCM RAM	指令/数据紧耦合存储器 (ITCM/DTCM RAM)
+Dual Octo SPI	双八线串行外设接口 (Dual Octo SPI)
+Dual Quad SPI	双四线串行外设接口 (Dual Quad SPI)
+Identification / Authentication	标识/认证 (Identification / Authentication)
+Abnormal Situation Handling	异常状况处理 (Abnormal Situation Handling)
+Application Lifecycle	应用生命周期 (Application Lifecycle)
+Battery Life Estimation	电池寿命估算 (Battery Life Estimation)
+Default Battery Properties	默认电池属性 (Default Battery Properties)
+Default Sequence Table	默认时序表 (Default Sequence Table)
+Display Selection	显示选择 (Display Selection)
+Batteries Table	电池参数表 (Batteries Table)
+CPU Frequency	CPU 频率 (CPU Frequency)
+Average Consumption	平均功耗 (Average Consumption)
+Average DMIPS	平均 DMIPS (Average DMIPS)
+Auto Refresh	自动刷新 (Auto Refresh)
+Disable Auto Refresh	禁用自动刷新 (Disable Auto Refresh)
+Back To Default Sequence	恢复默认时序 (Back To Default Sequence)
+Generate RUN + STOP	生成运行/停止功耗 (Generate RUN + STOP)
+Pin Count	引脚数量 (Pin Count)
+High Power Mode	高功耗模式 (High Power Mode)
+Secure Boot	安全启动 (Secure Boot)
+A real-time clock (RTC) is a computer clock that keeps track of the current time.	实时时钟（RTC）是用于记录当前时间的计算机时钟 (A real-time clock (RTC) is a computer clock that keeps track of the current time.)
+It is a message-based protocol, designed originally for multiplex electrical wiring.	这是一种基于报文的协议，最初为多路电气布线设计
+It triggers a reset sequence when the counter reaches the timeout value.	计数器达到超时值时触发复位序列。
+The RCC also manages the various resets present in the device.	复位与时钟控制器还管理器件中的各种复位
+The window watchdog has a programmable free-running downcounter that must be refreshed	窗口看门狗具有可编程的自由运行递减计数器，必须在保证软件正常执行的窗口期内刷新；
+and the time period expires, the window watchdog generates a system reset.	窗口看门狗将产生系统复位。
+You can set pins to input or output, put them low (0 volts) or HIGH (3,3 volts),	可将引脚设为输入或输出、设为低电平（0 V）或高电平（3.3 V）
+select pull resistors, choose output type and select clock speed.	选择上/下拉电阻、选择输出类型并选择时钟速度
+voltage on a pin to a digital number. By converting from the analog	把引脚上的电压转换为数字量，通过模拟量转换
+of a serial interface device that can be programmed to communicate asynchronously or	可编程为异步或同步通信的串行接口设备 (of a serial interface device that can be programmed to communicate asynchronously or)
+configurable to support many synchronous standard communications protocols.	可配置以支持多种同步标准通信协议 (configurable to support many synchronous standard communications protocols.)
+or generating output waveforms (output compare, PWM, complementary PWM with dead-time insertion).	或产生输出波形（输出比较、PWM、带死区插入的互补 PWM）
+devices such as microcontrollers, sensors, and serial interface memories. This peripheral provides	面向微控制器、传感器和串行接口存储器等器件。此外设提供 (devices such as microcontrollers, sensors, and serial interface memories. This peripheral provides)
+to communicate with each other in applications without a host computer.	在无主机计算机的应用中相互通信 (to communicate with each other in applications without a host computer.)
+device to the microcontroller in full speed mode (FS).	以全速模式（FS）将该设备连接到微控制器 (device to the microcontroller in full speed mode (FS).)
+allowing the microcontroller to communicate with nearby external devices. The interface is highly	使微控制器能与附近的外部器件通信。该接口非常 (allowing the microcontroller to communicate with nearby external devices. The interface is highly)
+an easy-to-use interface, with very simple software programming, and full timing flexibility.	易于使用，软件编程非常简单，并且时序灵活 (an easy-to-use interface, with very simple software programming, and full timing flexibility.)
+and it is only interrupted when a whole data block is available for processing.	并且只有当整个数据块可供处理时才产生中断
+but without making corrections when errors are detected. It is used in data transmission or	但检测到错误时不会纠正。它用于数据传输或 (but without making corrections when errors are detected. It is used in data transmission or)
+designed to allow microcontrollers and devices	用于让微控制器和器件 (designed to allow microcontrollers and devices)
+It may be used for a variety of purposes, including measuring the pulse lengths of input signals (input capture)	它可用于多种用途，包括测量输入信号的脉冲长度（输入捕获）
+The NVIC and the processor core interface are closely coupled, which enables low latency	嵌套向量中断控制器与处理器内核接口紧密耦合，可实现低延迟
+All interrupts including the core exceptions are managed by the NVIC. For more information	包括内核异常在内的所有中断均由嵌套向量中断控制器管理。更多信息
+interrupt processing and efficient processing of late arriving interrupts.	中断处理以及对迟到中断的高效处理
+within a window period that guarantees proper software execution. If a problem occurs	若出现问题且窗口期到期，
+the Cortex-Mx processor. During this operation, the main processor DMA execute other tasks	Cortex-Mx 处理器介入。在此操作期间，主处理器 DMA 可执行其他任务 (the Cortex-Mx processor. During this operation, the main processor DMA execute other tasks)
+Reference manual - Low/Medium/High/XL density	参考手册 —— 小/中/大/超大容量 (Reference manual - Low/Medium/High/XL density)
+details and documentation (Ctrl+d)...	详情与文档 (Ctrl+D)... (details and documentation (Ctrl+d)...)
+\n• 16 programmable priority levels (4 bits of interrupt priority are used)	• 16 个可编程优先级（使用 4 位中断优先级）
+\n• implementation of system control registers	• 系统控制寄存器的实现
+\n• low-latency exception and interrupt handling	• 低延迟的异常与中断处理
+\n• 68 maskable interrupt channels (not including the 16 interrupt lines of Cortex®-M3)	• 68 个可屏蔽中断通道（不含 Cortex®-M3 的 16 条中断线）
+\non exceptions and NVIC programming, refer to STM32F10xxx Cortex®-M3 programming manual.	有关异常与嵌套向量中断控制器编程，请参阅 STM32F10xxx Cortex®-M3 编程手册
+Summary:	摘要： (Summary:)
+Related documentation:	相关文档： (Related documentation:)
+List of Peripheral DMA Requests	外设 DMA 请求列表 (List of Peripheral DMA Requests)
+Reference manual	参考手册 (Reference manual)
+Tutorial Video	教学视频 (Tutorial Video)
+The DMA allows data transfers to take place in the background, without the intervention of	DMA 允许数据传输在后台进行，无需 (The DMA allows data transfers to take place in the background, without the intervention of)
+\n                data storage integrity check.\n            	数据存储完整性检查。
+\n                world to the digital world.\n            	世界到数字世界。
+\n• power management control	• 电源管理控制
+An Analog to digital converter is a feature that converts an analog	模数转换器是一种将模拟量转换的功能 (An Analog to digital converter is a feature that converts an analog)
+A USART (Universal Synchronous/Asynchronous Receiver/Transmitter) is a type	USART（通用同步/异步收发器）是一种 (A USART (Universal Synchronous/Asynchronous Receiver/Transmitter) is a type)
+ Sequence Time / Ta Max   	时序时间 / 最高环境温度 (Sequence Time / Ta Max)
+ at max CPU frequency + 	在最高 CPU 频率下 +
+ at max CPU frequency getting 	在最高 CPU 频率下得到
+ automatically update sequence table, display and results in the right panel.	自动更新时序表、显示内容与右侧面板中的结果。 (automatically update sequence table, display and results in the right panel.)
+ conditions except when explicitly mentioned and there is no load on I/O pins.	条件下的测量值，除非特别说明且 I/O 引脚无负载。 (conditions except when explicitly mentioned and there is no load on I/O pins.)
+ explains how to efficiently use PCC	说明如何高效使用 PCC
+ of the Sequence Generator	时序生成器的
+ performance and consumption, and a 	性能与功耗，以及一个
+ power modes in typical conditions without creating each step manually using 	典型条件下的功耗模式，无需使用以下方式手动创建每个步骤 (power modes in typical conditions without creating each step manually using)
+ with the lowest consumption	以最低功耗
+Advanced peripheral Buses frequency value: fAPB1 = fCPU/2, fAPB2 = fCPU	高级外设总线频率值：fAPB1 = fCPU/2，fAPB2 = fCPU (Advanced peripheral Buses frequency value: fAPB1 = fCPU/2, fAPB2 = fCPU)
+\n                the Cortex-Mx processor. During this operation, the main processor DMA execute other tasks	Cortex-Mx 处理器介入。在此操作期间，主处理器 DMA 可执行其他任务 (the Cortex-Mx processor. During this operation, the main processor DMA execute other tasks)
+\n                and it is only interrupted when a whole data block is available for processing.\n            	并且只有当整个数据块可供处理时才产生中断
+The window watchdog is used to detect the occurrence of software faults.	窗口看门狗用于检测软件故障的发生。 (The window watchdog is used to detect the occurrence of software faults.)
+\n                The window watchdog has a programmable free-running downcounter that must be refreshed	窗口看门狗具有可编程的自由运行递减计数器，必须在保证软件正常执行的窗口期内刷新；
+\n                within a window period that guarantees proper software execution. If a problem occurs	若出现问题且窗口期到期，
+\n                and the time period expires, the window watchdog generates a system reset.\n            	窗口看门狗将产生系统复位。
+List \n    of Peripheral DMA Requests 	外设 DMA 请求列表 (List of Peripheral DMA Requests)
+Tutorial \n    Video 	教学视频 (Tutorial Video)
+Reference \n    manual 	参考手册 (Reference manual)
+The independent watchdog is used to detect and resolve malfunctions due to software failure.	独立看门狗用于检测并处理由软件故障引起的异常。 (The independent watchdog is used to detect and resolve malfunctions due to software failure.)
+
+# ── 外设说明英文原文（界面只显示中文）──
+#
+# [DMA] The DMA allows data transfers to take place in the background, without the intervention of the Cortex-Mx processor. During this operation, the main processor DMA execute other tasks and it is only interrupted when a whole data block is available for processing.
+#
+# [WWDG] The window watchdog is used to detect the occurrence of software faults. The window watchdog has a programmable free-running downcounter that must be refreshed within a window period that guarantees proper software execution. If a problem occurs and the time period expires, the window watchdog generates a system reset.
+#
+# [IWDG] The independent watchdog is used to detect and resolve malfunctions due to software failure. It triggers a reset sequence when the counter reaches the timeout value.
+#
+ Partly disabled conflict with:	部分禁用，与以下项冲突：
+PA8 mapped with GPIO_Output	PA8 已映射为 GPIO_Output
+PB0 mapped with GPIO_Output	PB0 已映射为 GPIO_Output
+PB1 mapped with GPIO_Output	PB1 已映射为 GPIO_Output
+PB12 mapped with GPIO_Output	PB12 已映射为 GPIO_Output
+The advanced-control timers consist of an auto-reload counter driven by a programmable prescaler.	高级控制定时器由一个自动重载计数器构成，由可编程预分频器驱动。 (The advanced-control timers consist of an auto-reload counter driven by a programmable prescaler.)
+The general-purpose timers consist of an auto-reload counter driven by a programmable prescaler.	通用定时器由一个自动重载计数器构成，由可编程预分频器驱动。 (The general-purpose timers consist of an auto-reload counter driven by a programmable prescaler.)
+Reference \n    manual - Connectivity line 	参考手册 - 互联型 (Reference manual - Connectivity line)
+\n                voltage on a pin to a digital number. By converting from the analog	把引脚上的电压转换为数字量。通过将模拟
+Ambient	环境温度 (Ambient)
+Capacity	容量 (Capacity)
+  Consumption 	功耗 (Consumption)
+Generator	发生器 (Generator)
+Interface 	接口 (Interface)
+Sequence	序列 (Sequence)
+  Step  	步骤 (Step)
+Change	更改 (Change)
+Constant Name	常量名称 (Constant Name)
+Generated Function Calls 	生成的函数调用 (Generated Function Calls)
+Hardware Flow Control (RS232) 	硬件流控制 RS232 (Hardware Flow Control (RS232))
+In Parallel 	并联 (In Parallel)
+In Series 	串联 (In Series)
+Information Notes	信息说明 (Information Notes)
+Max Cont Current	最大持续电流 (Max Cont Current)
+            Min Version	最低版本 (Min Version)
+Nominal Voltage	标称电压 (Nominal Voltage)
+Restore Defaults	恢复默认值 (Restore Defaults)
+Self Discharge	自放电 (Self Discharge)
+Typ. Average Current 	典型平均电流 (Typ. Average Current)
+Select your Preferred Display	选择首选的显示方式 (Select your Preferred Display)
+Show differences only	仅显示差异 (Show differences only)
+Use current project	使用当前工程 (Use current project)
+Transitions Checker	跳转检查器 (Transitions Checker)
+Search Constants	搜索常量 (Search Constants)
+General purpose timer 	通用定时器
+Inter Integrated Circuit 	集成电路互连总线 (Inter Integrated Circuit)
+Serial Peripheral Interface 	串行外设接口 (Serial Peripheral Interface)
+Universal Synchronous/Asynchronous Receiver/Transmitter 	通用同步/异步收发器 (Universal Synchronous/Asynchronous Receiver/Transmitter)
+RTC OUT 	实时时钟输出 (RTC OUT)
+Add Peripheral Handle Label	添加外设句柄标签 (Add Peripheral Handle Label)
+ST Arm Clang	ST Arm Clang 编译器 (ST Arm Clang)
+Mass Storage Class	大容量存储类 (Mass Storage Class)
+Communication Device Class (Virtual Port Com)	通信设备类（虚拟串口） (Communication Device Class (Virtual Port Com))
+Custom Human Interface Device Class (HID)	自定义人机接口设备类 HID (Custom Human Interface Device Class (HID))
+Human Interface Device Class (HID)	人机接口设备类 HID (Human Interface Device Class (HID))
+Download Firmware Update Class (DFU)	固件下载更新类 DFU (Download Firmware Update Class (DFU))
+Default – Mapping suitable strategy depending on RTOS selection.	默认——根据 RTOS 选择映射合适的策略。 (Default – Mapping suitable strategy depending on RTOS selection.)
+FreeRTOS Strategy #4 - Allow lock usage from interrupts	FreeRTOS 策略 #4 —— 允许在中断中使用锁 (FreeRTOS Strategy #4 - Allow lock usage from interrupts)
+FreeRTOS Strategy #5 - Deny lock usage from interrupts	FreeRTOS 策略 #5 —— 禁止在中断中使用锁 (FreeRTOS Strategy #5 - Deny lock usage from interrupts)
+Generic Strategy #1 - Custom implementation	通用策略 #1 —— 自定义实现 (Generic Strategy #1 - Custom implementation)
+Generic Strategy #2 - Allow lock usage from interrupts	通用策略 #2 —— 允许在中断中使用锁 (Generic Strategy #2 - Allow lock usage from interrupts)
+Generic Strategy #3 - Deny lock usage from interrupts	通用策略 #3 —— 禁止在中断中使用锁 (Generic Strategy #3 - Deny lock usage from interrupts)
+IP Consumption: All	IP 功耗：全部 (IP Consumption: All)
+IP Consumption: Analog	IP 功耗：模拟 (IP Consumption: Analog)
+IP Consumption: Digital	IP 功耗：数字 (IP Consumption: Digital)
+Pie: All Modes	饼图：全部模式 (Pie: All Modes)
+Pie: Run / Low Power	饼图：运行/低功耗 (Pie: Run / Low Power)
+Plot: All Steps	曲线：全部步骤 (Plot: All Steps)
+Plot: Run / Low Power	曲线：运行/低功耗 (Plot: Run / Low Power)
+Area %: Run / Low Power	面积百分比：运行/低功耗 (Area %: Run / Low Power)
+Results at 25°C / 3.3V	结果为 25°C / 3.3V 条件下 (Results at 25°C / 3.3V)
+peripherals consumption measurements	外设功耗测量 (peripherals consumption measurements)
+Sequence Configuration	序列配置 (Sequence Configuration)
+Sequence Generator	序列发生器 (Sequence Generator)
+Sequence Information Notes	序列信息说明 (Sequence Information Notes)
+Sequence Time	序列时间 (Sequence Time)
+Sequence Type 	序列类型 (Sequence Type)
+Sequence Generator allows to quickly generate 	序列发生器可快速生成 (Sequence Generator allows to quickly generate)
+ Sequence gathers a 	序列汇集了 (Sequence gathers a)
+User Sequence Table	用户序列表 (User Sequence Table)
+What is the Default Sequence ?	什么是默认序列？ (What is the Default Sequence ?)
+Why Use Sequence Generator ?	为何使用序列发生器？ (Why Use Sequence Generator ?)
+default Help	详细帮助 (detailed Help)
+detailed Help	详细帮助 (detailed Help)
+The RCC controller manages system and peripheral clocks.	RCC 控制器管理系统时钟与外设时钟。 (The RCC controller manages system and peripheral clocks.)
+A Controller Area Network (CAN bus) is bus standard	控制器局域网（CAN 总线）是一种总线标准，
+GPIO library is used to work with physical pins on microcontroller.	GPIO 库用于操作微控制器上的物理引脚。
+I2C (Inter Integrated Circuit) is a communication interface widely used to connect	I2C（集成电路互连总线）是一种广泛用于连接的通信接口，
+The Serial Peripheral Interface (SPI) bus is a simple communication interface,	串行外设接口（SPI）总线是一种简单的通信接口，
+USB (Universal Serial Bus Device) is widely used to connect either a PC or a USB	USB（通用串行总线设备）广泛用于连接 PC 或 USB
+ sequence is an example which does not match any pinout, configuration nor clock settings and can be directly edited for reuse or removed	该序列仅为示例，不匹配任何引脚、配置或时钟设置，可直接编辑复用或删除。
+PCC measurements are done in 	PCC 测量在以下条件下进行 (PCC measurements are done in)
+ conditions  with V	条件下的测量值，V (conditions with V)
+ or click 	或点击 (or click)
+ in Help menu.	在帮助菜单中。 (in Help menu.)
+ on code generation	关于代码生成 (on code generation)
+ with the 	使用 (with the)
+ consumption in 	功耗，在 (consumption in)
+ step in 	步骤，在 (step in)
+Holding the 	保持 (Holding the)
+Loading IOC 	正在加载 IOC (Loading IOC)
+Rendering UI 	正在渲染界面 (Rendering UI)
+<Ctrl + Mouse left button> down to show alternate pin(s)	按住 Ctrl + 鼠标左键显示备选引脚 (<Ctrl + Mouse left button> down to show alternate pin(s))
+Firmware Name                 Community Version	固件名称                 社区版本 (Firmware Name                 Community Version)
+MiddleWares	中间件 (MiddleWares)
+Makefile	Makefile 构建文件 (Makefile)
+Results at T	结果为 T 条件下 (Results at T)
+no impact	无影响 (no impact)
+typical	典型值 (typical)
+highest	最高 (highest)
+lowest	最低 (lowest)
+\n                or generating output waveforms (output compare and PWM).\n            	或产生输出波形（输出比较与 PWM）。
+SYS_JTMS-SWDIO (Debug Serial Wire)	SYS_JTMS-SWDIO（调试串行线） (SYS_JTMS-SWDIO (Debug Serial Wire))
+&lt;Ctrl + Mouse left button&gt; down to show alternate pin(s)	按住 Ctrl + 鼠标左键显示备选引脚 (&lt;Ctrl + Mouse left button&gt; down to show alternate pin(s))
+SPI2 : Mode Transmit Only Master	SPI2：仅主机发送模式 (SPI2 : Mode Transmit Only Master)
+SPI2_MOSI (Mode Transmit Only Master)	SPI2_MOSI（仅主机发送模式） (SPI2_MOSI (Mode Transmit Only Master))
+SPI2_SCK (Mode Transmit Only Master)	SPI2_SCK（仅主机发送模式） (SPI2_SCK (Mode Transmit Only Master))
+Nested Vectored Interrupt Controller 	嵌套向量中断控制器 (Nested Vectored Interrupt Controller)
+The nested vector interrupt controller NVIC includes the following features:	嵌套向量中断控制器 NVIC 包含以下特性：
+Interrupt unmasking ordering table (interrupt init code is moved after all the peripheral init code)	中断解除屏蔽顺序表（中断初始化代码移到所有外设初始化代码之后） (Interrupt unmasking ordering table (interrupt init code is moved after all the peripheral init code))
+ [DC] GPIO_Output (Output Push Pull:No pull-up and no pull-down)	[DC] GPIO_Output（推挽输出：无上下拉） ([DC] GPIO_Output (Output Push Pull:No pull-up and no pull-down))
+[CS] GPIO_Output (Output Push Pull:No pull-up and no pull-down)	[CS] GPIO_Output（推挽输出：无上下拉） ([CS] GPIO_Output (Output Push Pull:No pull-up and no pull-down))
+[RST] GPIO_Output (Output Push Pull:No pull-up and no pull-down)	[RST] GPIO_Output（推挽输出：无上下拉） ([RST] GPIO_Output (Output Push Pull:No pull-up and no pull-down))
+&#60Ctrl + Mouse left button&#62 down to show alternate pin(s)	按住 Ctrl + 鼠标左键显示备选引脚 (&#60Ctrl + Mouse left button&#62 down to show alternate pin(s))
+1/ Manual change in Sequence Table will disable the 	1/ 手动修改序列表将禁用
+2/ See Chapter about Power Consumption Calculator View.	2/ 参见功耗计算器视图一章。
+: peripherals are just clocked on, some consumptions may be higher/lower than the real value, when all peripherals are enabled consumption may not match datasheet values, consumption of more than one peripheral may be higher than the real value.	：外设仅处于时钟开启状态，实际功耗可能高于或低于此值；当所有外设都启用时，功耗可能与数据手册不符；多个外设同时工作时的功耗可能高于实际值。
+Default Battery is selected by taking the smallest compatible battery based on Max Continuous Current. The battery can be to small if all peripherals are enabled.	默认电池按最大持续电流从兼容电池中选取最小者。若所有外设都启用，该电池可能偏小。
+\n                synchronously.\n            	同步方式。
+Last modified date : 19/11/2026 15:39:01	最后修改日期：19/11/2026 15:39:01 (Last modified date : 19/11/2026 15:39:01)
+Nested Vectored Interrupt Controller	嵌套向量中断控制器 (Nested Vectored Interrupt Controller)
+\n" 16 programmable priority levels (4 bits of interrupt priority are used)	• 16 个可编程优先级（使用 4 位中断优先级） (• 16 programmable priority levels (4 bits of interrupt priority are used))
+\n" implementation of system control registers	• 系统控制寄存器的实现 (• implementation of system control registers)
+\n" low-latency exception and interrupt handling	• 低延迟的异常与中断处理 (• low-latency exception and interrupt handling)
+\n" 68 maskable interrupt channels (not including the 16 interrupt lines of Cortex®-M3)	• 68 个可屏蔽中断通道（不含 Cortex®-M3 的 16 条中断线） (• 68 maskable interrupt channels (not including the 16 interrupt lines of Cortex®-M3))
+\n" power management control	• 电源管理控制
+General Purpose Input/Output (GPIO)	通用输入/输出 (GPIO)
+Direct Memory Access controller (DMA)	直接存储器访问控制器 (DMA)
+FREE Real Time OS (FREERTOS)	FreeRTOS 实时操作系统 (FREERTOS)
+Low-Power Background Autonomous Mode	低功耗后台自主模式 (LPBAM)
+Integrated Op-Amp	集成运算放大器 (Integrated Op-Amp)
+Identification / Authentication / Attestation	标识 / 认证 / 证明 (Identification / Authentication / Attestation)
+Isolation Dual Core	双核隔离 (Isolation Dual Core)
+Isolation Firewall	隔离防火墙 (Isolation Firewall)
+Pin assignment	引脚分配 (Pin assignment)
+Pin, signal and label	引脚、信号与标签 (Pin, signal and label)
+Output window	输出窗口 (Output window)
+SYS Mode and Configuration	系统模式与配置 (SYS Mode and Configuration)
+Clock conflict	时钟冲突 (Clock conflict)
+Window divider	窗口分频 (Window divider)
+Clear/disable functions	清除/禁用功能 (Clear/disable functions)
+Command lines	命令行 (Command lines)
+Conflict resolution	冲突解决 (Conflict resolution)
+Device Tree	设备树 (Device Tree)
+Icons and color scheme	图标与配色 (Icons and color scheme)
+Init order	初始化顺序 (Init order)
+Internal peripheral lists	内部外设列表 (Internal peripheral lists)
+Internal peripherals and interrupts	内部外设与中断 (Internal peripherals and interrupts)
+AMC Timer	AMC 定时器 (AMC Timer)
+HR timer	高分辨率定时器 (HR timer)
+IR timer	红外定时器 (IR timer)
+CAN Total	CAN 总计 (CAN Total)
+I2C Total	I2C 总计 (I2C Total)
+CCM RAM	CCM 内存 (CCM RAM)
+System configuration.	系统配置。 (System configuration.)
+General purpose timer	通用定时器 (General purpose timer)
+System configuration.\n            	系统配置。
+Digital to Analog Converter 	数模转换器
+Inter-IC Sound 	集成电路内置音频总线
+Secure Digital Input Output 	安全数字输入输出
+Universal Asynchronous Receiver/Transmitter 	通用异步收发器 (Universal Asynchronous Receiver/Transmitter)
+Basic timer 	基本定时器
+The basic timer consists of an auto-reload counter driven by a programmable prescaler.	基本定时器由一个自动重载计数器构成，由可编程预分频器驱动。
+\n                It may be used as a generic timer for time-base generation but it is also specifically used to drive the digital-to-analog converter (DAC).\n            	它可用作通用定时器来产生时基，但也专门用于驱动数模转换器 (DAC)。
+The DAC module is a 12-bit, voltage output digital-to-analog converter. The DAC can	DAC 模块是 12 位电压输出型数模转换器。DAC 可 (The DAC module is a 12-bit, voltage output digital-to-analog converter. The DAC can)
+\n                be configured in 8 or 12 bit mode and may be used in conjunction with the DMA controller. In	配置为 8 位或 12 位模式，并可与 DMA 控制器配合使用。在
+\n                12-bit mode, the data could be left or right-aligned.\n            	12 位模式下，数据可采用左对齐或右对齐。
+The SDIO (Secure Digital IO) is a non-volatile memory card format developed by	SDIO（安全数字 I/O）是一种非易失性存储卡格式，由
+\n                the SD Card Association (SDA) for use in portable devices.\n            	SD 卡协会 (SDA) 制定，用于便携设备。
+A UART (Universal Asynchronous Receiver/Transmitter) is a computer hardware device	UART（通用异步收发器）是一种计算机硬件设备，
+\n                for asynchronous serial communication in which the data format and transmission speeds are	用于异步串行通信，其数据格式与传输速率
+\n                configurable. The electric signaling levels and methods (such as differential signaling, etc.)	可配置。电气信号电平与方式（如差分信号等）
+\n                are handled by a driver circuit external to the UART.\n            	由 UART 外部的驱动电路处理。
+I²S (Inter-IC Sound), is an electrical serial bus interface standard used for connecting	I²S（集成电路内置音频总线）是一种电气串行总线接口标准，用于连接
+\n                digital audio devices together. It is used to communicate PCM audio data between integrated circuits	数字音频设备。它用于在集成电路之间传输 PCM 音频数据，
+\n                in an electronic device. The I²S bus separates clock and serial data signals.\n            	位于电子设备内部。I²S 总线将时钟信号与串行数据信号分离。
+The cyclic redundancy check (CRC) is a technique used for detecting errors in digital data,	循环冗余校验 (CRC) 是一种用于检测数字数据错误的技术，
+\n                but without making corrections when errors are detected. It is used in data transmission or	但检测到错误时不会纠正。它用于数据传输或 (but without making corrections when errors are detected. It is used in data transmission or)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can stop the collection of your features usage statistics when you use the application at any time 	您可以随时停止收集功能使用统计数据
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with effect for the future or update your preferences via the menu Help > User Preferences > General Settings.	，自此后生效，或通过菜单 Help > User Preferences > General Settings 更新您的偏好设置。
+Project LCD.ioc has been modified would you like to save the project ?	工程 LCD.ioc 已修改，是否保存？ (Project LCD.ioc has been modified would you like to save the project ?)
+Nested vectored interrupt controller (NVIC)	嵌套向量中断控制器 (NVIC) (Nested vectored interrupt controller (NVIC))
+AZURE RTOS	Azure RTOS 实时操作系统 (AZURE RTOS)
+Arm Cortex-M33 with TrustZone	Arm Cortex-M33（含 TrustZone）(Arm Cortex-M33 with TrustZone)
+Arm Cortex-M7+M4 Dual	Arm Cortex-M7+M4 双核 (Arm Cortex-M7+M4 Dual)
+CAN FD	CAN FD 灵活数据速率 (CAN FD)
+DDR ENC/DEC	DDR 编解码 (DDR ENC/DEC)
+OTF DEC	OTF 解码 (OTF DEC)
+OTF ENC/DEC	OTF 编解码 (OTF ENC/DEC)
+HDMI CEC	HDMI-CEC 消费电子控制 (HDMI CEC)
+HyperFlash	HyperFlash 存储器 (HyperFlash)
+Isolation TrustZone	TrustZone 隔离 (Isolation TrustZone)
+JPEG Codec	JPEG 编解码器 (JPEG Codec)
+LCD TFT Controller	LCD TFT 控制器 (LCD TFT Controller)
+LCD parallel Interface	LCD 并行接口 (LCD parallel Interface)
+LP timer	低功耗定时器 (LP timer)
+MCU Finder	MCU 选型器 (MCU Finder)
+MIPI CSI-2 camera interface	MIPI CSI-2 摄像头接口 (MIPI CSI-2 camera interface)
+MIPI DSI	MIPI DSI 显示接口 (MIPI DSI)
+NeoChrom GPU	NeoChrom 图形处理器 (NeoChrom GPU)
+NeoChrom VG GPU	NeoChrom VG 矢量图形处理器 (NeoChrom VG GPU)
+PCC sequence generator	PCC 序列发生器 (PCC sequence generator)
+PDF report	PDF 报告 (PDF report)
+Parallel camera interface	并行摄像头接口 (Parallel camera interface)
+Pinout compatible	引脚兼容 (Pinout compatible)
+Proxy settings	代理设置 (Proxy settings)
+Quad SPI Total	四线 SPI 总计 (Quad SPI Total)
+DDR3(L)/DDR4/LPDDR4 16-bit	DDR3(L)/DDR4/LPDDR4 16 位 (DDR3(L)/DDR4/LPDDR4 16-bit)
+DDR3(L)/DDR4/LPDDR4 16/32-bit	DDR3(L)/DDR4/LPDDR4 16/32 位 (DDR3(L)/DDR4/LPDDR4 16/32-bit)
+DDR3(L)/LPDDR2/LPDDR3 16-bit	DDR3(L)/LPDDR2/LPDDR3 16 位 (DDR3(L)/LPDDR2/LPDDR3 16-bit)
+DDR3(L)/LPDDR2/LPDDR3 16/32-bit	DDR3(L)/LPDDR2/LPDDR3 16/32 位 (DDR3(L)/LPDDR2/LPDDR3 16/32-bit)
+I2S2 Mode and Configuration	I2S2 模式与配置 (I2S2 Mode and Configuration)
+Untitled - Clock Configuration	未命名 - 时钟配置 (Untitled - Clock Configuration)
+To I2S2 (MHz)	至 I2S2 (MHz)
+To I2S3 (MHz)	至 I2S3 (MHz)
+To SDIO (MHz)	至 SDIO (MHz)
+Radio system (RF)	射频系统 (Radio system (RF))
+SLC NAND	单层单元 NAND 闪存 (SLC NAND)
+Serial NAND	串行 NAND 闪存 (Serial NAND)
+Serial NOR	串行 NOR 闪存 (Serial NOR)
+Segment LCD	段式液晶 (Segment LCD)
+Vref Buffer	基准电压缓冲 (Vref Buffer)
+MemToMem	存储器到存储器 (MemToMem)
+Secure Install/Update	安全安装/更新 (Secure Install/Update)
+Secure Manufacturing	安全制造 (Secure Manufacturing)
+Secure Storage	安全存储 (Secure Storage)
+Security Function	安全功能 (Security Function)
+Silicon Device Lifecycle	芯片生命周期 (Silicon Device Lifecycle)
+Software IP Protection	软件 IP 保护 (Software IP Protection)
+TrustZone	TrustZone 安全隔离 (TrustZone)
+SPI Total	SPI 总计 (SPI Total)
+UART Total	UART 总计 (UART Total)
+Single-precision FPU	单精度浮点单元 (Single-precision FPU)
+USB 2.0 Host	USB 2.0 主机 (USB 2.0 Host)
+USB 3.0 DRD	USB 3.0 双角色设备 (USB 3.0 DRD)
+USB DRD FS	USB 双角色设备全速 (USB DRD FS)
+USB Device	USB 设备 (USB Device)
+USB FS	USB 全速 (USB FS)
+USB OTG FS	USB OTG 全速 (USB OTG FS)
+USB OTG HS	USB OTG 高速 (USB OTG HS)
+USB OTG FS + USB OTG FS/HS	USB OTG 全速 + USB OTG 全速/高速 (USB OTG FS + USB OTG FS/HS)
+USB Power Delivery (USBPD)	USB 电力传输 (USBPD)
+USB Type-C	USB Type-C 接口 (USB Type-C)
+USB-C Power Delivery	USB-C 电力传输 (USB-C Power Delivery)
+USBH HS	USB 主机高速 (USBH HS)
+Universal Serial Bus Type-C™ Power Delivery interface (UCPD)	通用串行总线 Type-C 电力传输接口 (UCPD) (Universal Serial Bus Type-C™ Power Delivery interface (UCPD))
+Junction T° Max	最高结温 (Junction T° Max)
+Junction T° Min	最低结温 (Junction T° Min)
+T° Max	最高温度 (T° Max)
+T° Min	最低温度 (T° Min)
+Ta Max	最高环境温度 (Ta Max)
+Power Max	最大功耗 (Power Max)
+Power Min	最小功耗 (Power Min)
+MCU/MPU Selector	MCU/MPU 选型器 (MCU/MPU Selector)
+New project	新建工程 (New project)
+Part No	料号 (Part No)
+Part Number	料号 (Part Number)
+User constants	用户常量 (User constants)
+LCD.ioc - Pinout & Configuration	LCD.ioc - 引脚与配置 (LCD.ioc - Pinout & Configuration)
+Untitled - Pinout & Configuration	未命名 - 引脚与配置 (Untitled - Pinout & Configuration)
+OTHER INTERFACE	其他接口 (OTHER INTERFACE)
+OTHER PERIPHERAL	其他外设 (OTHER PERIPHERAL)
+all interrupts	所有中断 (all interrupts)
+enabled interrupts	已启用的中断 (enabled interrupts)
+YouTube	YouTube 视频 (YouTube)
+Other videos	其他视频 (Other videos)
+Suggested videos	推荐视频 (Suggested videos)
+Video server:	视频服务器： (Video server:)
+Li-SOCL2(A3400) (1x1)	锂亚硫酰氯电池 A3400 (1x1) (Li-SOCL2(A3400) (1x1))
+All IPs (Middlewares) will be disabled:	所有 IP（中间件）将被禁用： (All IPs (Middlewares) will be disabled:)
+would you like to continue anyway ?	是否仍要继续？ (would you like to continue anyway ?)
+[DC] GPIO_Output (Output Push Pull:No pull-up and no pull-down)	[DC] GPIO_Output（推挽输出：无上下拉） ([DC] GPIO_Output (Output Push Pull:No pull-up and no pull-down))
+STM32 Arm Cortex MPUs	STM32 Arm Cortex 微处理器 (STM32 Arm Cortex MPUs)
+STM32 high performance MCUs	STM32 高性能微控制器 (STM32 high performance MCUs)
+STM32 mainstream MCUs	STM32 主流微控制器 (STM32 mainstream MCUs)
+STM32 ultra low power MCUs	STM32 超低功耗微控制器 (STM32 ultra low power MCUs)
+STM32 wireless MCUs	STM32 无线微控制器 (STM32 wireless MCUs)
+STM32F1 Series	STM32F1 系列 (STM32F1 Series)
+STM32F0x0 value Line	STM32F0x0 超值系列 (STM32F0x0 value Line)
+STM32F100 value Line	STM32F100 超值系列 (STM32F100 value Line)
+STM32F7x0 value line	STM32F7x0 超值系列 (STM32F7x0 value line)
+STM32G0x0 value line	STM32G0x0 超值系列 (STM32G0x0 value line)
+STM32H730 value line	STM32H730 超值系列 (STM32H730 value line)
+STM32H750 value line	STM32H750 超值系列 (STM32H750 value line)
+STM32H7B0 value line	STM32H7B0 超值系列 (STM32H7B0 value line)
+STM32L0x0 value line	STM32L0x0 超值系列 (STM32L0x0 value line)
+STM32L100 value line	STM32L100 超值系列 (STM32L100 value line)
+STM32WBAxM modules	STM32WBAxM 模组 (STM32WBAxM modules)
+STM32WBx0 value line	STM32WBx0 超值系列 (STM32WBx0 value line)
+STM32WBxM modules	STM32WBxM 模组 (STM32WBxM modules)
+Step	步骤 (Step)
+Consumption	功耗 (Consumption)
+Commercial	商业级 (Commercial)
+Evaluation	评估版 (Evaluation)
+Proposal	建议值 (Proposal)
+Preview	预览 (Preview)
+Match	匹配 (Match)
+Restricted	受限 (Restricted)
+Obsolete	已停产 (Obsolete)
+Subtitles	字幕 (Subtitles)
+Updates	更新 (Updates)
+• 16 programmable priority levels (4 bits of interrupt priority are used)	• 16 个可编程优先级（使用 4 位中断优先级）
+• implementation of system control registers	• 系统控制寄存器的实现
+• low-latency exception and interrupt handling	• 低延迟的异常与中断处理
+• 68 maskable interrupt channels (not including the 16 interrupt lines of Cortex®-M3)	• 68 个可屏蔽中断通道（不含 Cortex®-M3 的 16 条中断线）
+on exceptions and NVIC programming, refer to STM32F10xxx Cortex®-M3 programming manual.	有关异常与嵌套向量中断控制器编程，请参阅 STM32F10xxx Cortex®-M3 编程手册
+data storage integrity check.	数据存储完整性检查。
+world to the digital world.	世界到数字世界。
+• power management control	• 电源管理控制
+Reference manual - Connectivity line	参考手册 - 互联型 (Reference manual - Connectivity line)
+or generating output waveforms (output compare and PWM).	或产生输出波形（输出比较与 PWM）。
+synchronously.	同步方式。
+" 16 programmable priority levels (4 bits of interrupt priority are used)	• 16 个可编程优先级（使用 4 位中断优先级） (• 16 programmable priority levels (4 bits of interrupt priority are used))
+" implementation of system control registers	• 系统控制寄存器的实现 (• implementation of system control registers)
+" low-latency exception and interrupt handling	• 低延迟的异常与中断处理 (• low-latency exception and interrupt handling)
+" 68 maskable interrupt channels (not including the 16 interrupt lines of Cortex®-M3)	• 68 个可屏蔽中断通道（不含 Cortex®-M3 的 16 条中断线） (• 68 maskable interrupt channels (not including the 16 interrupt lines of Cortex®-M3))
+" power management control	• 电源管理控制
+It may be used as a generic timer for time-base generation but it is also specifically used to drive the digital-to-analog converter (DAC).	它可用作通用定时器来产生时基，但也专门用于驱动数模转换器 (DAC)。
+be configured in 8 or 12 bit mode and may be used in conjunction with the DMA controller. In	配置为 8 位或 12 位模式，并可与 DMA 控制器配合使用。在
+12-bit mode, the data could be left or right-aligned.	12 位模式下，数据可采用左对齐或右对齐。
+the SD Card Association (SDA) for use in portable devices.	SD 卡协会 (SDA) 制定，用于便携设备。
+for asynchronous serial communication in which the data format and transmission speeds are	用于异步串行通信，其数据格式与传输速率
+configurable. The electric signaling levels and methods (such as differential signaling, etc.)	可配置。电气信号电平与方式（如差分信号等）
+are handled by a driver circuit external to the UART.	由 UART 外部的驱动电路处理。
+digital audio devices together. It is used to communicate PCM audio data between integrated circuits	数字音频设备。它用于在集成电路之间传输 PCM 音频数据，
+in an electronic device. The I²S bus separates clock and serial data signals.	位于电子设备内部。I²S 总线将时钟信号与串行数据信号分离。
+SDIO Clock divider bypass	SDIO 时钟分频器旁路 (SDIO Clock divider bypass)
+SDIO Clock output enable when the bus is idle	总线空闲时使能 SDIO 时钟输出 (SDIO Clock output enable when the bus is idle)
+SDIO hardware flow control	SDIO 硬件流控制 (SDIO hardware flow control)
+SDIOCLK clock divide factor	SDIOCLK 时钟分频系数 (SDIOCLK clock divide factor)
+Clock phase	时钟相位 (Clock phase)
+Clock edge	时钟边沿 (Clock edge)
+ClockDivider	时钟分频 (ClockDivider)
+BusWide	总线位宽 (BusWide)
+SDIO Card Detect	SDIO 卡检测 (SDIO Card Detect)
+SDIO Detection	SDIO 检测 (SDIO Detection)
+SDIO settings	SDIO 设置 (SDIO settings)
+SDIO Clock Frequency	SDIO 时钟频率 (SDIO Clock Frequency)
