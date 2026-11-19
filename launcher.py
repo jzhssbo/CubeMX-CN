@@ -302,6 +302,72 @@ def gui() -> None:
         (STATE / "logs").mkdir(parents=True, exist_ok=True)
         open_path(STATE / "logs")
     ttk.Button(footer, text="查看日志", command=open_logs).pack(side="left", padx=12)
+
+    def export_gaps() -> None:
+        """Filter recorded traces into a translation checklist for this user's chip."""
+        logs = STATE / "logs"
+        traces = sorted(logs.glob("*trace*.tsv")) if logs.is_dir() else []
+        if not traces:
+            messagebox.showinfo(
+                "还没有记录",
+                "先勾选「记录界面显示过的文字」，启动中文版并用一遍界面，"
+                "正常关闭 CubeMX 后再来导出。",
+                parent=root)
+            return
+        target = filedialog.asksaveasfilename(
+            title="保存待翻译清单",
+            defaultextension=".md",
+            initialfile="待翻译清单.md",
+            filetypes=[("Markdown（便于交给 AI 翻译）", "*.md"),
+                       ("TSV（可直接追加进词库）", "*.tsv"),
+                       ("文本", "*.txt")],
+            parent=root)
+        if not target:
+            return
+        destination = Path(target)
+        # Under PyInstaller __file__ points into a temp extraction dir, so the tools
+        # folder must be resolved from _MEIPASS when frozen.
+        if getattr(sys, "frozen", False):
+            tools_dir = Path(getattr(sys, "_MEIPASS", APP_ROOT)) / "tools"
+        else:
+            tools_dir = Path(__file__).resolve().parent / "tools"
+        try:
+            sys.path.insert(0, str(tools_dir))
+            from filter_trace import collect, load_dictionary  # noqa: PLC0415
+        except Exception as error:  # pragma: no cover - packaging guard
+            messagebox.showerror("筛选组件缺失", f"找不到 filter_trace 模块：{error}", parent=root)
+            return
+        try:
+            entries, translated = load_dictionary(BUNDLE / "translations/zh_CN.tsv")
+            gaps, buckets, seen = collect(traces, entries, translated)
+            ordered = sorted(gaps.items())
+            if destination.suffix.lower() == ".tsv":
+                body = "".join(f"{text}\t\n" for text, _ in ordered)
+            elif destination.suffix.lower() == ".txt":
+                body = "".join(text + "\n" for text, _ in ordered)
+            else:
+                lines = ["# 待翻译清单", "",
+                         f"来源：{len(traces)} 份记录、{seen} 条界面文字。",
+                         f"候选：**{len(ordered)}** 条（已滤掉型号、引脚名、数值等噪声）。", "",
+                         "按 `中文 (English original)` 格式翻译；实例名与引脚名保留原文，"
+                         "写成 `原名（中文注释）`。", ""]
+                for text, bucket in ordered:
+                    suffix = "　_（界面显示被裁切）_" if bucket == "review-truncated" else ""
+                    lines.append(f"- `{text}`{suffix}")
+                body = "\n".join(lines) + "\n"
+            with destination.open("w", encoding="utf-8", newline="\n") as handle:
+                handle.write(body)
+        except Exception as error:
+            messagebox.showerror("导出失败", str(error), parent=root)
+            return
+        dropped = sum(n for name, n in buckets.items() if name.startswith("skip-"))
+        status.set(f"已导出 {len(ordered)} 条待翻译，滤掉 {dropped} 条噪声。")
+        try:
+            os.startfile(str(destination.parent))
+        except OSError:
+            pass
+
+    ttk.Button(footer, text="导出待翻译清单", command=export_gaps).pack(side="left", padx=12)
     ttk.Label(body, textvariable=status, style="Sub.TLabel", wraplength=650).pack(anchor="w", pady=(18, 0))
     # Size from the actual DPI-scaled widgets so the footer remains visible at 150%/200%.
     root.update_idletasks()

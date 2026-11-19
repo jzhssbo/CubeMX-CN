@@ -119,6 +119,9 @@ public final class Translator {
 
     private static void record(String original, String translated, boolean hit) {
         if (!tracing) return;
+        // translate() runs more than once on the same component, so a second pass sees the
+        // Chinese we already produced. That is not a dictionary gap; do not log it as one.
+        if (!hit && translatedValues.contains(original.strip())) hit = true;
         traces.putIfAbsent(original, new TraceRow(original, translated, hit));
     }
 

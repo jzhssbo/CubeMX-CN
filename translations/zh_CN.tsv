@@ -13330,6 +13330,8 @@ USBH_HS_OVRCUR	USBH_HS_OVRCUR（通用串行总线主机过流检测）
 USBH_HS_TXRTUNE	USBH_HS_TXRTUNE（通用串行总线主机发送调谐）
 USBH_HS_VBUSEN	USBH_HS_VBUSEN（通用串行总线主机总线电压使能）
 USB_NOE	USB_NOE（通用串行总线输出使能）
+USB_OTG_FS	USB_OTG_FS（通用串行总线 OTG 全速）
+USB_OTG_HS	USB_OTG_HS（通用串行总线 OTG 高速）
 USB_OTG_FS_DM	USB_OTG_FS_DM（通用串行总线 OTG 全速数据负线）
 USB_OTG_FS_DP	USB_OTG_FS_DP（通用串行总线 OTG 全速数据正线）
 USB_OTG_FS_ID	USB_OTG_FS_ID（通用串行总线 OTG 全速身份识别）
