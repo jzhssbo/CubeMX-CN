@@ -213,6 +213,35 @@ def gui() -> None:
     style.configure("TButton", font=("Microsoft YaHei UI", 10), padding=(15, 10))
     style.configure("Primary.TButton", background="#1169d3", foreground="white")
     style.map("Primary.TButton", background=[("active", "#0c54ac")])
+    # The clam theme draws a cross for "selected", which reads as "off" on Windows.
+    # Replace both indicator states with check marks drawn here, so the control looks
+    # native and cannot be misread.
+    def _indicator(checked: bool) -> tk.PhotoImage:
+        size = 16
+        image = tk.PhotoImage(width=size, height=size)
+        image.put("#ffffff", to=(0, 0, size, size))          # clear canvas
+        image.put("#c8d2e0", to=(0, 0, size, 1))              # top border
+        image.put("#c8d2e0", to=(0, size - 1, size, size))     # bottom border
+        image.put("#c8d2e0", to=(0, 0, 1, size))              # left border
+        image.put("#c8d2e0", to=(size - 1, 0, size, size))     # right border
+        if checked:
+            for x, y in ((3, 8), (4, 9), (5, 10), (6, 9), (7, 8), (8, 7), (9, 6), (10, 5), (11, 4)):
+                image.put("#1169d3", to=(x, y, x + 2, y + 2))
+        return image
+    _checked_icon = _indicator(True)
+    _unchecked_icon = _indicator(False)
+    style.element_create("CubemxCn.Indicator", "image", _unchecked_icon,
+                         ("selected", _checked_icon), sticky="", padding=(2, 2))
+    style.layout("CubemxCn.TCheckbutton", [
+        ("Checkbutton.padding", {"sticky": "nswe", "children": [
+            ("CubemxCn.Indicator", {"side": "left", "sticky": ""}),
+            ("Checkbutton.focus", {"side": "left", "sticky": "w", "children": [
+                ("Checkbutton.label", {"sticky": "nswe"}),
+            ]}),
+        ]}),
+    ])
+    style.configure("CubemxCn.TCheckbutton", background="#f3f6fb",
+                    font=("Microsoft YaHei UI", 10), foreground="#29334b")
     body = ttk.Frame(root, padding=30)
     body.pack(fill="both", expand=True)
     ttk.Label(body, text="CubeMX-CN", style="Title.TLabel").pack(anchor="w")
@@ -234,7 +263,7 @@ def gui() -> None:
     actions.pack(fill="x", pady=(26, 18))
     trace_var = tk.BooleanVar(value=(STATE / "trace.flag").exists())
     trace_box = ttk.Checkbutton(body, text="记录界面显示过的文字（用于补充词库，不影响使用）",
-                                variable=trace_var)
+                                variable=trace_var, style="CubemxCn.TCheckbutton")
     trace_box.pack(anchor="w", pady=(0, 6))
 
     def persist_trace_flag() -> None:
