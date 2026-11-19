@@ -15,6 +15,14 @@ public final class Translator {
     private static final Map<Font, Font> fonts = new java.util.concurrent.ConcurrentHashMap<>();
     private static final String CJK_FONT = "Microsoft YaHei UI";
 
+    // Optional runtime capture: -Dcubemx.cn.trace=<path>
+    // Records each distinct string the renderer actually receives, plus whether it hit the
+    // dictionary. Off unless the property is set, so a normal launch pays nothing.
+    private static final java.util.concurrent.ConcurrentMap<String, TraceRow> traces =
+            new java.util.concurrent.ConcurrentHashMap<>();
+    private static volatile boolean tracing;
+    private static volatile Path tracePath;
+
     public static void initialize() throws IOException {
         Path path = Path.of(System.getProperty("cubemx.cn.dictionary"));
         Map<String, String> entries = new LinkedHashMap<>();
@@ -34,24 +42,84 @@ public final class Translator {
         dictionary = Collections.unmodifiableMap(entries);
         translatedValues = Set.copyOf(entries.values());
         System.err.println("[CubeMX-CN] Dictionary entries=" + entries.size());
+        startTracing();
+        Runtime.getRuntime().addShutdownHook(new Thread(Translator::flushTraces, "cubemx-cn-trace"));
+    }
+
+    private static void startTracing() {
+        String target = System.getProperty("cubemx.cn.trace");
+        if (target == null || target.isBlank()) return;
+        try {
+            tracePath = Path.of(target).toAbsolutePath();
+            if (tracePath.getParent() != null) Files.createDirectories(tracePath.getParent());
+            tracing = true;
+            System.err.println("[CubeMX-CN] Tracing rendered strings to " + tracePath);
+        } catch (Exception e) {
+            tracing = false;
+            System.err.println("[CubeMX-CN] Trace disabled: " + e);
+        }
+    }
+
+    private static final class TraceRow {
+        final String original;
+        final String translated;
+        final boolean hit;
+        TraceRow(String original, String translated, boolean hit) {
+            this.original = original;
+            this.translated = translated;
+            this.hit = hit;
+        }
+    }
+
+    /** Writes TSV: hit, original, translated. Sorted for stable diffs. */
+    static void flushTraces() {
+        if (!tracing || tracePath == null) return;
+        Map<String, TraceRow> snapshot = new TreeMap<>(traces);
+        StringBuilder sb = new StringBuilder(snapshot.size() * 64);
+        sb.append("hit\toriginal\ttranslated\n");
+        for (TraceRow row : snapshot.values()) {
+            sb.append(row.hit ? "1" : "0").append('\t')
+              .append(row.original.replace("\t", "\\t").replace("\n", "\\n").replace("\r", "\\r")).append('\t')
+              .append(row.translated.replace("\t", "\\t").replace("\n", "\\n").replace("\r", "\\r")).append('\n');
+        }
+        try {
+            Files.writeString(tracePath, sb.toString(), StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            System.err.println("[CubeMX-CN] Trace flush failed: " + e);
+        }
     }
 
     public static String translate(JComponent component, String text) {
         if (text == null || text.isEmpty() || isUserContent(component)) return text;
         String result = dictionary.get(text);
-        if (result != null) return result;
+        if (result != null) {
+            record(text, result, true);
+            return result;
+        }
         // Preserve display padding and colon/ellipsis punctuation without substring replacement.
         String core = text.strip();
         result = dictionary.get(core);
-        if (result != null) return preservePadding(text, core, result);
+        if (result != null) {
+            record(text, result, true);
+            return preservePadding(text, core, result);
+        }
         for (String suffix : new String[]{"...", "…", ":"}) {
             if (core.endsWith(suffix)) {
                 String stem = core.substring(0, core.length() - suffix.length()).stripTrailing();
                 result = dictionary.get(stem);
-                if (result != null) return preservePadding(text, core, result + suffix);
+                if (result != null) {
+                    record(text, result, true);
+                    return preservePadding(text, core, result + suffix);
+                }
             }
         }
+        record(text, text, false);
         return text;
+    }
+
+    private static void record(String original, String translated, boolean hit) {
+        if (!tracing) return;
+        traces.putIfAbsent(original, new TraceRow(original, translated, hit));
     }
 
     private static String preservePadding(String text, String core, String replacement) {

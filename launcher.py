@@ -132,7 +132,8 @@ def java_options(folder: Path) -> list[str]:
 
 
 def launch(folder: Path, chinese: bool = True, capture: Path | None = None,
-           dictionary: Path | None = None, project: Path | None = None) -> tuple[subprocess.Popen, Path, dict]:
+           dictionary: Path | None = None, project: Path | None = None,
+           trace: bool = False) -> tuple[subprocess.Popen, Path, dict]:
     info = inspect_install(folder)
     folder = Path(info["installation"])
     STATE.mkdir(parents=True, exist_ok=True)
@@ -151,6 +152,11 @@ def launch(folder: Path, chinese: bool = True, capture: Path | None = None,
         command.extend([f"-javaagent:{jvm_path(runtime / 'cubemx-cn-agent.jar')}", f"-Dcubemx.cn.dictionary={jvm_path(runtime_dictionary)}"])
         if capture:
             command.append(f"-Dcubemx.cn.capture={capture.resolve()}")
+        if trace:
+            # One file per session so several days of use do not overwrite each other.
+            trace_path = logs / f"trace-{stamp}.tsv"
+            command.append(f"-Dcubemx.cn.trace={trace_path}")
+            info["trace"] = str(trace_path)
     command.extend(["-jar", info["executable"]])
     if project is not None:
         if project.suffix.lower() != ".ioc" or not project.is_file():
@@ -226,6 +232,23 @@ def gui() -> None:
     ttk.Label(body, text="适用于传统版 STM32CubeMX / Java 21。", style="Sub.TLabel").pack(anchor="w")
     actions = ttk.Frame(body)
     actions.pack(fill="x", pady=(26, 18))
+    trace_var = tk.BooleanVar(value=(STATE / "trace.flag").exists())
+    trace_box = ttk.Checkbutton(body, text="记录界面显示过的文字（用于补充词库，不影响使用）",
+                                variable=trace_var)
+    trace_box.pack(anchor="w", pady=(0, 6))
+
+    def persist_trace_flag() -> None:
+        try:
+            STATE.mkdir(parents=True, exist_ok=True)
+            flag = STATE / "trace.flag"
+            if trace_var.get():
+                flag.write_text("1", encoding="utf-8")
+            elif flag.exists():
+                flag.unlink()
+        except OSError:
+            pass
+
+    trace_box.configure(command=persist_trace_flag)
     status = tk.StringVar(value="就绪。选择启动语言即可。")
     child: list[subprocess.Popen] = []
     def complete(error: Exception | None, log: Path | None, chinese: bool) -> None:
@@ -244,7 +267,7 @@ def gui() -> None:
         status.set("正在检查安装并启动，请稍候…")
         def worker() -> None:
             try:
-                process, log, _ = launch(selected, chinese)
+                process, log, info = launch(selected, chinese, trace=trace_var.get())
                 child.append(process)
                 if chinese:
                     wait_ready(process, log)
@@ -297,12 +320,15 @@ def main() -> int:
     parser.add_argument("--capture", type=Path, help="开发验证：30 秒后抓取此进程窗口，指定输出前缀")
     parser.add_argument("--dictionary", type=Path, help="指定 UTF-8 TSV 词典")
     parser.add_argument("--project", type=Path, help="启动时打开指定 .ioc 文件")
+    parser.add_argument("--trace", action="store_true",
+                        help="记录界面实际渲染的字符串到 logs/trace-<时间>.tsv，用于发现词库缺口")
     args = parser.parse_args()
     try:
         if args.inspect:
             result = inspect_install(args.inspect)
         elif args.launch:
-            process, log, result = launch(args.launch, not args.english, args.capture, args.dictionary, args.project)
+            process, log, result = launch(args.launch, not args.english, args.capture,
+                                          args.dictionary, args.project, args.trace)
             if not args.english:
                 wait_ready(process, log)
             result["log"] = str(log)
