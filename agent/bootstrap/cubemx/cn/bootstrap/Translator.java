@@ -20,6 +20,8 @@ public final class Translator {
     // dictionary. Off unless the property is set, so a normal launch pays nothing.
     private static final java.util.concurrent.ConcurrentMap<String, TraceRow> traces =
             new java.util.concurrent.ConcurrentHashMap<>();
+    private static final java.util.concurrent.ConcurrentMap<String, String> missNotes =
+            new java.util.concurrent.ConcurrentHashMap<>();
     private static volatile boolean tracing;
     private static volatile Path tracePath;
 
@@ -90,7 +92,10 @@ public final class Translator {
         if (name.contains("JTabbedPane")) return "tab";
         if (name.contains("JCheckBox") || name.contains("JRadioButton")) return "choice";
         if (name.contains("JPanel") || name.contains("JViewport")) return "panel";
-        return "other";
+        // Keep the concrete class name: several CubeMX panels draw their own text,
+        // and knowing the real type is what distinguishes a hand-painted link from
+        // an ordinary label. "other" alone says nothing.
+        return "other:" + name;
     }
 
     /** Writes TSV: hit, original, translated. Sorted for stable diffs. */
@@ -107,6 +112,16 @@ public final class Translator {
         }
         try {
             Files.writeString(tracePath, sb.toString(), StandardCharsets.UTF_8);
+            Path missPath = tracePath.resolveSibling(
+                    tracePath.getFileName().toString().replace(".tsv", "-miss.txt"));
+            StringBuilder mb = new StringBuilder();
+            for (Map.Entry<String, String> e : new TreeMap<>(missNotes).entrySet()) {
+                String text = e.getKey().substring(e.getKey().indexOf('|') + 1);
+                mb.append(e.getValue()).append('\n')
+                  .append("  text=").append(text.replace("\\", "\\\\").replace("\n", "\\n"))
+                  .append('\n');
+            }
+            Files.writeString(missPath, mb.toString(), StandardCharsets.UTF_8);
         } catch (IOException e) {
             System.err.println("[CubeMX-CN] Trace flush failed: " + e);
         }
@@ -137,8 +152,80 @@ public final class Translator {
                 }
             }
         }
+        // Tooltips that wrap a label across lines arrive with the break inside the text,
+        // e.g. "List \n    of Peripheral DMA Requests". strip() only trims the ends, so
+        // collapse inner runs of whitespace (including literal \n) and try once more.
+        String squashed = squash(core);
+        if (!squashed.equals(core)) {
+            result = dictionary.get(squashed);
+            if (result != null) {
+                record(text, result, true, kind);
+                return result;
+            }
+        }
+        // Pin-table rows read "(28)-PB2 : Reset_State". The pin name must stay as-is, but
+        // the state word is ordinary text. Translating the whole row would need one entry
+        // per pin, so split it and translate only the state.
+        java.util.regex.Matcher pin = PIN_ROW.matcher(core);
+        if (pin.matches()) {
+            String state = pin.group("state");
+            String zh = dictionary.get(state);
+            if (zh == null) zh = dictionary.get(squash(state));
+            if (zh != null) {
+                String rebuilt = text.substring(0, text.indexOf(':') + 1) + " " + zh;
+                record(text, rebuilt, true, kind);
+                return rebuilt;
+            }
+        }
         record(text, text, false, kind);
+        if (tracing) noteMiss(text);
         return text;
+    }
+
+    private static final java.util.regex.Pattern PIN_ROW =
+            java.util.regex.Pattern.compile("^\\(\\d+\\)-(?<pin>[A-Za-z0-9_\\-/]+) ?: ?(?<state>[A-Za-z_]+)$");
+
+    /**
+     * Record why a lookup failed: the exact code units the renderer passed.
+     * A visually identical string can still differ by an invisible character,
+     * and only the code units make that visible.
+     */
+    private static void noteMiss(String text) {
+        if (text.length() < 20 || missNotes.size() > 4000) return;
+        String key = dictionary.size() + "|" + text;
+        if (missNotes.containsKey(key)) return;
+        StringBuilder hex = new StringBuilder(text.length() * 2);
+        for (int i = 0; i < Math.min(text.length(), 60); i++) {
+            hex.append(String.format("%02x", (int) text.charAt(i)));
+        }
+        String stripped = text.strip();
+        String detail = "len=" + text.length()
+                + " strippedInDict=" + dictionary.containsKey(stripped)
+                + " squashedInDict=" + dictionary.containsKey(squash(stripped))
+                + " hex=" + hex;
+        missNotes.put(key, detail);
+    }
+
+    /** Collapse every whitespace run, literal backslash-n included, into one space. */
+    private static String squash(String text) {
+        StringBuilder sb = new StringBuilder(text.length());
+        boolean pending = false;
+        for (int i = 0; i < text.length(); i++) {
+            char c = text.charAt(i);
+            if (c == '\\' && i + 1 < text.length() && text.charAt(i + 1) == 'n') {
+                pending = true;
+                i++;
+                continue;
+            }
+            if (Character.isWhitespace(c)) {
+                pending = true;
+                continue;
+            }
+            if (pending && sb.length() > 0) sb.append(' ');
+            pending = false;
+            sb.append(c);
+        }
+        return sb.toString();
     }
 
     private static void record(String original, String translated, boolean hit, String kind) {
