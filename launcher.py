@@ -368,21 +368,44 @@ def gui() -> None:
             return
         try:
             entries, translated = load_dictionary(BUNDLE / "translations/zh_CN.tsv")
-            gaps, buckets, seen = collect(traces, entries, translated)
-            ordered = sorted(gaps.items())
+            groups, buckets, seen = collect(traces, entries, translated)
+            sections = [
+                ("pin", "一、引脚配置（优先，全部保留）"),
+                ("clock", "二、时钟树"),
+                ("combo", "三、下拉/列表选项"),
+                ("other", "四、其余界面文案"),
+            ]
+            total = sum(len(groups[name]) for name, _ in sections)
             if destination.suffix.lower() == ".tsv":
-                body = "".join(f"{text}\t\n" for text, _ in ordered)
+                body = "".join(
+                    f"{text}\t\n"
+                    for name, _ in sections
+                    for text in sorted(groups[name])
+                )
             elif destination.suffix.lower() == ".txt":
-                body = "".join(text + "\n" for text, _ in ordered)
+                lines = []
+                for name, title in sections:
+                    items = sorted(groups[name])
+                    if not items:
+                        continue
+                    lines.append(f"### {title}（{len(items)} 条）")
+                    lines.extend(items)
+                body = "\n".join(lines) + "\n"
             else:
                 lines = ["# 待翻译清单", "",
-                         f"来源：{len(traces)} 份记录、{seen} 条界面文字。",
-                         f"候选：**{len(ordered)}** 条（已滤掉型号、引脚名、数值等噪声）。", "",
+                         f"来源：{len(traces)} 份记录、{seen} 条界面文字。候选合计 **{total}** 条。", "",
                          "按 `中文 (English original)` 格式翻译；实例名与引脚名保留原文，"
-                         "写成 `原名（中文注释）`。", ""]
-                for text, bucket in ordered:
-                    suffix = "　_（界面显示被裁切）_" if bucket == "review-truncated" else ""
-                    lines.append(f"- `{text}`{suffix}")
+                         "写成 `原名（中文注释）`。引脚配置优先级最高，请优先处理。", ""]
+                for name, title in sections:
+                    items = sorted(groups[name].items())
+                    if not items:
+                        continue
+                    lines.append(f"## {title}（{len(items)} 条）")
+                    lines.append("")
+                    for text, bucket in items:
+                        suffix = "　_（界面显示被裁切）_" if bucket == "review-truncated" else ""
+                        lines.append(f"- `{text}`{suffix}")
+                    lines.append("")
                 body = "\n".join(lines) + "\n"
             with destination.open("w", encoding="utf-8", newline="\n") as handle:
                 handle.write(body)
@@ -390,7 +413,7 @@ def gui() -> None:
             messagebox.showerror("导出失败", str(error), parent=root)
             return
         dropped = sum(n for name, n in buckets.items() if name.startswith("skip-"))
-        status.set(f"已导出 {len(ordered)} 条待翻译，滤掉 {dropped} 条噪声。")
+        status.set(f"已导出 {total} 条待翻译，滤掉 {dropped} 条噪声。")
         try:
             os.startfile(str(destination.parent))
         except OSError:

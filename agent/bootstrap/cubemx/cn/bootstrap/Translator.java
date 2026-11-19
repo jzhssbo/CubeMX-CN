@@ -64,11 +64,33 @@ public final class Translator {
         final String original;
         final String translated;
         final boolean hit;
-        TraceRow(String original, String translated, boolean hit) {
+        final String kind;
+        TraceRow(String original, String translated, boolean hit, String kind) {
             this.original = original;
             this.translated = translated;
             this.hit = hit;
+            this.kind = kind;
         }
+    }
+
+    /**
+     * Coarse widget category, so a later pass can keep pin configuration, clock tree and
+     * drop-down labels apart instead of treating every rendered string the same.
+     */
+    private static String kindOf(Component component) {
+        if (component == null) return "unknown";
+        String name = component.getClass().getName();
+        if (name.contains("ComboBox") || name.contains("Combo")) return "combo";
+        if (name.contains("JTree") || name.contains("Tree")) return "tree";
+        if (name.contains("JTable") || name.contains("Table")) return "table";
+        if (name.contains("JList")) return "list";
+        if (name.contains("JLabel")) return "label";
+        if (name.contains("JButton") || name.contains("Button")) return "button";
+        if (name.contains("JTextField") || name.contains("JTextArea")) return "text";
+        if (name.contains("JTabbedPane")) return "tab";
+        if (name.contains("JCheckBox") || name.contains("JRadioButton")) return "choice";
+        if (name.contains("JPanel") || name.contains("JViewport")) return "panel";
+        return "other";
     }
 
     /** Writes TSV: hit, original, translated. Sorted for stable diffs. */
@@ -76,11 +98,12 @@ public final class Translator {
         if (!tracing || tracePath == null) return;
         Map<String, TraceRow> snapshot = new TreeMap<>(traces);
         StringBuilder sb = new StringBuilder(snapshot.size() * 64);
-        sb.append("hit\toriginal\ttranslated\n");
+        sb.append("hit\toriginal\ttranslated\tkind\n");
         for (TraceRow row : snapshot.values()) {
             sb.append(row.hit ? "1" : "0").append('\t')
               .append(row.original.replace("\t", "\\t").replace("\n", "\\n").replace("\r", "\\r")).append('\t')
-              .append(row.translated.replace("\t", "\\t").replace("\n", "\\n").replace("\r", "\\r")).append('\n');
+              .append(row.translated.replace("\t", "\\t").replace("\n", "\\n").replace("\r", "\\r")).append('\t')
+              .append(row.kind).append('\n');
         }
         try {
             Files.writeString(tracePath, sb.toString(), StandardCharsets.UTF_8);
@@ -91,16 +114,17 @@ public final class Translator {
 
     public static String translate(JComponent component, String text) {
         if (text == null || text.isEmpty() || isUserContent(component)) return text;
+        String kind = tracing ? kindOf(component) : null;
         String result = dictionary.get(text);
         if (result != null) {
-            record(text, result, true);
+            record(text, result, true, kind);
             return result;
         }
         // Preserve display padding and colon/ellipsis punctuation without substring replacement.
         String core = text.strip();
         result = dictionary.get(core);
         if (result != null) {
-            record(text, result, true);
+            record(text, result, true, kind);
             return preservePadding(text, core, result);
         }
         for (String suffix : new String[]{"...", "…", ":"}) {
@@ -108,21 +132,25 @@ public final class Translator {
                 String stem = core.substring(0, core.length() - suffix.length()).stripTrailing();
                 result = dictionary.get(stem);
                 if (result != null) {
-                    record(text, result, true);
+                    record(text, result, true, kind);
                     return preservePadding(text, core, result + suffix);
                 }
             }
         }
-        record(text, text, false);
+        record(text, text, false, kind);
         return text;
     }
 
-    private static void record(String original, String translated, boolean hit) {
+    private static void record(String original, String translated, boolean hit, String kind) {
         if (!tracing) return;
         // translate() runs more than once on the same component, so a second pass sees the
         // Chinese we already produced. That is not a dictionary gap; do not log it as one.
-        if (!hit && translatedValues.contains(original.strip())) hit = true;
-        traces.putIfAbsent(original, new TraceRow(original, translated, hit));
+        final boolean resolvedHit = !hit && translatedValues.contains(original.strip()) ? true : hit;
+        final String resolvedKind = (kind == null || kind.isEmpty()) ? "unknown" : kind;
+        traces.compute(original, (key, existing) ->
+                (existing != null && !"unknown".equals(existing.kind))
+                        ? existing
+                        : new TraceRow(original, translated, resolvedHit, resolvedKind));
     }
 
     private static String preservePadding(String text, String core, String replacement) {

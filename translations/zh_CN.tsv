@@ -9086,10 +9086,10 @@ Cortex-M4 FW	Cortex-M4 固件 (Cortex-M4 FW)
 CortexA35NS OS	Cortex-A35 非安全系统 (CortexA35NS OS)
 CortexA35NS SSBL	Cortex-A35 非安全二级引导 (CortexA35NS SSBL)
 CortexM33NS	Cortex-M33 非安全 (CortexM33NS)
-Cortex-M0	Cortex-M0 内核 (Cortex-M0)
-Cortex-M0+	Cortex-M0+ 内核 (Cortex-M0+)
-Cortex-M4	Cortex-M4 内核 (Cortex-M4)
-Cortex-M7	Cortex-M7 内核 (Cortex-M7)
+Cortex-M0	Cortex-M0 内核
+Cortex-M0+	Cortex-M0+ 内核
+Cortex-M4	Cortex-M4 内核
+Cortex-M7	Cortex-M7 内核
 GPIO port I/O pin 0	GPIO 端口输入/输出引脚 0 (GPIO port I/O pin 0)
 GPIO port I/O pin 1	GPIO 端口输入/输出引脚 1 (GPIO port I/O pin 1)
 GPIO port I/O pin 2	GPIO 端口输入/输出引脚 2 (GPIO port I/O pin 2)
@@ -9994,11 +9994,11 @@ BLE	BLE（低功耗蓝牙）
 Contiki-NG	Contiki-NG（无线传感网）
 Cryptographic	Cryptographic（加密库）
 FatFs	FatFs（文件系统）
-FileX	FileX（文件系统） (FileX)
-FreeRTOS	FreeRTOS（实时系统） (FreeRTOS)
+FileX	FileX（文件系统）
+FreeRTOS	FreeRTOS（实时系统）
 GNSS	GNSS（卫星定位）
 KMS	KMS（密钥管理）
-LevelX	LevelX（闪存均衡） (LevelX)
+LevelX	LevelX（闪存均衡）
 LibJPEG	LibJPEG（JPEG 解码）
 LoRaWan	LoRaWan（远距无线）
 LwIP	LwIP（轻量 IP 栈）
@@ -10006,24 +10006,24 @@ MEMS	MEMS（微机电传感）
 NDEF	NDEF（NFC 数据格式）
 NFC	NFC（近场通信）
 NetXDuo	NetXDuo（TCP/IP 栈）
-OpenAMP	OpenAMP（多核通信） (OpenAMP)
+OpenAMP	OpenAMP（多核通信）
 SBSFU	SBSFU（安全启动更新）
 STermWin	STermWin（图形库）
 STemWin	STemWin（图形库）
-Sigfox	Sigfox（低功耗广域） (Sigfox)
+Sigfox	Sigfox（低功耗广域）
 SubGHz_Phy	SubGHz_Phy（Sub-GHz 物理层）
 TFM	TFM（TrustZone 框架）
 Thread	Thread（无线网状网）
-ThreadX	ThreadX（实时系统） (ThreadX)
+ThreadX	ThreadX（实时系统）
 TouchGFX	TouchGFX（图形框架）
-TouchSensing	TouchSensing（触摸感应） (TouchSensing)
+TouchSensing	TouchSensing（触摸感应）
 USBXDevice	USBXDevice（USBX 设备）
 USBXHost	USBXHost（USBX 主机）
-USB_Device	USB_Device（通用串行总线设备库） (USB_Device)
+USB_Device	USB_Device（通用串行总线设备库）
 USB_Host	USB_Host（通用串行总线主机库）
 USB_PD_Lib	USB_PD_Lib（通用串行总线电力传输库）
 Zigbee	Zigbee（无线网状网）
-mbedTLS	mbedTLS（加密库） (mbedTLS)
+mbedTLS	mbedTLS（加密库）
 # ── 参数组标题 Group 属性（2026-11-10 第 24 批）──
 ADC Trigger 1	模数转换器触发 1 (ADC Trigger 1)
 ADC Trigger 10	模数转换器触发 10 (ADC Trigger 10)
@@ -10322,10 +10322,10 @@ Cable Detection Parameters	线缆检测参数 (Cable Detection Parameters)
 Port 0 Parameters	端口 0 参数 (Port 0 Parameters)
 Not supported	不支持 (Not supported)
 # ── 引脚右键菜单通用项（2026-11-10 第 26 批）──
-Reset_State	Reset_State（复位状态） (Reset_State)
-GPIO_Input	GPIO_Input（输入） (GPIO_Input)
-GPIO_Output	GPIO_Output（输出） (GPIO_Output)
-GPIO_Analog	GPIO_Analog（模拟） (GPIO_Analog)
+Reset_State	Reset_State（复位状态）
+GPIO_Input	GPIO_Input（输入）
+GPIO_Output	GPIO_Output（输出）
+GPIO_Analog	GPIO_Analog（模拟）
 EVENTOUT	EVENTOUT（事件输出）
 SYS_WKUP	SYS_WKUP（唤醒）
 GPIO_Output_OD	GPIO_Output_OD（开漏输出）
@@ -11300,7 +11300,7 @@ Address 4 Line	地址 4 线 (Address 4 Line)
 All Tampers Interruption	所有篡改中断 (All Tampers Interruption)
 SDRAM Bank2 remapped on FMC bank2 and still accessible at default mapping	同步动态存储器存储块 2 重映射到灵活存储控制器存储块 2，默认映射仍可访问 (SDRAM Bank2 remapped on FMC bank2 and still accessible at default mapping)
 Alternate Mode Controller (AMC) (DFP)	备用模式控制器 (AMC)（下行端口） (Alternate Mode Controller (AMC) (DFP))
-OPAMP 2	OPAMP 2（运算放大器 2） (OPAMP 2)
+OPAMP 2	OPAMP 2（运算放大器 2）
 SS[31:0] are compared and must match to activate alarm	SS[31:0] 全部比较且必须匹配才触发闹钟 (SS[31:0] are compared and must match to activate alarm)
 PDUSB Host (UFP)	PDUSB 主机（上行端口） (PDUSB Host (UFP))
 Common space setup time	公共空间建立时间 (Common space setup time)
@@ -11502,7 +11502,7 @@ Daylightsaving Sub1h	夏令时减 1 小时 (Daylightsaving Sub1h)
 Not capable	不具备 (Not capable)
 Instruction 1 line	指令 1 线 (Instruction 1 line)
 TIM16 CH1/UP DMA CH4 remap	定时器 16 通道 1/更新重映射到直接存储器访问通道 4 (TIM16 CH1/UP DMA CH4 remap)
-OPAMP 3	OPAMP 3（运算放大器 3） (OPAMP 3)
+OPAMP 3	OPAMP 3（运算放大器 3）
 Alternate Byte 8 Line	备用字节 8 线 (Alternate Byte 8 Line)
 Number of A7S requests	A7S 请求数量 (Number of A7S requests)
 Routed to AF1 device	路由到 AF1 设备 (Routed to AF1 device)
@@ -11730,14 +11730,14 @@ SRAM3 power down in Run mode	SRAM3 在运行模式下掉电 (SRAM3 power down in
 USART COMP2 out	USART 取自比较器 2 输出 (USART COMP2 out)
 SD 1 bit with auto dir voltage converter	SD 1 位（带自动方向电压转换） (SD 1 bit with auto dir voltage converter)
 # ── TIM1_8 高级定时器模板（2026-11-10 第 29 批 G，30 个芯片族共享）──
-- COMP1	- COMP1（比较器 1） (- COMP1)
-- COMP2	- COMP2（比较器 2） (- COMP2)
-- COMP3	- COMP3（比较器 3） (- COMP3)
-- COMP4	- COMP4（比较器 4） (- COMP4)
-- COMP5	- COMP5（比较器 5） (- COMP5)
-- COMP6	- COMP6（比较器 6） (- COMP6)
-- COMP7	- COMP7（比较器 7） (- COMP7)
-- DFSDM	- DFSDM（Sigma-Delta 数字滤波器） (- DFSDM)
+- COMP1	- COMP1（比较器 1）
+- COMP2	- COMP2（比较器 2）
+- COMP3	- COMP3（比较器 3）
+- COMP4	- COMP4（比较器 4）
+- COMP5	- COMP5（比较器 5）
+- COMP6	- COMP6（比较器 6）
+- COMP7	- COMP7（比较器 7）
+- DFSDM	- DFSDM（Sigma-Delta 数字滤波器）
 - Digital Input	- 数字输入 (- Digital Input)
 Activate Break Input 2 on PIN shared with COMP1 out	在与比较器 1 输出复用的引脚上启用刹车输入 2 (Activate Break Input 2 on PIN shared with COMP1 out)
 Activate Break Input 2 on PIN shared with COMP2 out	在与比较器 2 输出复用的引脚上启用刹车输入 2 (Activate Break Input 2 on PIN shared with COMP2 out)
@@ -12066,7 +12066,7 @@ Maximum time taken to perform a read command	读命令执行最长时间 (Maximu
 Activate Bank 1 WRP	启用存储区 1 写保护 (Activate Bank 1 WRP)
 CAD default resistor	CAD 默认电阻 (CAD default resistor)
 USB Communication Capable	支持通用串行总线通信 (USB Communication Capable)
-OPAMP 1	OPAMP 1（运算放大器 1） (OPAMP 1)
+OPAMP 1	OPAMP 1（运算放大器 1）
 SRAM2 Page1 power down in Stop (0, 1, 2)  mode	SRAM2 页 1 在停止（0、1、2）模式下掉电 (SRAM2 Page1 power down in Stop (0, 1, 2)  mode)
 Get Battery Capabitity and Status messages	获取电池能力与状态消息 (Get Battery Capabitity and Status messages)
 OPAMP2 output connection to COMP1 non-inverting input	运算放大器 2 输出连接到比较器 1 同相输入 (OPAMP2 output connection to COMP1 non-inverting input)
@@ -14058,8 +14058,8 @@ TIM8_CH4N	TIM8_CH4N（定时器 8 互补通道 4）
 TIM9_CH1	TIM9_CH1（定时器 9 通道 1）
 TIM9_CH2	TIM9_CH2（定时器 9 通道 2）
 OTG_Dual_Role_Device	OTG_Dual_Role_Device（双角色设备）
-Host_Only	Host_Only（仅主机） (Host_Only)
-Device_Only	Device_Only（仅设备） (Device_Only)
+Host_Only	Host_Only（仅主机）
+Device_Only	Device_Only（仅设备）
 # ── 引脚配置全覆盖收尾（2026-11-10 第 29 批 Q）──
 ADC1_INP0	ADC1_INP0（模数转换器 1 差分输入 0 正端）
 ADC1_PDM_CLK	ADC1_PDM_CLK（模数转换器脉冲密度调制麦克风时钟）
@@ -14729,8 +14729,8 @@ NorPsramChipSelect2_1	NOR/PSRAM 片选 2_1 (NorPsramChipSelect2_1)
 NorPsramChipSelect2_2	NOR/PSRAM 片选 2_2 (NorPsramChipSelect2_2)
 NorPsramChipSelect2_3	NOR/PSRAM 片选 2_3 (NorPsramChipSelect2_3)
 NorPsramChipSelect2_4	NOR/PSRAM 片选 2_4 (NorPsramChipSelect2_4)
-OTG/Dual_Role_Device	OTG/Dual_Role_Device（双角色设备） (OTG/Dual_Role_Device)
-OTG/Dual-Role-Device-FS	OTG/Dual-Role-Device-FS（双角色设备全速） (OTG/Dual-Role-Device-FS)
+OTG/Dual_Role_Device	OTG/Dual_Role_Device（双角色设备）
+OTG/Dual-Role-Device-FS	OTG/Dual-Role-Device-FS（双角色设备全速）
 OTG/Dual-Role-Device-HS	OTG/Dual-Role-Device-HS（双角色设备高速）
 OTG/Dual_Role_Device_FS	OTG/Dual_Role_Device_FS（双角色设备全速）
 OTG/Dual_Role_Device_HS	OTG/Dual_Role_Device_HS（双角色设备高速）
@@ -14748,15 +14748,15 @@ IWDG Early Wakeup Interrupt	IWDG 早期唤醒中断 (IWDG Early Wakeup Interrupt
 Activate_NOE	Activate_NOE（激活输出使能）
 Activate_SOF	Activate_SOF（激活帧起始）
 Activate_SOF_FS	Activate_SOF_FS（激活帧起始全速）
-Activate_VBUS	Activate_VBUS（激活总线电压） (Activate_VBUS)
+Activate_VBUS	Activate_VBUS（激活总线电压）
 Activate_VBUS_BCD	Activate_VBUS_BCD（激活总线电压电池充电检测）
 BCD (Battery Charging Detection)	BCD（电池充电检测） (BCD (Battery Charging Detection))
 Device_DP_DM	Device_DP_DM（设备 DP/DM 信号）
 Device_mode	Device_mode（设备模式）
-Dual_Role_Device	Dual_Role_Device（双角色设备） (Dual_Role_Device)
+Dual_Role_Device	Dual_Role_Device（双角色设备）
 Endpoint 0 Max Packet size	端点 0 最大包大小 (Endpoint 0 Max Packet size)
-Hich Full Speed 12MBit/s	Hich Full Speed 12MBit/s（高速 12 Mbit/s） (Hich Full Speed 12MBit/s)
-Host	Host（主机） (Host)
+Hich Full Speed 12MBit/s	Hich Full Speed 12MBit/s（高速 12 Mbit/s）
+Host	Host（主机）
 Host Channels	主机通道数 (Host Channels)
 Host Full Speed 12MBit/s	主机全速 12 Mbit/s (Host Full Speed 12MBit/s)
 Host Low Speed 1.5MBit/s	主机低速 1.5 Mbit/s (Host Low Speed 1.5MBit/s)
@@ -14772,7 +14772,7 @@ IWDG_Activate	IWDG_Activate（激活）
 IWDG_State	IWDG_State（状态）
 System	系统 (System)
 Bypass mode	旁路模式 (Bypass mode)
-RNG_Activate	RNG_Activate（激活） (RNG_Activate)
+RNG_Activate	RNG_Activate（激活）
 RNG_S1	RNG_S1（RNG 模式 S1）
 RNG_S2	RNG_S2（RNG 模式 S2）
 RNG_State	RNG_State（状态）
@@ -14928,7 +14928,7 @@ Switch between PA14-BOOT(),PA15,PB5,PB8	在 PA14-BOOT()、PA15、PB5、PB8 间�
 Switch between PB0,PB1,PA8,PA11[PA9]	在 PB0、PB1、PA8、PA11[PA9] 间切换 (Switch between PB0,PB1,PA8,PA11[PA9])
 Switch between PB7,PB8,PB9,PC14-OSC32_IN	在 PB7、PB8、PB9、PC14-OSC32_IN 间切换 (Switch between PB7,PB8,PB9,PC14-OSC32_IN)
 Switch between PF2-NRST,PA0,PA1,PA2	在 PF2-NRST、PA0、PA1、PA2 间切换 (Switch between PF2-NRST,PA0,PA1,PA2)
-SysTick	SysTick（系统滴答定时器） (SysTick)
+SysTick	SysTick（系统滴答定时器）
 System Wake-Up	系统唤醒 (System Wake-Up)
 System Wake-Up 0	系统唤醒 0 (System Wake-Up 0)
 System Wake-Up 1	系统唤醒 1 (System Wake-Up 1)
@@ -15027,7 +15027,7 @@ WakeUp6	WakeUp6（唤醒 6）
 WakeUp7	WakeUp7（唤醒 7）
 WakeUp8	WakeUp8（唤醒 8）
 WakeUp9	WakeUp9（唤醒 9）
-isolationVdda	isolationVdda（VDDA 隔离） (isolationVdda)
+isolationVdda	isolationVdda（VDDA 隔离）
 PWR switching on the fly interrupt, PWR end of BLE activity interrupt, PWR end of critical radio phase interrupt	电源动态切换中断、BLE 活动结束中断、关键射频阶段结束中断 (PWR switching on the fly interrupt, PWR end of BLE activity interrupt, PWR end of critical radio phase interrupt)
 PWR switching on the fly, end of BLE activity, end of 802.15.4 activity, end of critical radio phase interrupt	电源动态切换、BLE 活动结束、802.15.4 活动结束、关键射频阶段结束中断 (PWR switching on the fly, end of BLE activity, end of 802.15.4 activity, end of critical radio phase interrupt)
 Processor_SAFETY_interrupt due lost LOOKUP	处理器 SAFETY 中断（LOOKUP 丢失） (Processor_SAFETY_interrupt due lost LOOKUP)
@@ -15099,7 +15099,7 @@ AlternateFunctionPushPull_RI_Timer_IC1	AlternateFunctionPushPull_RI_Timer_IC1（
 AlternateFunctionPushPull_RI_Timer_IC2	AlternateFunctionPushPull_RI_Timer_IC2（复用功能：推挽，路由接口，定时器，输入捕获 2）
 AlternateFunctionPushPull_RI_Timer_IC3	AlternateFunctionPushPull_RI_Timer_IC3（复用功能：推挽，路由接口，定时器，输入捕获 3）
 AlternateFunctionPushPull_RI_Timer_IC4	AlternateFunctionPushPull_RI_Timer_IC4（复用功能：推挽，路由接口，定时器，输入捕获 4）
-AnalogForADC	AnalogForADC（模数转换器模拟输入） (AnalogForADC)
+AnalogForADC	AnalogForADC（模数转换器模拟输入）
 HAL_BIND_SO8_PIN1_PB7	HAL_BIND_SO8_PIN1_PB7（SO8 封装引脚 1 绑定 PB7）
 HAL_BIND_SO8_PIN1_PC14	HAL_BIND_SO8_PIN1_PC14（SO8 封装引脚 1 绑定 PC14）
 HAL_BIND_SO8_PIN4_PA0	HAL_BIND_SO8_PIN4_PA0（SO8 封装引脚 4 绑定 PA0）
@@ -15212,7 +15212,7 @@ Smart run domain in Run mode            Call in MX_SystemPower_Config()	智能�
 Smart run domain in Run mode Call in MX_SystemPower_Config()	智能运行域运行模式（在 MX_SystemPower_Config() 中调用） (Smart run domain in Run mode Call in MX_SystemPower_Config())
 System power supply                          Call in MX_SystemPower_Config()	系统供电（在 MX_SystemPower_Config() 中调用） (System power supply                          Call in MX_SystemPower_Config())
 EnabledDeadBatteryUCPD1	EnabledDeadBatteryUCPD1（UCPD1 死电池信号使能）
-No_Debug	No_Debug（不调试） (No_Debug)
+No_Debug	No_Debug（不调试）
 PINREMAP	PINREMAP（引脚重映射）
 VREFBUFMODE	VREFBUFMODE（VREFBUF 模式）
 VREFBUFOFFMode	VREFBUFOFFMode（VREFBUF 关闭）
@@ -15225,12 +15225,12 @@ Voltage Reference Out	电压参考输出 (Voltage Reference Out)
 Voltage_Reference	Voltage_Reference（电压参考）
 Voltage_Reference_Buffer_Settings	电压参考缓冲设置 (Voltage_Reference_Buffer_Settings)
 Voltage_reference	Voltage_reference（电压参考）
-AnalogForADC_NoPuPd	模数转换器模拟输入（无上下拉）（AnalogForADC_NoPuPd） (AnalogForADC_NoPuPd)
+AnalogForADC_NoPuPd	模数转换器模拟输入（无上下拉）（AnalogForADC_NoPuPd）
 Analog_NoPuPd	模拟输入（无上下拉）（Analog_NoPuPd）
 EXTI1	EXTI1（外部中断 1）
 EXTI2	EXTI2（外部中断 2）
 EXTIRisingFalling	EXTIRisingFalling（外部中断上升/下降沿）
-ExternalMemoryLoader	ExternalMemoryLoader（外部存储器加载器） (ExternalMemoryLoader)
+ExternalMemoryLoader	ExternalMemoryLoader（外部存储器加载器）
 InputFloating	输入浮空（InputFloating）
 InputPullDown	输入下拉（InputPullDown）
 LL_APB4_GRP1_PERIPH_SBS	LL_APB4_GRP1_PERIPH_SBS（低层库 APB4 组 1 外设系统总线）
@@ -17881,3 +17881,6 @@ LPBAM Manager	LPBAM 管理器 (LPBAM Manager)
 Show User Label	显示用户标签 (Show User Label)
 Terms of Use.	使用条款。 (Terms of Use.)
 For details please see our	详情请参阅我们的 (For details please see our)
+For this Cortex-M7 device, it is highly recommended to preconfigure the Memory Protection Unit	对于此 Cortex-M7 器件，强烈建议预先配置内存保护单元 (Memory Protection Unit)
+to optimize the Speculative Read access of the core.	以优化内核的推测读取访问 (Speculative Read)
+Do you want to apply now such default configuration ?	是否现在应用此默认配置？ (Do you want to apply now such default configuration ?)

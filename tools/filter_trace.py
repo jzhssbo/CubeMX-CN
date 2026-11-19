@@ -19,6 +19,22 @@ import re
 import sys
 from pathlib import Path
 
+# Pin configuration vocabulary. Anything matching stays in the pin section even if it
+# looks like an ordinary phrase, because pin labels are the highest-value target.
+PIN_CONTEXT = re.compile(
+    r"\b(GPIO|Pin|Pins|Signal|Signals|WKUP|NRST|BOOT0?|VBAT|VDD|VSS|VCAP|VDDA|VSSA)\b"
+    r"|^(Input|Output|Analog|Alternate)\b"
+    r"|\b(pull-up|pull-down|Push Pull|Open Drain|Speed|Mode|Label|Assignment)\b",
+    re.I,
+)
+
+# Clock-tree vocabulary. Lower priority than pin configuration.
+CLOCK_CONTEXT = re.compile(
+    r"\b(Prescaler|Mux|Clock|Clocks|PLL|HCLK|PCLK|SYSCLK|AHB|APB|HSE|HSI|LSE|LSI|MSI|"
+    r"MCO|Divider|MHz|KHz|VCO|PLLCLK|PLLI2S|CSS)\b",
+    re.I,
+)
+
 # A trace row is: hit<TAB>original<TAB>translated
 CJK = re.compile(r"[\u4e00-\u9fff]")
 
@@ -31,7 +47,7 @@ CHIP = re.compile(
 # Package / component identifiers that contain hyphens: AIROC-Wi-Fi-Bluetooth-STM32
 COMPONENT = re.compile(r"^[A-Za-z][A-Za-z0-9]*(-[A-Za-z0-9]+){2,}$")
 # Pin table rows: (23)-PA0-WKUP : Reset_State
-PIN_ROW = re.compile(r"^\(\d+\)-[A-Za-z0-9_\-/]+ ?: ?[A-Za-z_]+$")
+PIN_ROW = re.compile(r"^\(\d+\)-(?P<pin>[A-Za-z0-9_\-/]+) ?: ?(?P<state>[A-Za-z_]+)$")
 # Bare pin / power names
 PIN_NAME = re.compile(r"^(P[A-Z]\d{1,2}([-_][A-Za-z0-9_\-]+)?|V(DD|SS|BAT|CAP|REF|DDA)[A-Z0-9_]*|NRST)$")
 # Keyboard shortcuts
@@ -171,16 +187,19 @@ def classify(text: str, translated_values: set[str]) -> str:
     return "skip-other"
 
 
-def read_trace(path: Path) -> list[tuple[str, str, str]]:
+def read_trace(path: Path) -> list[tuple[str, str, str, str]]:
+    """Rows are hit / original / translated, with an optional widget-kind column."""
     rows = []
     with path.open(encoding="utf-8") as handle:
         header = handle.readline()
         if "hit" not in header or "original" not in header:
             raise ValueError(f"{path.name} does not look like a trace file (missing header)")
+        has_kind = "kind" in header
         for line in handle:
             parts = line.rstrip("\n").split("\t")
             if len(parts) >= 3:
-                rows.append((parts[0], parts[1], parts[2]))
+                kind = parts[3] if (has_kind and len(parts) >= 4) else "unknown"
+                rows.append((parts[0], parts[1], parts[2], kind))
     return rows
 
 
@@ -200,21 +219,63 @@ def load_dictionary(path: Path | None) -> tuple[dict[str, str], set[str]]:
 
 
 def collect(paths: list[Path], entries: dict[str, str], translated: set[str]):
-    gaps: dict[str, str] = {}
+    """Group gaps into the three areas that must never be dropped, plus the rest.
+
+    Pin configuration outranks the clock tree: a pin-table row such as
+    ``(10)-VLXSMPS : Power`` carries a translatable state word, so the row is
+    split and only the state is checked instead of discarding the whole line.
+    """
+    groups: dict[str, dict[str, str]] = {
+        "pin": {}, "clock": {}, "combo": {}, "other": {},
+    }
     buckets: dict[str, int] = {}
     seen = 0
+
     for path in paths:
-        for hit, original, _translated in read_trace(path):
+        for hit, original, _translated, kind in read_trace(path):
             seen += 1
             if hit == "1":
                 continue
             if original in entries:
                 continue
+
+            # A pin-table row: keep the state word, drop the pin name.
+            row = PIN_ROW.match(original.strip())
+            if row:
+                state = row.group("state").strip()
+                buckets["pin-row-split"] = buckets.get("pin-row-split", 0) + 1
+                if state in entries or state in translated:
+                    continue
+                bucket = classify(state, translated)
+                buckets[bucket] = buckets.get(bucket, 0) + 1
+                if bucket in ("gap-phrase", "gap-word", "review-truncated"):
+                    groups["pin"].setdefault(state, bucket)
+                continue
+
             bucket = classify(original, translated)
             buckets[bucket] = buckets.get(bucket, 0) + 1
-            if bucket in ("gap-phrase", "gap-word", "review-truncated"):
-                gaps.setdefault(original.strip(), bucket)
-    return gaps, buckets, seen
+            if bucket not in ("gap-phrase", "gap-word", "review-truncated"):
+                continue
+
+            area = area_of(original, kind)
+            groups[area].setdefault(original.strip(), bucket)
+
+    return groups, buckets, seen
+
+
+def area_of(text: str, kind: str) -> str:
+    """Decide which of the four output sections a string belongs to."""
+    core = text.strip()
+    # A long sentence is prose, not a pin label, even when it mentions pins in passing.
+    if len(core) > 60:
+        return "other"
+    if PIN_CONTEXT.search(core):
+        return "pin"
+    if CLOCK_CONTEXT.search(core):
+        return "clock"
+    if kind in ("combo", "list"):
+        return "combo"
+    return "other"
 
 
 def main() -> int:
@@ -243,39 +304,66 @@ def main() -> int:
         return 2
 
     entries, translated = load_dictionary(args.dictionary)
-    gaps, buckets, seen = collect(paths, entries, translated)
+    groups, buckets, seen = collect(paths, entries, translated)
 
     if not args.include_truncated:
-        gaps = {k: v for k, v in gaps.items() if v != "review-truncated"}
+        for name in groups:
+            groups[name] = {k: v for k, v in groups[name].items() if v != "review-truncated"}
 
-    ordered = sorted(gaps.items())
+    sections = [
+        ("pin", "一、引脚配置（优先，全部保留）"),
+        ("clock", "二、时钟树"),
+        ("combo", "三、下拉/列表选项"),
+        ("other", "四、其余界面文案"),
+    ]
+    total = sum(len(groups[name]) for name, _ in sections)
+
+    def entry_lines(name: str) -> list[str]:
+        out = []
+        for text, bucket in sorted(groups[name].items()):
+            clipped = bucket == "review-truncated"
+            if args.format == "md":
+                out.append(f"- `{text}`" + ("　_（界面显示被裁切）_" if clipped else ""))
+            elif args.format == "tsv":
+                out.append(f"{text}\t")
+            else:
+                out.append(text + ("  [clipped]" if clipped else ""))
+        return out
 
     lines: list[str] = []
     if args.format == "md":
-        lines.append("# Strings missing from the dictionary")
+        lines.append("# 待翻译清单")
         lines.append("")
-        lines.append(f"Source: {len(paths)} trace file(s), {seen} rendered strings.")
-        lines.append(f"Candidates: **{len(ordered)}**")
+        lines.append(f"来源：{len(paths)} 份记录、{seen} 条界面文字。候选合计 **{total}** 条。")
         lines.append("")
-        lines.append("Translate each line as `中文 (English original)` unless the name must stay")
-        lines.append("in English (part numbers, pin names, register names).")
+        lines.append("按 `中文 (English original)` 格式翻译；实例名与引脚名保留原文，")
+        lines.append("写成 `原名（中文注释）`。引脚配置优先级最高，请优先处理。")
         lines.append("")
-        for text, bucket in ordered:
-            lines.append(f"- `{text}`" + (" _(clipped in UI)_" if bucket == "review-truncated" else ""))
-    elif args.format == "tsv":
-        for text, _bucket in ordered:
-            lines.append(f"{text}\t")
+        for name, title in sections:
+            items = entry_lines(name)
+            if not items:
+                continue
+            lines.append(f"## {title}（{len(items)} 条）")
+            lines.append("")
+            lines.extend(items)
+            lines.append("")
     else:
-        for text, bucket in ordered:
-            suffix = "  [clipped]" if bucket == "review-truncated" else ""
-            lines.append(text + suffix)
+        for name, title in sections:
+            items = entry_lines(name)
+            if not items:
+                continue
+            if args.format == "text":
+                lines.append(f"### {title}（{len(items)} 条）")
+            lines.extend(items)
 
     body = "\n".join(lines) + ("\n" if lines else "")
     if args.output:
         # Explicit LF: the dictionary and trace files must stay LF on Windows too.
         with args.output.open("w", encoding="utf-8", newline="\n") as handle:
             handle.write(body)
-        print(f"wrote {len(ordered)} entries to {args.output}", file=sys.stderr)
+        print(f"wrote {total} entries to {args.output}", file=sys.stderr)
+        for name, _ in sections:
+            print(f"  {name:<8} {len(groups[name])}", file=sys.stderr)
     else:
         # Avoid CRLF translation on Windows consoles and in redirected files.
         sys.stdout.reconfigure(encoding="utf-8", newline="\n")
